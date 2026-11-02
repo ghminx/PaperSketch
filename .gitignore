@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 runs/
 .venv/
+ANALYSIS_AND_PORT_PLAN.md
+검증항목.md
+review/
+tests/
