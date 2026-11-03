@@ -62,6 +62,8 @@ async def generate(processor, data: dict):
 
 async def refine(processor, data: dict, feedback: str):
     """원본 chat 계약을 유지한 PBInteract 수정 경로 수행."""
+    if data.get('task_name') == 'plot':
+        raise ValueError('Plot PBInteract refinement is not connected; generate a new plot instead')
     if not feedback.strip():
         raise ValueError('Feedback must not be empty')
     validate_completed_turn(data)
@@ -93,6 +95,11 @@ async def run(args):
                           'execution': data['execution_record'],
                           'selected_field': data['eval_image_field']}))
         return
+    if args.task == 'plot':
+        if args.plot_timeout <= 0:
+            raise ValueError('plot-timeout must be positive')
+        from run_plot import run_plot
+        return await run_plot(args)
     dataset = args.dataset_dir.resolve()
     if args.action == 'generate' and args.retrieval != 'none':
         json.loads((dataset / 'reference_manifest.json').read_text(encoding='utf-8'))
@@ -165,6 +172,7 @@ async def run(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['generate', 'refine', 'inspect', 'select'])
+    parser.add_argument('--task', choices=['diagram', 'plot'], default='diagram')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--dataset-dir', type=Path)
     parser.add_argument('--input', type=Path)
@@ -176,6 +184,7 @@ if __name__ == '__main__':
     parser.add_argument('--critic-rounds', type=int, default=3)
     parser.add_argument('--internal-rounds', type=int, default=1)
     parser.add_argument('--timeout', type=float, default=1200)
+    parser.add_argument('--plot-timeout', type=float, default=30)
     args = parser.parse_args()
     if args.action != 'inspect' and args.output is None:
         parser.error('generate/refine/select require --output')
@@ -187,7 +196,7 @@ if __name__ == '__main__':
         parser.error('select requires --image-field')
     if args.action == 'generate' and args.input is None:
         parser.error('generate requires --input')
-    if args.action == 'generate' and args.retrieval == 'auto' and args.reference_groups is None:
+    if args.action == 'generate' and args.task == 'diagram' and args.retrieval == 'auto' and args.reference_groups is None:
         parser.error('generate --retrieval auto requires --reference-groups')
     if args.action == 'refine' and (args.prior is None or args.feedback_file is None):
         parser.error('refine requires --prior and --feedback-file')

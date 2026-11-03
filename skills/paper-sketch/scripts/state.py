@@ -13,7 +13,16 @@ from review_protocol import context_hash
 
 RUNTIME = Path(__file__).resolve().parents[1] / 'assets/interact'
 sys.path.insert(0, str(RUNTIME))
+sys.path.insert(0, str(RUNTIME.parent))
 from utils.base64_rw_helper import offload_base64_fields
+
+
+def _plot_code(data: dict, description_field: str) -> bytes:
+    """원본 추출 규칙으로 실행 가능한 코드 bytes 반환."""
+    from paperbanana_plot.utils.plot_execution import extract_plot_code
+    if description_field + '_executed_code' in data:
+        return data[description_field + '_executed_code'].encode('utf-8')
+    return extract_plot_code(data[description_field + '_code']).encode('utf-8')
 
 
 def _image_fields(value):
@@ -75,12 +84,23 @@ def _verify_exports(root: Path, data: dict, metadata: dict):
             raise ValueError('Export path escapes the images directory')
         if hashlib.sha256(exported.read_bytes()).hexdigest() != digest:
             raise ValueError(f'Export image hash mismatch: {row["image"]}')
+        if data.get('task_name') == 'plot':
+            code_path = (root / row['code']).resolve()
+            if not code_path.is_relative_to(root / 'code'):
+                raise ValueError('Code export leaves the code directory')
+            code = _plot_code(data, row['description_field'])
+            if code_path.read_bytes() != code or hashlib.sha256(code).hexdigest() != row['code_sha256']:
+                raise ValueError('Plot code export does not match the record')
     selected = versions[data['eval_image_field']]
     if hashlib.sha256((root / 'final.jpg').read_bytes()).hexdigest() != selected['sha256']:
         raise ValueError('Selected final.jpg hash mismatch')
     description = data[selected['description_field']].replace('\r\n', '\n').replace('\r', '\n')
     if (root / 'description.txt').read_text(encoding='utf-8') != description:
         raise ValueError('Selected description.txt does not match the record')
+    if data.get('task_name') == 'plot':
+        selected_code = _plot_code(data, selected['description_field'])
+        if (root / 'final.py').read_bytes() != selected_code:
+            raise ValueError('Selected final.py does not match the record')
 
 
 def validate_completed_turn(data: dict):
@@ -157,7 +177,7 @@ def summarize_result(data: dict) -> dict:
     if review is None or any(review.get(k) != v for k, v in {
             'image_field': selected, 'image_sha256': digest, 'context_sha256': context_hash(data)}.items()):
         review = {'status': 'not_reviewed', 'reason': 'No final review for the selected image and requirements'}
-    return {'selected_field': selected, 'versions': versions, 'final_review': review,
+    summary = {'selected_field': selected, 'versions': versions, 'final_review': review,
             'execution': data.get('execution_record', {'status': 'unverified',
                 'reason': 'No execution record in this legacy result'}),
             'image_ratios': ratios, 'selected_image_ratio': ratios[data['eval_image_field']],
@@ -165,6 +185,11 @@ def summarize_result(data: dict) -> dict:
             'image_generation_history': data.get('image_generation_history', []),
             'feedback': [t['content'] for t in data['chat_history'] if t['role'] == 'user'],
             'prior_preferred_candidates': data.get('prior_preferred_candidates', [])}
+    if data.get('task_name') == 'plot':
+        summary.update(task_name='plot', rendering_backend='matplotlib-local',
+                       image_generation_status=data['plot_generation_status'],
+                       image_generation_history=data['plot_execution_history'])
+    return summary
 
 
 def select_version(data: dict, field: str) -> dict:
@@ -207,13 +232,22 @@ async def save_result(output: Path, data: dict, *, action='generate', parent: Pa
         relative = f'images/{index:03d}.jpg'
         (output / relative).write_bytes(raw)
         row.update({'image': relative, 'sha256': hashlib.sha256(raw).hexdigest()})
+        if data.get('task_name') == 'plot':
+            code = _plot_code(data, row['description_field'])
+            relative_code = f'code/{index:03d}.py'
+            (output / 'code').mkdir(exist_ok=True)
+            (output / relative_code).write_bytes(code)
+            row.update(code=relative_code, code_sha256=hashlib.sha256(code).hexdigest())
     field = data['eval_image_field']
     (output / 'final.jpg').write_bytes(base64.b64decode(data[field], validate=True))
     (output / 'description.txt').write_text(data[field.removesuffix('_base64_jpg')], encoding='utf-8', newline='')
+    if data.get('task_name') == 'plot':
+        (output / 'final.py').write_bytes(_plot_code(data, field.removesuffix('_base64_jpg')))
     write_json(output / 'result.json', stored)
     metadata = {'format_version': 1, 'action': action, **summary,
                 'result_sha256': hashlib.sha256((output / 'result.json').read_bytes()).hexdigest(),
-                'source_manifest_sha256': hashlib.sha256((RUNTIME / 'SOURCE_MANIFEST.json').read_bytes()).hexdigest()}
+                'source_manifest_sha256': hashlib.sha256(((RUNTIME.parent / 'paperbanana_plot' if data.get('task_name') == 'plot'
+                    else RUNTIME) / 'SOURCE_MANIFEST.json').read_bytes()).hexdigest()}
     if parent is not None:
         metadata['parent'] = {'path': str(parent.resolve()), 'sha256': hashlib.sha256(parent.read_bytes()).hexdigest()}
     _verify_exports(output, data, metadata)

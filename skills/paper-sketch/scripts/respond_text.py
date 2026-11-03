@@ -46,9 +46,7 @@ def main():
     parser.add_argument('--model', required=True)
     parser.add_argument('--timeout', type=float, default=180)
     args = parser.parse_args()
-    request = json.loads(args.request.read_text(encoding='utf-8'))
-    prompt, images = text_prompt(request)
-    submit_text(args.request, model=args.model, timeout=args.timeout, prompt=prompt, images=images)
+    submit_text(args.request, model=args.model, timeout=args.timeout, prompt_builder=text_prompt)
 
 
 if __name__ == '__main__':

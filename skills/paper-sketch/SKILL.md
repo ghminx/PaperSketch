@@ -1,11 +1,13 @@
 ---
 name: paper-sketch
-description: Generate scientific methodology figures and refine saved figures from user feedback using preserved PaperBanana-Interact Python agents, real reference examples, Codex reasoning, and built-in imagegen. Also inspect, select, and continue completed PaperSketch results.
+description: Generate scientific diagrams with imagegen and statistical plots with Python/Matplotlib using preserved PaperBanana agents, real reference examples, and Codex reasoning. Refine saved diagrams from user feedback; inspect and select saved diagram or plot versions.
 ---
 
 # PaperSketch
 
-Use the Python implementation in `assets/interact/`. Keep its style guide, processor loops, state fields and non-retrieval prompts intact. Auto retrieval intentionally uses the approved four-group selection adapter described below. The pinned Interact commit and hashes of the 28 preserved files are in `assets/interact/SOURCE_MANIFEST.json`; `omitted_files` records the two removed provider files, their original hashes and removal reasons. Its Apache-2.0 license is in `assets/interact/LICENSE`. The base PaperBanana skill informed the setup/usage/output structure; its API-key runner is not this backend.
+For diagrams use the Python implementation in `assets/interact/`. Keep its style guide, processor loops, state fields and non-retrieval prompts intact. Auto retrieval intentionally uses the approved four-group selection adapter described below. The pinned Interact commit and hashes of the 28 preserved files are in `assets/interact/SOURCE_MANIFEST.json`; `omitted_files` records the two removed provider files, their original hashes and removal reasons. Its Apache-2.0 license is in `assets/interact/LICENSE`. The base PaperBanana skill informed the setup/usage/output structure; its API-key runner is not this backend.
+
+For statistical plots from numerical data, read [references/plot.md](references/plot.md) and use `--task plot`. That mode uses the copied PaperBanana implementation in `assets/paperbanana_plot/`, Codex text/code calls, and local Matplotlib instead of imagegen. Its source commit, exact copy hashes and explicit path/import/execution-hook changes are in its `SOURCE_MANIFEST.json`. Do not run the diagram feedback procedure on plots.
 
 ## Environment and host contract
 
@@ -13,27 +15,32 @@ Use the Python implementation in `assets/interact/`. Keep its style guide, proce
 
 The Google SDK provides original message/config types. The runner substitutes the generation module before importing agents, without initializing providers or looking up API keys. Python writes requests and waits; **the active Codex chat must service them**. Running the command alone does not invoke host tools and will eventually time out. Grouped retrieval and PBInteract text requests use independent Codex executions below. Original sampling, size tiers, and text-provider retries are not reproduced. Image retries follow the classified host policy below rather than the provider's exception/backoff logic. Do not fall back to a paid API or install this skill globally as part of a figure request.
 
-Supported scope: diagram, one candidate, full initial generation, PBInteract feedback, completed-turn continuation and version selection. Plots, simultaneous candidates, manual-reference mode, other refiners, external evaluation/simulation, arbitrary upstream UI/batch-session import, and interrupted-run recovery are not connected.
+Supported scope: diagram, one candidate, full initial generation, PBInteract feedback, completed-turn continuation and version selection; plots support initial full generation, inspect and version selection. Plot PBInteract feedback, simultaneous candidates, manual-reference mode, other refiners, external evaluation/simulation, arbitrary upstream UI/batch-session import, and interrupted-run recovery are not connected. The remaining generation and feedback sections describe diagrams; plot-specific execution is in references/plot.md.
 
 The unused `configs/model_config.template.yaml` and original `utils/generation_utils.py` are not shipped. Do not create a provider API-key configuration for this runner. `scripts/bridge.py` must register the compatible generation module before importing agents; the original function names still resolve to the host bridge. Keep the Google SDK dependency for message/config types.
 
 ## Reference data
 
-Use the prepared MTP reference root. If it is not prepared, make a separate copy:
+Use `<project>/data/diagram/` for the retained 298 diagram references. Duplicate downloads and evaluation splits were removed from this project's local data tree; original reference JSON, dataset documentation/license, and the download manifest remain as provenance. Plot mode uses the 240 references at `<project>/data/plot/`; the diagram runner does not use them. If preparing another diagram copy from a fresh external download:
 
 ```text
-python <skill>/scripts/prepare_references.py --source <project>/data/MTPaperBananaBench --output <project>/data/prepared/MTPaperBananaBench
+python <skill>/scripts/prepare_references.py --source <downloaded-MTP-root> --output <new-prepared-root>
+python <skill>/scripts/prepare_reference_groups.py --dataset-dir <new-prepared-root> --output <new-prepared-root>/retrieval
 ```
 
-Raw data stays unchanged. Preparation verifies all 298 reference images, fixes only the copied `ref_309` leading-U+200C path mismatch, records provenance, and preserves empty content in `ref_260`/`ref_305`. An existing destination is rejected. The test split is not a reference pool.
+The preparation command does not change its input download. It verifies all 298 reference images, fixes only the copied `ref_309` leading-U+200C path mismatch, records provenance, and preserves empty content in `ref_260`/`ref_305`. An existing destination is rejected. The test split is not a reference pool. Retained diagram/plot reference JSON and image bytes were preserved during deduplication; source snapshot JSON is under `data/sources/`.
 
 - `auto`: use `--reference-groups <groups-root>` pointing to the prepared four groups of the original first 200 references. `grouped_retriever.py` selects six IDs from each group, then compares all 24 shortlisted full methodologies/captions to select ten. It preserves the original topic/visual-intent ranking criteria, but changes the selection count and JSON schema to `{"selected_diagrams": [...]}` for each of the five calls. This is an approved algorithm change from the original single 200-candidate request; equivalent ranking quality is not guaranteed. Random/none keep their original behavior.
 - `random`: original random selection of ten from 298; use when requested or explicitly reporting a connection test. It does not establish relevance.
 - `none`: explicitly omit references.
 
-This project's groups are at `<project>/data/derived/MTPaperBananaBench/retrieval-first200-800k/`. Each contains at most 800,000 candidate characters. The adapter validates the dataset hash, full text, order and all 200 records before calling a model; it also bounds system-plus-user text to 1,000,000 characters. The host must preserve these texts and check its final envelope size. Character checks do not guarantee a model token limit. Missing/stale groups, invalid counts, duplicate IDs or IDs from another group fail; do not substitute random or truncate. All five selections and input IDs are retained in `retrieval.json` and `result.json.retrieval_audit`.
+This project's groups are at `<project>/data/diagram/retrieval/`. Each contains at most 800,000 candidate characters. The adapter validates the dataset hash, full text, order and all 200 records before calling a model; it also bounds system-plus-user text to 1,000,000 characters. The host must preserve these texts and check its final envelope size. Character checks do not guarantee a model token limit. Missing/stale groups, invalid counts, duplicate IDs or IDs from another group fail; do not substitute random or truncate. All five selections and input IDs are retained in `retrieval.json` and `result.json.retrieval_audit`.
+
+The group preparation command is offline and refuses an existing destination. It greedily partitions the first 200 complete records at 800,000 characters per group, requires four groups with at least six candidates each, and checks the full 24-finalist budget. On this dataset it reproduces group sizes 53/51/58/38 and the existing candidate text hashes. It does not download, truncate or summarize references. Pass the new retrieval folder to `--reference-groups`; do not overwrite the current dataset/groups during preparation.
 
 Process the four group requests and the final request in separate model contexts, each using only that request's system instruction and complete user text. For each pending retrieval request run `python <skill>/scripts/respond_retrieval.py <request.json> --model gpt-6.1-sol --timeout 120`. This requires an existing ChatGPT Codex CLI login, reads the full request directly from disk, invokes an independent `codex exec --ephemeral`, and submits its response to the bridge. It uses no separate API key and records prompt, response, events, requested model and usage in the request's `codex-host/` folder. It refuses repeat submission. Do not accumulate all groups in one chat. This command handles retrieval only; PBInteract uses `respond_text.py` and the mandatory refine policy below.
+
+For a readable request with a known ID, both text host commands submit explicit error responses for prompt preparation, missing CLI/login, process start errors and login timeouts, then exit with failure. The waiting runner can stop with its failure checkpoint immediately instead of waiting for its full timeout. Existing responses and prior host attempts are never overwritten; do not resubmit them.
 
 Planner receives the selected actual images and full example texts. View all images. If only text excerpts can be processed, disclose that difference; do not claim full-context equivalence. The runner requires ten distinct IDs from the active pool when references are enabled.
 

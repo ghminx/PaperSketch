@@ -1,0 +1,135 @@
+{
+  "repository": "https://github.com/dwzhu-pku/PaperBanana",
+  "commit": "f1da3db8d5f4c3add947dfd3ddd93dddd3394dc3",
+  "scope": "plot demo_full, single candidate; no PBInteract or external evaluation",
+  "files": {
+    "LICENSE": {
+      "source_sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+      "vendored_sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+      "replacements": []
+    },
+    "agents/base_agent.py": {
+      "source_sha256": "0a62382df76daadad55b0f3584f065f2435356e855ae022b6c89274e81d8b236",
+      "vendored_sha256": "0a62382df76daadad55b0f3584f065f2435356e855ae022b6c89274e81d8b236",
+      "replacements": []
+    },
+    "agents/retriever_agent.py": {
+      "source_sha256": "76a6670ea65ed7e8c9203c997d980e0f37cabd1fa1b14c246fedc9ee30a16e84",
+      "vendored_sha256": "6cd4c7379a3d8c1049333c952f817918ecc1901b3a829b5a55bd22a6f633b2b0",
+      "replacements": [
+        {
+          "before": "self.exp_config.work_dir / f\"data/PaperBananaBench/{cfg['task_name']}/ref.json\"",
+          "after": "self.exp_config.dataset_dir / \"ref.json\""
+        }
+      ]
+    },
+    "agents/planner_agent.py": {
+      "source_sha256": "e7f87cc8087a57cb818ae32c98a1470fce091340f3baa4d2c41d43b6961669df",
+      "vendored_sha256": "f47bcd87b9ccc444ee09257b76ba3ca86a3d4100885ebe4e4698e02a9b272d98",
+      "replacements": [
+        {
+          "before": "self.exp_config.work_dir / f\"data/PaperBananaBench/{cfg['task_name']}/ref.json\"",
+          "after": "self.exp_config.dataset_dir / \"ref.json\""
+        },
+        {
+          "before": "self.exp_config.work_dir / f\"data/PaperBananaBench/{cfg['task_name']}\" / item[\"path_to_gt_image\"]",
+          "after": "self.exp_config.dataset_dir / item[\"path_to_gt_image\"]"
+        }
+      ]
+    },
+    "agents/stylist_agent.py": {
+      "source_sha256": "350c51c9837771c981d9eb6c84488ac8b9ea0d0a759ecde726eafec3960d2a3c",
+      "vendored_sha256": "350c51c9837771c981d9eb6c84488ac8b9ea0d0a759ecde726eafec3960d2a3c",
+      "replacements": []
+    },
+    "agents/visualizer_agent.py": {
+      "source_sha256": "132e8b0ba805f827daa7fccfd1df351cad2ad62eb181990b1bfc7bce9c102572",
+      "vendored_sha256": "507517bca4bb74fd084af88122c480145196a70efb26c262c170a7dad0850b91",
+      "replacements": [
+        {
+          "before": "from concurrent.futures import ProcessPoolExecutor",
+          "after": "from concurrent.futures import ThreadPoolExecutor as ProcessPoolExecutor"
+        },
+        {
+          "before": "from utils.critic_rounds import",
+          "after": "from paperbanana_plot.utils.critic_rounds import"
+        },
+        {
+          "before": "from utils.legacy_generation_options import",
+          "after": "from paperbanana_plot.utils.legacy_generation_options import"
+        },
+        {
+          "before": "from utils.plot_execution import",
+          "after": "from paperbanana_plot.utils.plot_execution import"
+        },
+        {
+          "before": "ProcessPoolExecutor(max_workers=32)",
+          "after": "ProcessPoolExecutor(max_workers=1)"
+        },
+        {
+          "before": "self.process_executor, execute_plot_code_worker, raw_code, 300",
+          "after": "self.process_executor, self.execute_plot_code, raw_code, 300"
+        }
+      ]
+    },
+    "agents/critic_agent.py": {
+      "source_sha256": "b7a03aafd1fe3f3c7f1217e2f572ae86dee6f872bd68826bd1abee8fa076f41d",
+      "vendored_sha256": "b7a03aafd1fe3f3c7f1217e2f572ae86dee6f872bd68826bd1abee8fa076f41d",
+      "replacements": []
+    },
+    "utils/paperviz_processor.py": {
+      "source_sha256": "de1a20ac129ec7a5d8261b0edd4d8493c6b492c607b73e8e7d7d113c1a93ca84",
+      "vendored_sha256": "e09384c9613c553bcb0ba2d71c2e23bd01ad1a4bd8e490a8e236b8678b3ebb45",
+      "replacements": [
+        {
+          "before": "from agents.retriever_agent import",
+          "after": "from paperbanana_plot.agents.retriever_agent import"
+        },
+        {
+          "before": "from agents.planner_agent import",
+          "after": "from paperbanana_plot.agents.planner_agent import"
+        },
+        {
+          "before": "from agents.stylist_agent import",
+          "after": "from paperbanana_plot.agents.stylist_agent import"
+        },
+        {
+          "before": "from agents.visualizer_agent import",
+          "after": "from paperbanana_plot.agents.visualizer_agent import"
+        },
+        {
+          "before": "from agents.critic_agent import",
+          "after": "from paperbanana_plot.agents.critic_agent import"
+        },
+        {
+          "before": "from .config import ExpConfig",
+          "after": "from utils.config import ExpConfig"
+        },
+        {
+          "before": "from .eval_toolkits import",
+          "after": "from utils.eval_toolkits import"
+        }
+      ]
+    },
+    "utils/plot_execution.py": {
+      "source_sha256": "9f3ee8582c4cdf9bc4ea85d3f09ffd3c9ffcfadbd9c239bba116149bf519b04b",
+      "vendored_sha256": "9f3ee8582c4cdf9bc4ea85d3f09ffd3c9ffcfadbd9c239bba116149bf519b04b",
+      "replacements": []
+    },
+    "utils/critic_rounds.py": {
+      "source_sha256": "a8df3cfda00c8c028d2f9e9184e02773636ad8891aa478d073173582c1f2622c",
+      "vendored_sha256": "a8df3cfda00c8c028d2f9e9184e02773636ad8891aa478d073173582c1f2622c",
+      "replacements": []
+    },
+    "utils/legacy_generation_options.py": {
+      "source_sha256": "aca175087c86cd18ddd0275c08317dd34c93cb98d4b54f3ff13122bf27782934",
+      "vendored_sha256": "aca175087c86cd18ddd0275c08317dd34c93cb98d4b54f3ff13122bf27782934",
+      "replacements": []
+    },
+    "style_guides/neurips2025_plot_style_guide.md": {
+      "source_sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe",
+      "vendored_sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe",
+      "replacements": []
+    }
+  }
+}

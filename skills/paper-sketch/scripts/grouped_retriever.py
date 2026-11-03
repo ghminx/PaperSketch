@@ -8,20 +8,10 @@ from google.genai import types
 from agents.retriever_agent import RetrieverAgent
 from utils import generation_utils
 from bridge import write_json
+from reference_groups import GROUP_CHAR_BUDGET, PER_GROUP, candidate_text
 
 
 REQUEST_CHAR_BUDGET = 1_000_000
-GROUP_CHAR_BUDGET = 800_000
-PER_GROUP = 6
-
-
-def candidate_text(index: int, row: dict) -> str:
-    """원본 Retriever 형식의 전체 후보 블록 구성."""
-    return (f"Candidate Diagram {index}:\n- Diagram ID: {row['id']}\n"
-            f"- Caption: {row['visual_intent']}\n"
-            f"- Methodology section: {str(row['content'])}\n\n")
-
-
 class GroupedRetrieverAgent(RetrieverAgent):
     """auto만 단계 검색으로 교체하고 원본의 나머지 모드 계약 유지."""
 

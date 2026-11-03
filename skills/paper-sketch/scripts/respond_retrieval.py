@@ -34,12 +34,12 @@ def main():
     parser.add_argument('--model', required=True)
     parser.add_argument('--timeout', type=float, default=120)
     args = parser.parse_args()
-    request = json.loads(args.request.read_text(encoding='utf-8'))
-    submit_text(args.request, model=args.model, timeout=args.timeout, prompt=retrieval_prompt(request))
+    submit_text(args.request, model=args.model, timeout=args.timeout,
+                prompt_builder=lambda request: (retrieval_prompt(request), ()))
 
 
-def submit_text(request_path: Path, *, model: str, timeout: float, prompt: str,
-                images: Sequence[Path] = ()):
+def submit_text(request_path: Path, *, model: str, timeout: float, prompt: str | None = None,
+                images: Sequence[Path] = (), prompt_builder=None):
     """독립 실행의 입력·이미지·이벤트·응답 및 연결 근거 저장."""
     request_path = request_path.resolve()
     request = json.loads(request_path.read_text(encoding='utf-8'))
@@ -47,6 +47,27 @@ def submit_text(request_path: Path, *, model: str, timeout: float, prompt: str,
     response_path = directory / 'response.json'
     if response_path.exists() or (directory / 'codex-host').exists():
         raise FileExistsError('Request has a response or prior Codex host attempt')
+    try:
+        if prompt_builder is not None:
+            prompt, images = prompt_builder(request)
+        if not isinstance(prompt, str) or not prompt.strip():
+            raise ValueError('A non-empty host prompt is required')
+        _execute_text(request_path, request, model=model, timeout=timeout, prompt=prompt, images=images)
+    except FileExistsError:
+        # 기존 제출·동시 실행의 결과를 오류 응답으로 덮어쓰지 않기 위한 제외
+        raise
+    except (OSError, RuntimeError, ValueError, KeyError, subprocess.TimeoutExpired) as error:
+        if not response_path.exists():
+            write_json(response_path, {'id': request['id'], 'error': str(error),
+                                      'error_type': 'host_failure', 'exception': type(error).__name__})
+        raise
+
+
+def _execute_text(request_path: Path, request: dict, *, model: str, timeout: float,
+                  prompt: str, images: Sequence[Path]):
+    """검증된 요청의 Codex 실행과 응답·근거 파일 저장."""
+    directory = request_path.parent
+    response_path = directory / 'response.json'
     exe = shutil.which('codex')
     if exe is None:
         raise RuntimeError('Codex CLI is required for independent text contexts')
