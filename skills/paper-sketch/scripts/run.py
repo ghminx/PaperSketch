@@ -5,11 +5,13 @@ from pathlib import Path
 from types import SimpleNamespace
 
 from bridge import FileBridge, install_bridge, write_json
-from state import load_result, save_result, select_version, summarize_result, validate_completed_turn
+from state import load_result, save_result, save_failed_result, select_version, summarize_result, validate_completed_turn
+from execution import begin_execution, retrieval_started, retrieval_completed, finish_execution
 
 
 def make_processor(dataset: Path, retrieval: str, critic_rounds: int, internal_rounds: int,
-                   reference_groups: Path | None = None, retrieval_audit_path: Path | None = None):
+                   reference_groups: Path | None = None, retrieval_audit_path: Path | None = None,
+                   *, guard_reviews: bool = True):
     """보존된 원본 agent와 processor 구성."""
     from agents.critic_agent import CriticAgent
     from agents.planner_agent import PlannerAgent
@@ -20,6 +22,8 @@ def make_processor(dataset: Path, retrieval: str, critic_rounds: int, internal_r
     from agents.vanilla_agent import VanillaAgent
     from agents.polish_agent import PolishAgent
     from agents.refiner.pb_interact import PBInteract
+    if guard_reviews:
+        from review_agents import ValidatedCriticAgent as CriticAgent, ValidatedPBInteract as PBInteract
     from utils.paperviz_processor import PaperVizProcessor
     cfg = SimpleNamespace(dataset_dir=dataset.resolve(),
                           work_dir=Path(__file__).resolve().parents[1] / 'assets/interact',
@@ -40,6 +44,7 @@ def make_processor(dataset: Path, retrieval: str, critic_rounds: int, internal_r
 
 async def generate(processor, data: dict):
     """원본 검색 준비·full 생성 경로 수행."""
+    retrieval_started(data)
     await processor.prepare_retrieval([data])
     mode = processor.exp_config.retrieval_setting
     if mode != 'none':
@@ -49,6 +54,7 @@ async def generate(processor, data: dict):
         ids = data['top10_references']
         if len(ids) != 10 or len(set(ids)) != 10 or any(i not in valid for i in ids):
             raise ValueError('Expected ten distinct reference IDs from the active pool')
+    retrieval_completed(data, mode, processor.exp_config.dataset_dir)
     data = await processor.process_query_one(data, do_eval=False)
     data['chat_history'] = [{'role': 'assistant', 'content': 'Diagram generated.'}]
     return data
@@ -76,33 +82,83 @@ async def run(args):
     if args.critic_rounds < 0 or args.internal_rounds < 1:
         raise ValueError('critic-rounds must be >=0 and internal-rounds must be >=1')
     if args.action == 'select':
-        data = select_version(await load_result(args.prior), args.image_field)
+        data = await load_result(args.prior)
+        begin_execution(args, data, parent=args.prior)
+        data = select_version(data, args.image_field)
+        finish_execution(data, [], 'complete')
         await save_result(output, data, action='select', parent=args.prior)
         print(json.dumps({'status': 'complete', 'result': str(output / 'result.json'),
+                          'selected_image_ratio': summarize_result(data)['selected_image_ratio'],
+                          'final_review': summarize_result(data)['final_review'],
+                          'execution': data['execution_record'],
                           'selected_field': data['eval_image_field']}))
         return
     dataset = args.dataset_dir.resolve()
     if args.action == 'generate' and args.retrieval != 'none':
         json.loads((dataset / 'reference_manifest.json').read_text(encoding='utf-8'))
-    install_bridge(FileBridge(output / 'requests', timeout=args.timeout))
+    bridge = FileBridge(output / 'requests', timeout=args.timeout, independent_text=args.action == 'refine')
+    install_bridge(bridge)
     processor = make_processor(dataset, args.retrieval, args.critic_rounds, args.internal_rounds,
                                args.reference_groups, output / 'retrieval.json')
-    settings = {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()}
-    settings['host_context_isolation_guaranteed'] = False
-    if args.action == 'generate' and args.retrieval == 'auto':
-        settings['retrieval_strategy'] = 'grouped-4x6-to10'
+    requested = {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()}
+    settings = {'format_version': 2, 'requested_options': requested, 'execution_policy': {
+        'text_host': 'independent-codex' if args.action == 'refine' else 'per-request',
+        'final_review_text_host': 'independent-codex', 'expected_image_tool': 'imagegen',
+        'review_validation_enabled': True, 'review_response_attempts': 2, 'final_review': 'read_only'}}
     write_json(output / 'run_config.json', settings)
-    if args.action == 'generate':
-        source = json.loads(args.input.read_text(encoding='utf-8'))
-        data = {'content': source['content'], 'visual_intent': source['visual_intent'],
-                'additional_info': source.get('additional_info', {'rounded_ratio': '21:9'}),
-                'max_critic_rounds': args.critic_rounds}
-        data = await generate(processor, data)
-    else:
-        data = await load_result(args.prior)
-        data = await refine(processor, data, args.feedback_file.read_text(encoding='utf-8'))
+    data = {}
+    begin_execution(args, data)
+    try:
+        if args.action == 'generate':
+            source = json.loads(args.input.read_text(encoding='utf-8'))
+            data.update({'content': source['content'], 'visual_intent': source['visual_intent'],
+                    'additional_info': source.get('additional_info', {'rounded_ratio': '21:9'}),
+                    'max_critic_rounds': args.critic_rounds})
+            data['requested_image_ratio'] = data['additional_info'].get('rounded_ratio', '1:1')
+            data = await generate(processor, data)
+        else:
+            data = await load_result(args.prior)
+            begin_execution(args, data, parent=args.prior)
+            data = await refine(processor, data, args.feedback_file.read_text(encoding='utf-8'))
+        if not data.get(data['eval_image_field']):
+            valid = [k for k, v in data.items() if k.endswith('_base64_jpg') and v]
+            if not valid:
+                raise RuntimeError('Image generation failed: no valid image is available')
+            data['eval_image_field'] = valid[-1]
+            data['selection_fallback_reason'] = 'Selected render unavailable; retained last valid image'
+        from review_agents import final_review
+        data['final_review'] = await final_review(processor, data, args.action)
+    except Exception as error:
+        # 실행 경계에서 중간 결과를 보존한 뒤 원래 예외 의미 유지
+        for call in bridge.image_calls:
+            if call['status'] == 'running':
+                call.update(status='aborted', error=str(error))
+        if bridge.image_calls:
+            write_json(output / 'requests/image_generation.json', bridge.image_calls)
+        data.setdefault('image_generation_history', []).extend(bridge.image_calls)
+        data['review_validation_history'] = bridge.review_calls
+        if bridge.review_calls and bridge.review_calls[-1]['status'] != 'valid':
+            data['final_review'] = {'status': 'review_failed', 'error_type': type(error).__name__,
+                                    'error': str(error), 'reason': 'Review failed before completion'}
+        finish_execution(data, bridge.request_paths, 'failed')
+        await save_failed_result(output, data, error)
+        raise
+    data.setdefault('image_generation_history', []).extend(bridge.image_calls)
+    failed = sum(c['status'] != 'succeeded' for c in bridge.image_calls)
+    status = 'completed_with_image_failures' if failed else 'complete'
+    data['image_generation_status'] = status
+    data['review_validation_history'] = bridge.review_calls
+    if data['final_review']['status'] == 'review_failed':
+        status = 'completed_with_review_failure'
+    elif data['final_review']['status'] == 'issues_remaining' and status == 'complete':
+        status = 'completed_with_issues'
+    finish_execution(data, bridge.request_paths, status)
     await save_result(output, data, action=args.action, parent=args.prior)
-    print(json.dumps({'status': 'complete', 'result': str(output / 'result.json'),
+    print(json.dumps({'status': status, 'image_failures': failed, 'result': str(output / 'result.json'),
+                      'image_generation_status': data['image_generation_status'],
+                      'selected_image_ratio': summarize_result(data)['selected_image_ratio'],
+                      'final_review': summarize_result(data)['final_review'],
+                      'execution': data['execution_record'],
                       'image': str(output / 'final.jpg'), 'selected_field': data['eval_image_field']}))
 
 

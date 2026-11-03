@@ -25,8 +25,15 @@ def main():
     group.add_argument('--image-file', type=Path)
     group.add_argument('--error')
     group.add_argument('--prepare-image-prompt', type=Path)
+    parser.add_argument('--error-type', choices=['transient', 'quota', 'refused', 'invalid_input', 'fatal', 'unknown'],
+                        default='unknown')
     args = parser.parse_args()
     request = json.loads(args.request.read_text(encoding='utf-8'))
+    outcome_path = args.request.parent / 'outcome.json'
+    if outcome_path.exists():
+        raise ValueError('This request attempt is already closed; use the latest pending request')
+    if args.error_type != 'unknown' and (args.error is None or request['kind'] != 'image'):
+        raise ValueError('error-type applies only to image errors')
     if args.prepare_image_prompt:
         prompt = image_prompt(request)
         with args.prepare_image_prompt.open('x', encoding='utf-8') as output:
@@ -38,7 +45,11 @@ def main():
     response = {'id': request['id']}
     if args.error is not None:
         response['error'] = args.error
+        if request['kind'] == 'image':
+            response['error_type'] = args.error_type
     elif args.text_file:
+        if request.get('required_text_host') == 'independent-codex':
+            raise ValueError('Use respond_text.py for independent Codex text requests')
         if request['kind'] != 'text':
             raise ValueError('Text response supplied for an image request')
         response['text'] = args.text_file.read_text(encoding='utf-8')
