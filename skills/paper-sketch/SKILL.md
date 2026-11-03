@@ -39,6 +39,14 @@ Keep the actual execution boundaries clear:
 
 For an actual automatic-review denial, retain the denied command and stated reason and respect the decision. Do not retry the same denied action with changed wording, split it to evade review, disable approval controls, or claim that these instructions authorize a transmission. Explain the specific blocker only when it actually occurs; do not turn it into a consent gate for every figure request.
 
+## Async startup check
+
+The run.py CLI automatically checks asyncio initialization in a short-lived local Python subprocess before entering its original async execution path. It prints `PAPER_SKETCH_STARTUP` to stderr (preserving stdout request/result formats) with `checking`, followed by a structured `passed` or `failed` report. The default probe timeout is five seconds; it performs no model call and does not read task inputs. Help output does not run the probe.
+
+For an offline diagnostic using the same interpreter and execution permissions as the planned run, use `python <skill>/scripts/startup_check.py --timeout 5`. A Windows Python socketpair/accept stack at timeout is reported as `loopback_initialization_stalled`. Other timeouts and launch errors remain separate diagnoses; do not assert a socket or sandbox cause without that evidence. This checks startup only, not all later hangs or model availability.
+
+On failure, the CLI exits with code 2 before entering the agent flow; its stderr report includes the captured probe stack and next check; the standalone diagnostic prints its structured report to stdout. No run/result folder or model request is created by this check. Keep the command output in the task's execution logs. Do not call this a retrieval timeout or wait for the 1200-second bridge timeout. Do not bypass the check. If local-runtime permission is needed, explain the concrete initialization failure and request only the necessary execution permission under the host policy. Do not restart a denied action automatically or change global sandbox/network settings. On success the existing retrieval, generation, refinement and saving sequence is unchanged.
+
 ## Reference data
 
 Use `<runtime>/data/diagram/` for the retained 298 diagram references. Duplicate downloads and evaluation splits were removed from this project's local data tree; original reference JSON, dataset documentation/license, and the download manifest remain as provenance. Plot mode uses the 240 references at `<runtime>/data/plot/`; the diagram runner does not use them. If preparing another diagram copy from a fresh external download:

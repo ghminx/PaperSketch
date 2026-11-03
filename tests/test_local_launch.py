@@ -13,6 +13,9 @@ BOOTSTRAP = r'''
 import json, os, runpy, sys
 audit_file, script = sys.argv[1:3]
 def guard(event, args):
+    # 별도 프로세스의 고정 비동기 사전 검사만 허용
+    if event == 'subprocess.Popen' and '--papersketch-asyncio-probe' in args[1]:
+        return
     # Windows asyncio의 로컬 socketpair 통신만 허용
     if event == 'socket.connect' and isinstance(args[1], tuple) and args[1][0] in ('127.0.0.1', '::1'):
         return
@@ -28,7 +31,7 @@ runpy.run_path(script, run_name='__main__')
 
 
 class LocalLaunchTests(unittest.IsolatedAsyncioTestCase):
-    async def test_generate_emits_local_request_without_network_or_child_process(self):
+    async def test_generate_emits_local_request_without_network_or_model_process(self):
         """실제 auto 시작 경로가 외부 호출 없이 요청 파일에서 대기함을 확인."""
         with TemporaryDirectory() as temporary:
             work = Path(temporary)

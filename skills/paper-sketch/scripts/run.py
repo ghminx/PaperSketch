@@ -200,4 +200,7 @@ if __name__ == '__main__':
         parser.error('generate --retrieval auto requires --reference-groups')
     if args.action == 'refine' and (args.prior is None or args.feedback_file is None):
         parser.error('refine requires --prior and --feedback-file')
+    from startup_check import require_asyncio
+    import sys
+    require_asyncio(stream=sys.stderr)
     asyncio.run(run(args))

@@ -47,6 +47,13 @@ python <checkout>/scripts/install.py --apply
 
 ## Verify
 
+실제 실행 전에 설치된 Python으로 `scripts/startup_check.py --timeout 5` 실행이 가능함. `run.py`도 같은 검사를 자동 수행함. 기본 샌드박스와 권한 확장 환경은 결과가 다를 수 있으므로 실제 생성에 사용할 환경에서 확인이 필요함.
+
+- 정상 초기화: `PAPER_SKETCH_STARTUP`의 `passed` 출력 후 원래 흐름 진행임.
+- 초기화 실패: 약 5초의 검사 제한 후 진단·stack을 출력하고 종료 코드 2로 중단함. 결과 폴더·모델 요청은 생성하지 않음.
+- `loopback_initialization_stalled`: Windows asyncio의 socketpair와 accept/connect 위치가 timeout stack에서 확인된 경우임. 원인 근거가 없으면 별도의 미확정 timeout으로 구분함.
+- 검사에는 모델·연구 입력 전송이 없으며 자동 재시도·권한 상승·전역 설정 변경도 없음. 시작 초기화 검사이므로 이후 모든 정지 상황의 감지를 보장하지 않음.
+
 Windows PowerShell 예시임. 별도 가상환경 활성화는 불필요함.
 
 ```powershell
