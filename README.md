@@ -60,6 +60,59 @@ Diagram은 현재 그림을 새 요청뿐 아니라 이전 요구사항과도 �
 
 무엇을 입력하면 되는지 궁금하다면 [입력 예제와 사용 팁](docs/examples-and-tips.md)을 참고하세요. 원본 데모의 방법론·캡션 예제와 PaperSketch에서 바로 활용할 수 있는 요청 양식을 정리했습니다.
 
+## Quick Start
+
+Python 환경과 패키지는 uv로 관리함. 저장소 루트에서 아래 명령으로 잠금 파일에 기록된 환경을 준비함.
+
+Windows에서는 참고 이미지의 긴 파일명을 위해 짧은 경로에 클론하는 것을 권장함. Git의 긴 경로 처리는 아래처럼 저장소 단위로 설정할 수 있으며 전역 설정 변경은 필요하지 않음.
+
+```shell
+git clone -c core.longpaths=true https://github.com/ghminx/PaperSketch.git
+cd PaperSketch
+```
+
+```shell
+uv sync --locked
+```
+
+Codex에서 [PaperSketch 스킬](skills/paper-sketch/SKILL.md)을 사용해 방법론·캡션 또는 실제 수치 데이터·그래프 요구사항을 전달함. 텍스트 처리는 기존 ChatGPT Codex CLI 로그인, Diagram 이미지 생성은 내장 imagegen 사용이 필요함. 별도 Google API 키는 사용하지 않음.
+
+Python 실행기는 모델 요청을 파일로 전달하고 응답을 기다리는 구조임. 아래 명령만 실행하여 모델을 자동 호출하는 방식은 아니며, 요청별 host 처리는 스킬 지침에 따라 Codex가 수행함.
+
+```shell
+# 구조도
+uv run --locked python skills/paper-sketch/scripts/run.py generate --input input.json --dataset-dir data/diagram --reference-groups data/diagram/retrieval --output runs/diagram --retrieval auto
+
+# 통계 그래프
+uv run --locked python skills/paper-sketch/scripts/run.py generate --task plot --input input.json --dataset-dir data/plot --output runs/plot --retrieval auto
+```
+
+입력 JSON은 `content`와 `visual_intent`를 사용함. Diagram은 방법론·캡션, Plot은 실제 수치·표현 의도를 각각 전달함. 출력 폴더는 실행마다 새 경로를 지정함.
+
+```json
+{"content":{"A":10,"B":15,"C":12},"visual_intent":"값을 표시한 세로 막대그래프, y축은 0부터 시작, 제목 없음"}
+```
+
+## Reference Data
+
+- `data/diagram/`: 구조도 참고 이미지·본문·캡션 298개 및 자동 검색용 고정 그룹임.
+- `data/plot/`: 통계 그래프 참고 이미지·원시 데이터·표현 의도 240개임.
+- `data/sources/`: 데이터 출처·라이선스·원본 메타데이터임. 자세한 구성은 [데이터 안내](data/README.md) 기준임.
+
+참고 데이터와 그룹을 저장소에 포함함. 새 Diagram 데이터 사본의 검색 그룹은 아래 명령으로 준비하며 기존 출력 폴더를 덮어쓰지 않음.
+
+```shell
+uv run --locked python skills/paper-sketch/scripts/prepare_reference_groups.py --dataset-dir data/diagram --output path/to/new-retrieval
+```
+
+## Tests
+
+```shell
+uv run --locked python -m unittest discover -s tests -v
+```
+
+외부 모델 호출 없는 모의 응답과 로컬 Matplotlib 실행으로 흐름·데이터·저장·오류 처리를 검증함. 생성 품질 또는 원본 모델과의 성능 동등성을 보장하는 시험은 아님.
+
 ## Acknowledgements
 
 [PaperBanana](https://github.com/dwzhu-pku/PaperBanana)의 그림 생성 에이전트와 스킬 구성을 참고했습니다.

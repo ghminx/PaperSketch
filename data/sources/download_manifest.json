@@ -1,0 +1,76 @@
+{
+  "downloaded_at": "2026-11-02T13:02:26.412068+00:00",
+  "datasets": [
+    {
+      "repo_id": "dwzhu/PaperBananaBench",
+      "revision": "2ac62aa3e9118d0ea8d169d00a8c3b0f05b9cb09",
+      "directory": "C:\\WIP\\PaperSketch\\data\\PaperBananaBench",
+      "checks": [
+        {
+          "task": "diagram",
+          "split": "ref",
+          "records": 298,
+          "images_verified": 298,
+          "empty_content_ids": [
+            "ref_260",
+            "ref_305"
+          ]
+        },
+        {
+          "task": "diagram",
+          "split": "test",
+          "records": 292,
+          "images_verified": 292,
+          "empty_content_ids": []
+        },
+        {
+          "task": "plot",
+          "split": "ref",
+          "records": 240,
+          "images_verified": 240,
+          "empty_content_ids": []
+        },
+        {
+          "task": "plot",
+          "split": "test",
+          "records": 240,
+          "images_verified": 240,
+          "empty_content_ids": []
+        }
+      ]
+    },
+    {
+      "repo_id": "xqwu/MTPaperBananaBench",
+      "revision": "0f529027b26ed50843dd5279ace6c21d60445d89",
+      "directory": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench",
+      "download_complete": true,
+      "checks": [
+        {
+          "split": "ref",
+          "records": 298,
+          "images_verified": 297,
+          "missing": [
+            {
+              "id": "ref_309",
+              "path": "images/‌Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg",
+              "candidate_paths": [
+                "images\\Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg"
+              ]
+            }
+          ],
+          "empty_content_ids": [
+            "ref_260",
+            "ref_305"
+          ]
+        },
+        {
+          "split": "test",
+          "records": 292,
+          "images_verified": 292,
+          "missing": [],
+          "empty_content_ids": []
+        }
+      ]
+    }
+  ]
+}

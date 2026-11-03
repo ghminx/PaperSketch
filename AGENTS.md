@@ -1,11 +1,12 @@
-# PaperSketch 작업 지침
+# PaperSketch Maintenance
 
-- PaperBanana 계열의 실제 구현과 처리 흐름을 분석하고, 원본 기능을 추적할 수 있는 Codex 스킬로 이식하는 프로젝트임.
-- `reference/papervizagent`, `reference/PaperBanana`, `reference/PaperBanana-Interact`는 독립적인 원본 Git 저장소임. 소스 및 `.git` 수정 금지.
-- 변경 전 관련 진입점, 호출 관계, 프롬프트, 데이터 계약 및 현재 커밋 확인 필요.
-- 코드에서 확인한 사실, 문서상 설명, 추론 및 미확인 사항의 명시적 구분 필요.
-- 원본 기능과의 대응 관계를 유지하고, 근거 없는 기능·성능 동등성 주장 금지.
-- 요청 범위에 필요한 최소 변경과 검증 수행. 공식 한국어 문서는 간결한 개조식 문체 사용.
-- 현재 승인 범위는 이전 구현 점검·필요 수정, 결과 저장·선택 버전·완료 결과 재개, SKILL 실행 지침 정리, 작은 테스트부터 실제 생성·피드백 검증 및 reference 원본과 최종 처리 흐름 대조임. 영어 실행 지침과 실행에서 참조하지 않는 한국어 검토본을 분리함.
-- 승인된 데이터 다운로드는 완료됨. 구현에 필요한 패키지는 격리 환경에서 사용함. 이번 연결 검증에는 내장 imagegen 사용이 승인됨. 모델 다운로드, API 키 생성·사용, 별도 유료 API 호출 및 전역 스킬·설정 변경 금지.
-- 사용자 요청 없는 커밋, 원격 저장소 생성 및 업로드 금지.
+- PaperBanana 계열의 원본 에이전트·프롬프트·처리 흐름을 유지하는 Codex 스킬임. 원본과의 기능·성능 동등성을 근거 없이 주장하지 않음.
+- `skills/paper-sketch/`: 영어 실행 지침·Python 실행기·원본 코드 사본·라이선스 위치임. 출처·커밋·hash·연결 변경은 각 assets/SOURCE_MANIFEST.json 기준임.
+- `data/diagram/`: 참고 298개 및 retrieval/의 앞 200개 고정 4그룹임. `data/plot/`: 참고 240개임. `data/sources/`의 출처·라이선스·원본 JSON 보존이 필요함.
+- Diagram은 Codex·imagegen·PBInteract 수정을 지원함. Plot은 Codex 코드 생성·Matplotlib 실행·Critic 반복을 지원하며 PBInteract는 미지원임.
+- 환경 준비는 `uv sync --locked`, 검증은 `uv run --locked python -m unittest discover -s tests -v` 사용이 원칙임. 의존성 변경 시 pyproject.toml·uv.lock·스킬의 scripts/requirements.txt를 함께 확인함.
+- 실행은 `uv run --locked python skills/paper-sketch/scripts/run.py --help`에서 시작함. 파일 bridge의 모델 요청을 Codex host가 처리해야 함. 상세 지침은 SKILL.md 및 references/plot.md 기준임.
+- 수정 전 입력·출력·호출 관계를 확인하고 최소 변경·관련 회귀 검증을 수행함. 원본 사본·데이터·프롬프트·수치·라이선스를 임의 변경하지 않음.
+- 테스트는 외부 모델 없는 fixture·로컬 실행이 기본임. 모델 호출·외부 데이터 전송·유료 API·전역 설정·커밋·푸시는 사용자 승인 범위에서 수행함.
+- 실패 기록과 생성 결과를 구분하고 반복 상한을 유지함. 저장된 코드·그림을 조용히 덮어쓰지 않음.
+- 주석·docstring은 간결한 한국어 명사형, 공식 한국어 문서는 객관적 개조식 문체 사용이 원칙임.

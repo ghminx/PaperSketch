@@ -1,2 +1,4 @@
 # 보존한 원본 파일의 byte와 SOURCE_MANIFEST hash 유지
 skills/paper-sketch/assets/interact/** -text
+skills/paper-sketch/assets/paperbanana_plot/** -text
+data/** -text

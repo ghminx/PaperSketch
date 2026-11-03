@@ -1,10 +1,8 @@
-reference/
-data/
 __pycache__/
-*.pyc
+*.py[cod]
 runs/
 .venv/
-ANALYSIS_AND_PORT_PLAN.md
-검증항목.md
-review/
-tests/
+.uv-cache/
+.env
+.env.*
+!.env.example

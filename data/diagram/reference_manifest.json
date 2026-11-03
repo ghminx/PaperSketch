@@ -1,0 +1,1808 @@
+{
+  "source": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench",
+  "source_ref_sha256": "d978569bbd46c1d312cde669475b87ace868d80bfb7ffb0484464dbc6b8f5d6a",
+  "records": 298,
+  "images_verified": 298,
+  "empty_content_ids": [
+    "ref_260",
+    "ref_305"
+  ],
+  "corrections": [
+    {
+      "id": "ref_309",
+      "original_path": "images/‌Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg",
+      "prepared_path": "images/Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg",
+      "reason": "leading U+200C filename mismatch"
+    }
+  ],
+  "images": [
+    {
+      "id": "ref_1",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\$epsilon$-Seg Sparsely Supervised Semantic Segmentation of  Microscopy Data_diagram.jpg",
+      "prepared_path": "images/$epsilon$-Seg Sparsely Supervised Semantic Segmentation of  Microscopy Data_diagram.jpg",
+      "sha256": "5879371e1725322d8a20e877b0718d70a7f37688f7dea0ec5bd71d05b8265e4c"
+    },
+    {
+      "id": "ref_2",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\$mathcal{X}^2$-DFD A framework for e$mathcal{X}$plainable and e$mathcal{X}$tendable Deepfake Detection_diagram.jpg",
+      "prepared_path": "images/$mathcal{X}^2$-DFD A framework for e$mathcal{X}$plainable and e$mathcal{X}$tendable Deepfake Detection_diagram.jpg",
+      "sha256": "0f14f3f34cc086ccaebf8022b047b744dfba0c36780ef89f4c7c9a0f4b4f4152"
+    },
+    {
+      "id": "ref_3",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\$texttt{STRCMP}$ Integrating Graph Structural Priors with Language Models for Combinatorial Optimization_diagram.jpg",
+      "prepared_path": "images/$texttt{STRCMP}$ Integrating Graph Structural Priors with Language Models for Combinatorial Optimization_diagram.jpg",
+      "sha256": "24d4f51d27d95b7d9d744729a9cdfc5ccbd2f39fb745ad9fc96ed11165d48d99"
+    },
+    {
+      "id": "ref_4",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\3D Gaussian Splatting based Scene-independent Relocalization with Unidirectional and Bidirectional Feature Fusion_diagram.jpg",
+      "prepared_path": "images/3D Gaussian Splatting based Scene-independent Relocalization with Unidirectional and Bidirectional Feature Fusion_diagram.jpg",
+      "sha256": "bcb13e1f0f13658973af12b72da29af67fc1978556b3bbc9b3852831c3728c41"
+    },
+    {
+      "id": "ref_5",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\3DLLM-Mem Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model_diagram.jpg",
+      "prepared_path": "images/3DLLM-Mem Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model_diagram.jpg",
+      "sha256": "207133a1b2f9c35de9b6a49fda61c17c8ed01013a5b0879667424ded179658af"
+    },
+    {
+      "id": "ref_6",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\4D-LRM Large Space-Time Reconstruction Model From and To Any View at Any Time_diagram.jpg",
+      "prepared_path": "images/4D-LRM Large Space-Time Reconstruction Model From and To Any View at Any Time_diagram.jpg",
+      "sha256": "cb8b504525a0c611eb49c1224c8579cccdc76eb453a6894a3bbc934d1d17e64a"
+    },
+    {
+      "id": "ref_7",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\4KAgent Agentic Any Image to 4K Super-Resolution_diagram.jpg",
+      "prepared_path": "images/4KAgent Agentic Any Image to 4K Super-Resolution_diagram.jpg",
+      "sha256": "2136c1befa7be147c98c66711acd987897e00a0b6178463d1c80c12c162ac72b"
+    },
+    {
+      "id": "ref_8",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\70% Size, 100% Accuracy Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float (DFloat11)_diagram.jpg",
+      "prepared_path": "images/70% Size, 100% Accuracy Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float (DFloat11)_diagram.jpg",
+      "sha256": "3a44290b20ea9f900f8a2e8af674e7a43ed9dc20e02a8a33076b4dc6c67e414d"
+    },
+    {
+      "id": "ref_9",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\A Dynamic Learning Strategy for Dempster-Shafer Theory with Applications in Classification and Enhancement_diagram.jpg",
+      "prepared_path": "images/A Dynamic Learning Strategy for Dempster-Shafer Theory with Applications in Classification and Enhancement_diagram.jpg",
+      "sha256": "e22b0ecffa13cd4b3b269b744b14c7691903fc27eaf2083849a939812520e618"
+    },
+    {
+      "id": "ref_10",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\A Snapshot of Influence A Local Data Attribution Framework for Online Reinforcement Learning_diagram.jpg",
+      "prepared_path": "images/A Snapshot of Influence A Local Data Attribution Framework for Online Reinforcement Learning_diagram.jpg",
+      "sha256": "f6ca186325d721362be6987234af386b9e8c396fe78df71c9d38e4bb4831b2c2"
+    },
+    {
+      "id": "ref_11",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\A Unified Solution to Video Fusion From Multi-Frame Learning to Benchmarking_diagram.jpg",
+      "prepared_path": "images/A Unified Solution to Video Fusion From Multi-Frame Learning to Benchmarking_diagram.jpg",
+      "sha256": "f88b2c75d06957e8bab5384f6c9c4f0ce62afb785fcd77433905c540a9e401d9"
+    },
+    {
+      "id": "ref_12",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AF-UMC An Alignment-Free Fusion Framework for Unaligned Multi-View Clustering_diagram.jpg",
+      "prepared_path": "images/AF-UMC An Alignment-Free Fusion Framework for Unaligned Multi-View Clustering_diagram.jpg",
+      "sha256": "7be687b83c0871c822921b0003be38d1eff548c919dc7db8681629b1dfc85e95"
+    },
+    {
+      "id": "ref_13",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ALTER All-in-One Layer Pruning and Temporal Expert Routing for Efficient Diffusion Generation_diagram.jpg",
+      "prepared_path": "images/ALTER All-in-One Layer Pruning and Temporal Expert Routing for Efficient Diffusion Generation_diagram.jpg",
+      "sha256": "04c1f8d4c62446861e0e8cef4d1a4f8c8ccbda768fc6af016b1e7933589c01c2"
+    },
+    {
+      "id": "ref_14",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AR-RAG Autoregressive Retrieval Augmentation for Image Generation_diagram.jpg",
+      "prepared_path": "images/AR-RAG Autoregressive Retrieval Augmentation for Image Generation_diagram.jpg",
+      "sha256": "6608a63fc9b0cf09554906b85c045560e15b39abe1d121b92937a26abf127d0e"
+    },
+    {
+      "id": "ref_15",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Abstain Mask Retain Core Time Series Prediction by Adaptive Masking Loss with Representation Consistency_diagram.jpg",
+      "prepared_path": "images/Abstain Mask Retain Core Time Series Prediction by Adaptive Masking Loss with Representation Consistency_diagram.jpg",
+      "sha256": "fc9f699d6a9eeec8e8b0411c65baa27d259d50bc71a5651dc80194d803779e19"
+    },
+    {
+      "id": "ref_16",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Accelerating Feature Conformal Prediction via Taylor Approximation_diagram.jpg",
+      "prepared_path": "images/Accelerating Feature Conformal Prediction via Taylor Approximation_diagram.jpg",
+      "sha256": "1f1effb0c987cdce66578db9febbda323ad7bbb3a1fc23ef518f0e0f7ff7574f"
+    },
+    {
+      "id": "ref_17",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Accurate and Efficient Low-Rank Model Merging in Core Space_diagram.jpg",
+      "prepared_path": "images/Accurate and Efficient Low-Rank Model Merging in Core Space_diagram.jpg",
+      "sha256": "bd7ec8ed82dbf95f53ca6d193564aaf6a209539f6d101c941519f85587e31806"
+    },
+    {
+      "id": "ref_18",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Activation Control for Efficiently Eliciting Long Chain-of-thought Ability of Language Models_diagram.jpg",
+      "prepared_path": "images/Activation Control for Efficiently Eliciting Long Chain-of-thought Ability of Language Models_diagram.jpg",
+      "sha256": "b02ad3f33909d37205229017a23b12ae1c08a29d1ec10f987d4e8a7c6705e4e4"
+    },
+    {
+      "id": "ref_19",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Active Target Discovery under Uninformative Priors The Power of Permanent and Transient Memory_diagram.jpg",
+      "prepared_path": "images/Active Target Discovery under Uninformative Priors The Power of Permanent and Transient Memory_diagram.jpg",
+      "sha256": "074ba2ebe3b4d92f88b8be725a23bc07687775ef634a11d9c403996c5f9d9a8c"
+    },
+    {
+      "id": "ref_20",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Adaptive 3D Reconstruction via Diffusion Priors and Forward Curvature-Matching Likelihood Updates_diagram.jpg",
+      "prepared_path": "images/Adaptive 3D Reconstruction via Diffusion Priors and Forward Curvature-Matching Likelihood Updates_diagram.jpg",
+      "sha256": "021b5698a0e19db09a0d2860b12134af5952b4eab24653ff108a36aa08166f0a"
+    },
+    {
+      "id": "ref_21",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Adversarial Paraphrasing A Universal Attack for Humanizing AI-Generated Text_diagram.jpg",
+      "prepared_path": "images/Adversarial Paraphrasing A Universal Attack for Humanizing AI-Generated Text_diagram.jpg",
+      "sha256": "db2576f4626a6ff3b79c52e0bb084947aa2433f63be573db52f8b6069d0a1a2e"
+    },
+    {
+      "id": "ref_22",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AegisGuard RL-Guided Adapter Tuning for TEE-Based Efficient & Secure On-Device Inference_diagram.jpg",
+      "prepared_path": "images/AegisGuard RL-Guided Adapter Tuning for TEE-Based Efficient & Secure On-Device Inference_diagram.jpg",
+      "sha256": "0111ad96bad227596f5a688b96a97a9957bddc2db3429155a1b2724e47ec6a4c"
+    },
+    {
+      "id": "ref_23",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AgentAuditor Human-level Safety and Security Evaluation for LLM Agents_diagram.jpg",
+      "prepared_path": "images/AgentAuditor Human-level Safety and Security Evaluation for LLM Agents_diagram.jpg",
+      "sha256": "091ad49e298d13f0a8f2033e8454b9b6c7bebd5b352b4188322f95aba4c330f5"
+    },
+    {
+      "id": "ref_24",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Atomic Diffusion Models for Small Molecule Structure Elucidation from NMR Spectra_diagram.jpg",
+      "prepared_path": "images/Atomic Diffusion Models for Small Molecule Structure Elucidation from NMR Spectra_diagram.jpg",
+      "sha256": "a5141dc93b5dd4fb1a7b23e17dd90e09f7d7fe32701cf5abe6c0cf4b7c212035"
+    },
+    {
+      "id": "ref_25",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Auto-Connect Connectivity-Preserving RigFormer with  Direct Preference Optimization_diagram.jpg",
+      "prepared_path": "images/Auto-Connect Connectivity-Preserving RigFormer with  Direct Preference Optimization_diagram.jpg",
+      "sha256": "f2b021078525828f99e1c9a06cc0710547d59d5e7fe516f135009a0cdd6f22cf"
+    },
+    {
+      "id": "ref_26",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AutoData A Multi-Agent System for Open Web Data Collection_diagram.jpg",
+      "prepared_path": "images/AutoData A Multi-Agent System for Open Web Data Collection_diagram.jpg",
+      "sha256": "f072771599b0cb038cbc84747154aaf1ede3e71ccaedc5b14258e2601a945f81"
+    },
+    {
+      "id": "ref_27",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\AutoRedTeamer Autonomous Red Teaming with Lifelong Attack Integration_diagram.jpg",
+      "prepared_path": "images/AutoRedTeamer Autonomous Red Teaming with Lifelong Attack Integration_diagram.jpg",
+      "sha256": "99fa17e7e65ea6b70bdf6db7d5ed0fd75c3779524ccd092e1e05fee48752871f"
+    },
+    {
+      "id": "ref_28",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Automatic Visual Instrumental Variable Learning for Confounding-Resistant Domain Generalization_diagram.jpg",
+      "prepared_path": "images/Automatic Visual Instrumental Variable Learning for Confounding-Resistant Domain Generalization_diagram.jpg",
+      "sha256": "03fa4f691dc378343b25ba2425b183f920d35ece43fd1c89efb7363637912304"
+    },
+    {
+      "id": "ref_29",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Aux-Think Exploring Reasoning Strategies for Data-Efficient Vision-Language Navigation_diagram.jpg",
+      "prepared_path": "images/Aux-Think Exploring Reasoning Strategies for Data-Efficient Vision-Language Navigation_diagram.jpg",
+      "sha256": "24726209c246e6abbf68d72acb78e86ecf27a18651568b947bba99fa8dfccfa1"
+    },
+    {
+      "id": "ref_30",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\BNMusic Blending Environmental Noises into Personalized Music_diagram.jpg",
+      "prepared_path": "images/BNMusic Blending Environmental Noises into Personalized Music_diagram.jpg",
+      "sha256": "673f97992867fb8ea8a8b40513ab2b6a9e3e5c7912f4e11f37172cac892d4b75"
+    },
+    {
+      "id": "ref_31",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Best-of-N Jailbreaking_diagram.jpg",
+      "prepared_path": "images/Best-of-N Jailbreaking_diagram.jpg",
+      "sha256": "59e3464d8bf236febc98600ed3f126c0122b295aca754b5e2d243fbf4696c067"
+    },
+    {
+      "id": "ref_32",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Beyond Pairwise Connections Extracting High-Order Functional Brain Network Structures under Global Constraints_diagram.jpg",
+      "prepared_path": "images/Beyond Pairwise Connections Extracting High-Order Functional Brain Network Structures under Global Constraints_diagram.jpg",
+      "sha256": "842187802509b174438e0568f283f14a83f6f204422c330bb64504ee76a4c068"
+    },
+    {
+      "id": "ref_33",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Beyond Scalars Concept-Based Alignment Analysis in Vision Transformers_diagram.jpg",
+      "prepared_path": "images/Beyond Scalars Concept-Based Alignment Analysis in Vision Transformers_diagram.jpg",
+      "sha256": "5f2879c903fb55f28b14683b40785af9005e6ffee9c317ed5381c7b2412399c7"
+    },
+    {
+      "id": "ref_34",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Bifrost-1 Bridging Multimodal LLMs and Diffusion Models with Patch-level CLIP Latents_diagram.jpg",
+      "prepared_path": "images/Bifrost-1 Bridging Multimodal LLMs and Diffusion Models with Patch-level CLIP Latents_diagram.jpg",
+      "sha256": "396ce114bafa8e3067e7d40fdaec5113a4d8bfcaabf5534ceaf4e8d39fb4c050"
+    },
+    {
+      "id": "ref_35",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Bio-Inspired Image Restoration_diagram.jpg",
+      "prepared_path": "images/Bio-Inspired Image Restoration_diagram.jpg",
+      "sha256": "b0ce677a8989b6a909038328e5552b53afba5a0bef3fe24228239a4a213969cd"
+    },
+    {
+      "id": "ref_36",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\BioOSS A Bio-Inspired Oscillatory State System with Spatio-Temporal Dynamics_diagram.jpg",
+      "prepared_path": "images/BioOSS A Bio-Inspired Oscillatory State System with Spatio-Temporal Dynamics_diagram.jpg",
+      "sha256": "8837ec757592aea2f9f68563ec6bea1dc561288342c7746ff076a5e3cc1a2a74"
+    },
+    {
+      "id": "ref_38",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Bounds on the computational complexity of neurons due to dendritic morphology_diagram.jpg",
+      "prepared_path": "images/Bounds on the computational complexity of neurons due to dendritic morphology_diagram.jpg",
+      "sha256": "94cc1dc23c3bad96bfe2ca6eb94a8efc5bfbaabaaa30efa757e84d8ae6626cac"
+    },
+    {
+      "id": "ref_39",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Breakthrough Sensor-Limited Single View Towards Implicit Temporal Dynamics for Time Series Domain Adaptation_diagram.jpg",
+      "prepared_path": "images/Breakthrough Sensor-Limited Single View Towards Implicit Temporal Dynamics for Time Series Domain Adaptation_diagram.jpg",
+      "sha256": "aabc9ad923bf9d35772b7f5f4f4b916f209da3ae8b4ca1968304c31fb9f9a828"
+    },
+    {
+      "id": "ref_40",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\CAT Circular-Convolutional Attention for Sub-Quadratic Transformers_diagram.jpg",
+      "prepared_path": "images/CAT Circular-Convolutional Attention for Sub-Quadratic Transformers_diagram.jpg",
+      "sha256": "f51d4c9d01999dd913bb5ddbac1a400c6917b1e958ee63e9d338e136d5818efd"
+    },
+    {
+      "id": "ref_41",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\COME Adding Scene-Centric Forecasting Control to Occupancy World Model_diagram.jpg",
+      "prepared_path": "images/COME Adding Scene-Centric Forecasting Control to Occupancy World Model_diagram.jpg",
+      "sha256": "a434927232c7d515eee2eaf059e922e2605e1f6bb65f7d7cae34d4c351a119f4"
+    },
+    {
+      "id": "ref_42",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\CSBrain A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding_diagram.jpg",
+      "prepared_path": "images/CSBrain A Cross-scale Spatiotemporal Brain Foundation Model for EEG Decoding_diagram.jpg",
+      "sha256": "4a69b909176925ad90ab789fb5094b30ba185de98fab9ec12f11dfa2083624db"
+    },
+    {
+      "id": "ref_43",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Causal-R A Causal-Reasoning Geometry Problem Solver for Optimized Solution Exploration_diagram.jpg",
+      "prepared_path": "images/Causal-R A Causal-Reasoning Geometry Problem Solver for Optimized Solution Exploration_diagram.jpg",
+      "sha256": "9d548df8b0f82ca62959d758064c54fde8ca2d9d064793a7b48dfdcdd6edfe47"
+    },
+    {
+      "id": "ref_44",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Causality-Induced Positional Encoding for Transformer-Based Representation Learning of Non-Sequential Features_diagram.jpg",
+      "prepared_path": "images/Causality-Induced Positional Encoding for Transformer-Based Representation Learning of Non-Sequential Features_diagram.jpg",
+      "sha256": "6ae10a74c0cd1082a88dc85a8fccdcc2cb241928d44f1c646a3e99d9fd563d97"
+    },
+    {
+      "id": "ref_45",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ChA-MAEViT Unifying Channel-Aware Masked Autoencoders and Multi-Channel Vision Transformers for Improved Cross-Channel Learning_diagram.jpg",
+      "prepared_path": "images/ChA-MAEViT Unifying Channel-Aware Masked Autoencoders and Multi-Channel Vision Transformers for Improved Cross-Channel Learning_diagram.jpg",
+      "sha256": "736b5158ee81b3dc8f96a91d1b243a468580527d63ad26faee4883a42bfef853"
+    },
+    {
+      "id": "ref_47",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Co-PatcheR Collaborative Software Patching with Component-specific Small Reasoning Models_diagram.jpg",
+      "prepared_path": "images/Co-PatcheR Collaborative Software Patching with Component-specific Small Reasoning Models_diagram.jpg",
+      "sha256": "1c46112a889c6fa54a429cd9d2b8dc27c72b63cccb3f5b362a66f69f8a314194"
+    },
+    {
+      "id": "ref_48",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\CoCoA A Minimum Bayes Risk Framework Bridging Confidence and Consistency for Uncertainty Quantification in LLMs_diagram.jpg",
+      "prepared_path": "images/CoCoA A Minimum Bayes Risk Framework Bridging Confidence and Consistency for Uncertainty Quantification in LLMs_diagram.jpg",
+      "sha256": "d2bd252ad385d6a0fffa13f7be57edb2990a1f8281d7aff204bead6944801f96"
+    },
+    {
+      "id": "ref_49",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\CoIDO Efficient Data Selection for Visual Instruction Tuning via Coupled Importance-Diversity Optimization_diagram.jpg",
+      "prepared_path": "images/CoIDO Efficient Data Selection for Visual Instruction Tuning via Coupled Importance-Diversity Optimization_diagram.jpg",
+      "sha256": "959ff1111323149ea05f8a255bb2bcfa94a8bf0c715a9f470f13d2f45a0df590"
+    },
+    {
+      "id": "ref_50",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\CoT-lized Diffusion Let's Reinforce T2I Generation Step-by-step_diagram.jpg",
+      "prepared_path": "images/CoT-lized Diffusion Let's Reinforce T2I Generation Step-by-step_diagram.jpg",
+      "sha256": "f8233ef11073d2447234085ff9c7df0240c7f00b038bfe882bc9fe513d7e84c9"
+    },
+    {
+      "id": "ref_51",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ComfyMind Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback_diagram.jpg",
+      "prepared_path": "images/ComfyMind Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback_diagram.jpg",
+      "sha256": "64d7a43e5ee3c91fced396147ab673a2bb9894c61d6a7249b94a7ec90101a1d9"
+    },
+    {
+      "id": "ref_52",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Composite Flow Matching for Reinforcement Learning with Shifted-Dynamics Data_diagram.jpg",
+      "prepared_path": "images/Composite Flow Matching for Reinforcement Learning with Shifted-Dynamics Data_diagram.jpg",
+      "sha256": "4625954fc5ea88f7d023d70d3c74b7ef4f12e6ab1944d44ea9cc769fd5cce903"
+    },
+    {
+      "id": "ref_53",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Computational Hardness of Reinforcement Learning with Partial $q^{pi}$-Realizability_diagram.jpg",
+      "prepared_path": "images/Computational Hardness of Reinforcement Learning with Partial $q^{pi}$-Realizability_diagram.jpg",
+      "sha256": "55cafabff367c3f9e53fa8028173ccf341e5d3c1cdecd00c78a2908f4a277ed5"
+    },
+    {
+      "id": "ref_54",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Connectome-Based Modelling Reveals Orientation Maps in the Drosophila Optic Lobe_diagram.jpg",
+      "prepared_path": "images/Connectome-Based Modelling Reveals Orientation Maps in the Drosophila Optic Lobe_diagram.jpg",
+      "sha256": "16b258999df5ab60d287fec54edcfe5690a2a3e99e6fac67412e6a11ef3e32f5"
+    },
+    {
+      "id": "ref_55",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Continual Gaussian Mixture Distribution Modeling for Class Incremental Semantic Segmentation_diagram.jpg",
+      "prepared_path": "images/Continual Gaussian Mixture Distribution Modeling for Class Incremental Semantic Segmentation_diagram.jpg",
+      "sha256": "376b34a0aa86e588b7c11cc95f23cb8372f21c09e4824df41b74bb32041866af"
+    },
+    {
+      "id": "ref_57",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\D-VST Diffusion Transformer for Pathology-Correct Tone-Controllable Cross-Dye Virtual Staining of Whole Slide Images_diagram.jpg",
+      "prepared_path": "images/D-VST Diffusion Transformer for Pathology-Correct Tone-Controllable Cross-Dye Virtual Staining of Whole Slide Images_diagram.jpg",
+      "sha256": "ad44d9898c81fc9fa6b45b0831b5217233464566834a582ac820771fb09ecde6"
+    },
+    {
+      "id": "ref_58",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\D2SA Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction_diagram.jpg",
+      "prepared_path": "images/D2SA Dual-Stage Distribution and Slice Adaptation for Efficient Test-Time Adaptation in MRI Reconstruction_diagram.jpg",
+      "sha256": "4a19e83ff40048150bebdb529edfc4b095da0518cd80e326c267334e003abb3c"
+    },
+    {
+      "id": "ref_59",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DCA Graph-Guided Deep Embedding Clustering for Brain Atlases_diagram.jpg",
+      "prepared_path": "images/DCA Graph-Guided Deep Embedding Clustering for Brain Atlases_diagram.jpg",
+      "sha256": "e62af5f7b93a730dd74160a2302630edd7692630add7a22bfd9f4b1003bdbe82"
+    },
+    {
+      "id": "ref_60",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DEXTER Diffusion-Guided EXplanations with TExtual Reasoning for Vision Models_diagram.jpg",
+      "prepared_path": "images/DEXTER Diffusion-Guided EXplanations with TExtual Reasoning for Vision Models_diagram.jpg",
+      "sha256": "7bf92c6aef55fa09ab1f839240e7fe6d39b86a434450a3e4ed744e67d15eceac"
+    },
+    {
+      "id": "ref_61",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DISC Dynamic Decomposition Improves LLM Inference Scaling_diagram.jpg",
+      "prepared_path": "images/DISC Dynamic Decomposition Improves LLM Inference Scaling_diagram.jpg",
+      "sha256": "b0e2e12867786181ed2b031cfcb26f4a09554866a066beac76b313071d76959a"
+    },
+    {
+      "id": "ref_62",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DNAEdit Direct Noise Alignment for Text-Guided Rectified Flow Editing_diagram.jpg",
+      "prepared_path": "images/DNAEdit Direct Noise Alignment for Text-Guided Rectified Flow Editing_diagram.jpg",
+      "sha256": "c37b81b72b6df19d7fa8530043fa33a58cf16b8a8537294f478129a708a15e44"
+    },
+    {
+      "id": "ref_64",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Decoupling Contrastive Decoding Robust Hallucination Mitigation in Multimodal Large Language Models_diagram.jpg",
+      "prepared_path": "images/Decoupling Contrastive Decoding Robust Hallucination Mitigation in Multimodal Large Language Models_diagram.jpg",
+      "sha256": "98c589182f302761ddcfd4cd58c541211051c5ba43d9e857a0a4d9d2bf2a383c"
+    },
+    {
+      "id": "ref_65",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Democratizing Clinical Risk Prediction with Cross-Cohort Cross-Modal Knowledge Transfer_diagram.jpg",
+      "prepared_path": "images/Democratizing Clinical Risk Prediction with Cross-Cohort Cross-Modal Knowledge Transfer_diagram.jpg",
+      "sha256": "0afc0c3785c75eb4a429af913b77caa5528e0c4348846980d8739f9c06f6c495"
+    },
+    {
+      "id": "ref_66",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DenoiseRotator Enhance Pruning Robustness for LLMs via Importance Concentration_diagram.jpg",
+      "prepared_path": "images/DenoiseRotator Enhance Pruning Robustness for LLMs via Importance Concentration_diagram.jpg",
+      "sha256": "8f0116704901881fdd3984d742b00e61b046a3f8082c45cbbd607cea3ee27801"
+    },
+    {
+      "id": "ref_67",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Denoising Trajectory Biases for Zero-Shot AI-Generated Image Detection_diagram.jpg",
+      "prepared_path": "images/Denoising Trajectory Biases for Zero-Shot AI-Generated Image Detection_diagram.jpg",
+      "sha256": "0a46e83dd789b933323c430692905ab9f8fdc8088ba5097e3d837175a761c525"
+    },
+    {
+      "id": "ref_68",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DenseDPO Fine-Grained Temporal Preference Optimization for Video Diffusion Models_diagram.jpg",
+      "prepared_path": "images/DenseDPO Fine-Grained Temporal Preference Optimization for Video Diffusion Models_diagram.jpg",
+      "sha256": "4bf45dab37d364f090d512d9475b280ff7f27ec13b89e9e2f2e1c8a8c5b2e399"
+    },
+    {
+      "id": "ref_69",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Dependency Matters Enhancing LLM Reasoning with Explicit Knowledge Grounding_diagram.jpg",
+      "prepared_path": "images/Dependency Matters Enhancing LLM Reasoning with Explicit Knowledge Grounding_diagram.jpg",
+      "sha256": "ef92a2065a7535440c996dac9afab13800108a344fac06ba9c03234ef12764a7"
+    },
+    {
+      "id": "ref_70",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DexGarmentLab Dexterous Garment Manipulation Environment with Generalizable Policy_diagram.jpg",
+      "prepared_path": "images/DexGarmentLab Dexterous Garment Manipulation Environment with Generalizable Policy_diagram.jpg",
+      "sha256": "1558c7d0c3c92c218ab20f931f6c16885fd4afbdc4dd7fe97d68f47f2a7c4016"
+    },
+    {
+      "id": "ref_71",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Diffusion Tree Sampling Scalable inference‑time alignment of diffusion models_diagram.jpg",
+      "prepared_path": "images/Diffusion Tree Sampling Scalable inference‑time alignment of diffusion models_diagram.jpg",
+      "sha256": "ace20834958d6f95ea0eb0835d7b1eaf60f071d632f201a89545d13ecfe1b90b"
+    },
+    {
+      "id": "ref_72",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Direct3D-S2 Gigascale 3D Generation Made Easy with Spatial Sparse Attention_diagram.jpg",
+      "prepared_path": "images/Direct3D-S2 Gigascale 3D Generation Made Easy with Spatial Sparse Attention_diagram.jpg",
+      "sha256": "2e20a68d1f8cc7ffcfa6119a009befc1f74de76053e47b5ac0f75f57edcdb2fd"
+    },
+    {
+      "id": "ref_73",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Disentangled Cross-Modal Representation Learning with Enhanced Mutual Supervision_diagram.jpg",
+      "prepared_path": "images/Disentangled Cross-Modal Representation Learning with Enhanced Mutual Supervision_diagram.jpg",
+      "sha256": "e60d423fcc66da195c9a0ce81f569f8759bdd9fdff5ebd83e48dced50125d821"
+    },
+    {
+      "id": "ref_74",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Drag-and-Drop LLMs Zero-Shot Prompt-to-Weights_diagram.jpg",
+      "prepared_path": "images/Drag-and-Drop LLMs Zero-Shot Prompt-to-Weights_diagram.jpg",
+      "sha256": "1f2e0d513ad25cc7a328f318659170ee8e1dedf59b7bd61b1b7a0c418892e775"
+    },
+    {
+      "id": "ref_75",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DriveDPO Policy Learning via Safety DPO For End-to-End Autonomous Driving_diagram.jpg",
+      "prepared_path": "images/DriveDPO Policy Learning via Safety DPO For End-to-End Autonomous Driving_diagram.jpg",
+      "sha256": "4f7f55e7c8964713c6b626fe2d1d7f8b0bf2ec72dfa169557b79ed6b0a3970a8"
+    },
+    {
+      "id": "ref_76",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DynaNav Dynamic Feature and Layer Selection for Efficient Visual Navigation_diagram.jpg",
+      "prepared_path": "images/DynaNav Dynamic Feature and Layer Selection for Efficient Visual Navigation_diagram.jpg",
+      "sha256": "ebfd5dca334ec87835859ede98c875eceea2703ddff8640d56aac14bef56e532"
+    },
+    {
+      "id": "ref_77",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Dynamic Diffusion Schrödinger Bridge in Astrophysical Observational Inversions_diagram.jpg",
+      "prepared_path": "images/Dynamic Diffusion Schrödinger Bridge in Astrophysical Observational Inversions_diagram.jpg",
+      "sha256": "0a67ba29603a45e11a431ef36d121e5015ac2f36e2dd09efbf0dc34c5aa19586"
+    },
+    {
+      "id": "ref_79",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Dynamic Shadow Unveils Invisible Semantics for Video Outpainting_diagram.jpg",
+      "prepared_path": "images/Dynamic Shadow Unveils Invisible Semantics for Video Outpainting_diagram.jpg",
+      "sha256": "d718bdd55c8a83ae6cbf8b5d12574b5b54394bf31bbbbbba9df086cd1b070c5c"
+    },
+    {
+      "id": "ref_80",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\DynamicVerse A Physically-Aware Multimodal Framework for 4D World Modeling_diagram.jpg",
+      "prepared_path": "images/DynamicVerse A Physically-Aware Multimodal Framework for 4D World Modeling_diagram.jpg",
+      "sha256": "fe149162e2b8461db697bab3227bac677e34f27ace5e76f4b30acf91a5fe6b59"
+    },
+    {
+      "id": "ref_81",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Efficient Hybrid Language Model Compression through Group-Aware SSM Pruning_diagram.jpg",
+      "prepared_path": "images/Efficient Hybrid Language Model Compression through Group-Aware SSM Pruning_diagram.jpg",
+      "sha256": "e2d6818881226d24e334e75fbfd7d83f8fba660f5717519cdf130080718c6f02"
+    },
+    {
+      "id": "ref_82",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Efficient Rectified Flow for Image Fusion_diagram.jpg",
+      "prepared_path": "images/Efficient Rectified Flow for Image Fusion_diagram.jpg",
+      "sha256": "fe35c2386704a33cdf00c431fb8ab0497052bfebaf47147178f6e19fdfd6bd3f"
+    },
+    {
+      "id": "ref_83",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Efficiently Scaling LLM Reasoning Programs with Certaindex_diagram.jpg",
+      "prepared_path": "images/Efficiently Scaling LLM Reasoning Programs with Certaindex_diagram.jpg",
+      "sha256": "3b89a30eb8d425bcd6e408ddb29d41b978f2aa25cdbb7970c28edff643b6ac94"
+    },
+    {
+      "id": "ref_84",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Elevating Visual Perception in Multimodal LLMs with Visual Embedding Distillation_diagram.jpg",
+      "prepared_path": "images/Elevating Visual Perception in Multimodal LLMs with Visual Embedding Distillation_diagram.jpg",
+      "sha256": "dd6f10a6327fc5ac2ccd8e17e66c7c5f2beda5f25e7d832a540367f5eb6d7a6e"
+    },
+    {
+      "id": "ref_85",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Empower Words DualGround for Structured Phrase and Sentence-Level Temporal Grounding_diagram.jpg",
+      "prepared_path": "images/Empower Words DualGround for Structured Phrase and Sentence-Level Temporal Grounding_diagram.jpg",
+      "sha256": "914208c4c103ae92d463ba5ff073e36a0f2039d4b626be1fabaa593fde40eb02"
+    },
+    {
+      "id": "ref_86",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Enhancing 3D Reconstruction for Dynamic Scenes_diagram.jpg",
+      "prepared_path": "images/Enhancing 3D Reconstruction for Dynamic Scenes_diagram.jpg",
+      "sha256": "01f3f433d8620317aea03bd3d4e6078d423f23f51351d57863086f7bd04cd763"
+    },
+    {
+      "id": "ref_87",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Eulerian Neural Network Informed by Chemical Transport for Air Quality Forecasting_diagram.jpg",
+      "prepared_path": "images/Eulerian Neural Network Informed by Chemical Transport for Air Quality Forecasting_diagram.jpg",
+      "sha256": "1d11b5b7de1bd9ccda53e050249d4da00747a1d1831dc0848f3393dd49a3a657"
+    },
+    {
+      "id": "ref_88",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Event-Driven Dynamic Scene Depth Completion_diagram.jpg",
+      "prepared_path": "images/Event-Driven Dynamic Scene Depth Completion_diagram.jpg",
+      "sha256": "014dc40360fe23a11b2650e8ae65a17f06c43649a5eb9eb000aa6d2dbdd8c5e1"
+    },
+    {
+      "id": "ref_89",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Every Rollout Counts Optimal Resource Allocation for Efficient Test-Time Scaling_diagram.jpg",
+      "prepared_path": "images/Every Rollout Counts Optimal Resource Allocation for Efficient Test-Time Scaling_diagram.jpg",
+      "sha256": "ee1e24d04519f5559fdc4ff3a050ddc08a65a4ca4225120f53c18d3ba3ee4dfd"
+    },
+    {
+      "id": "ref_90",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Explicitly Modeling Subcortical Vision with a Neuro-Inspired Front-End Improves CNN Robustness_diagram.jpg",
+      "prepared_path": "images/Explicitly Modeling Subcortical Vision with a Neuro-Inspired Front-End Improves CNN Robustness_diagram.jpg",
+      "sha256": "c7ec73dbb52eadfb5d5dc2b02c87f7c6f6698f1b5ac2fec160fa0d1701e2572e"
+    },
+    {
+      "id": "ref_91",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Exploring Semantic-constrained Adversarial  Example with Instruction Uncertainty Reduction_diagram.jpg",
+      "prepared_path": "images/Exploring Semantic-constrained Adversarial  Example with Instruction Uncertainty Reduction_diagram.jpg",
+      "sha256": "387e68cf5c5c041b17f8d2eb59361f28dd8815985eb1524807a8bceec62f7051"
+    },
+    {
+      "id": "ref_92",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FADRM Fast and Accurate Data Residual Matching for Dataset Distillation_diagram.jpg",
+      "prepared_path": "images/FADRM Fast and Accurate Data Residual Matching for Dataset Distillation_diagram.jpg",
+      "sha256": "f0e9113b1f212ce77712959a44ceecca4c3edb8a9a52d7fcf8f2cf0a185583af"
+    },
+    {
+      "id": "ref_93",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Feature-aware Modulation for Learning from Temporal Tabular Data_diagram.jpg",
+      "prepared_path": "images/Feature-aware Modulation for Learning from Temporal Tabular Data_diagram.jpg",
+      "sha256": "44bcc0d789f535fe61e8340940a975b0d5565c88ac007af0451bb12e0308007a"
+    },
+    {
+      "id": "ref_94",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FlexWorld Progressively Expanding 3D Scenes for Flexible-View Exploration_diagram.jpg",
+      "prepared_path": "images/FlexWorld Progressively Expanding 3D Scenes for Flexible-View Exploration_diagram.jpg",
+      "sha256": "bcde0d4545790ee69310a2c660208b9ca0c4492d81b7719b7cd70acee262db0b"
+    },
+    {
+      "id": "ref_95",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Flexible inference for animal learning rules using neural networks_diagram.jpg",
+      "prepared_path": "images/Flexible inference for animal learning rules using neural networks_diagram.jpg",
+      "sha256": "b6c4cfa9af7f757f7d487077c28b94fd500fc5ea40788389ac7f3586e7ffdf54"
+    },
+    {
+      "id": "ref_96",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FlowCut Rethinking Redundancy via Information Flow for Efficient Vision-Language Models_diagram.jpg",
+      "prepared_path": "images/FlowCut Rethinking Redundancy via Information Flow for Efficient Vision-Language Models_diagram.jpg",
+      "sha256": "4da0c70d8226e68f21106a87cfb82d75a9653bf84aa14f845cfcea94c030e466"
+    },
+    {
+      "id": "ref_97",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Focus-Then-Reuse Fast Adaptation in Visual Perturbation Environments_diagram.jpg",
+      "prepared_path": "images/Focus-Then-Reuse Fast Adaptation in Visual Perturbation Environments_diagram.jpg",
+      "sha256": "58a620d7f7406da13f4ddad75f642700c18ceff04e0ae1372c354678632f465f"
+    },
+    {
+      "id": "ref_98",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Frame In-N-Out Unbounded Controllable Image-to-Video Generation_diagram.jpg",
+      "prepared_path": "images/Frame In-N-Out Unbounded Controllable Image-to-Video Generation_diagram.jpg",
+      "sha256": "9f43f520144d602931ccec423c0f1a64c76eb137af8845441dc351dc0e5d6e15"
+    },
+    {
+      "id": "ref_99",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FrameShield Adversarially Robust Video Anomaly Detection_diagram.jpg",
+      "prepared_path": "images/FrameShield Adversarially Robust Video Anomaly Detection_diagram.jpg",
+      "sha256": "9133dd0a48052570fc942064601dd59de8896ee0322055a487bf0afe5209f6f1"
+    },
+    {
+      "id": "ref_100",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FreqExit Enabling Early-Exit Inference for Visual Autoregressive Models via Frequency-Aware Guidance_diagram.jpg",
+      "prepared_path": "images/FreqExit Enabling Early-Exit Inference for Visual Autoregressive Models via Frequency-Aware Guidance_diagram.jpg",
+      "sha256": "76741f2bd75c2f3f9e403b7341ca937b2337bde4b5d6565211798fbfd8c5f29e"
+    },
+    {
+      "id": "ref_101",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FreqPolicy Frequency Autoregressive Visuomotor Policy with Continuous Tokens_diagram.jpg",
+      "prepared_path": "images/FreqPolicy Frequency Autoregressive Visuomotor Policy with Continuous Tokens_diagram.jpg",
+      "sha256": "bfd6e2b10997f28829a675c8862a2a52aec8b8ef8369dbe8d08e69ba7b084f75"
+    },
+    {
+      "id": "ref_102",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\From Judgment to Interference Early Stopping LLM Harmful Outputs via Streaming Content Monitoring_diagram.jpg",
+      "prepared_path": "images/From Judgment to Interference Early Stopping LLM Harmful Outputs via Streaming Content Monitoring_diagram.jpg",
+      "sha256": "8e574f42d3e4be28bed85a9071a6bee214b89068fdb270bbe90ec8394b6f76ed"
+    },
+    {
+      "id": "ref_103",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\From Noise to Narrative Tracing the Origins of Hallucinations in Transformers_diagram.jpg",
+      "prepared_path": "images/From Noise to Narrative Tracing the Origins of Hallucinations in Transformers_diagram.jpg",
+      "sha256": "54ddad789fd0ca5c1e28dee7a7fe5c8a63ad0d7adb7c46a0d0ca2faf5ce6d274"
+    },
+    {
+      "id": "ref_104",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\From Pretraining to Pathology How Noise Leads to Catastrophic Inheritance in Medical Models_diagram.jpg",
+      "prepared_path": "images/From Pretraining to Pathology How Noise Leads to Catastrophic Inheritance in Medical Models_diagram.jpg",
+      "sha256": "62ad13920666a9808f89ecd783f9c701c73b46e02b4039d24da822eaa3783ad5"
+    },
+    {
+      "id": "ref_105",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\From Shortcut to Induction Head How Data Diversity Shapes Algorithm Selection in Transformers_diagram.jpg",
+      "prepared_path": "images/From Shortcut to Induction Head How Data Diversity Shapes Algorithm Selection in Transformers_diagram.jpg",
+      "sha256": "d7a9db551e0f218c76a83fcf0f8703d7aae960d89f3929203307328047d7fd7c"
+    },
+    {
+      "id": "ref_106",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\FuncGenFoil Airfoil Generation and Editing Model in Function Space_diagram.jpg",
+      "prepared_path": "images/FuncGenFoil Airfoil Generation and Editing Model in Function Space_diagram.jpg",
+      "sha256": "61f4b7b3d41e5a065dc8e6fae68b27c97f1b8a1dbd91323a504df68d4866e252"
+    },
+    {
+      "id": "ref_107",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\G-Memory Tracing Hierarchical Memory for Multi-Agent Systems_diagram.jpg",
+      "prepared_path": "images/G-Memory Tracing Hierarchical Memory for Multi-Agent Systems_diagram.jpg",
+      "sha256": "656acac5f3e78b9da09024084a942fca1de23e020090f445cae97b8c2b1449d1"
+    },
+    {
+      "id": "ref_108",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\GMM-based VAE model with Normalising Flow for effective stochastic segmentation_diagram.jpg",
+      "prepared_path": "images/GMM-based VAE model with Normalising Flow for effective stochastic segmentation_diagram.jpg",
+      "sha256": "e149f3aae39aa4dfb2feeac9ce5f7af30eebb11bdd3cdaa5a00c46543a70fc2a"
+    },
+    {
+      "id": "ref_109",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\GMV A Unified and Efficient Graph Multi-View Learning Framework_diagram.jpg",
+      "prepared_path": "images/GMV A Unified and Efficient Graph Multi-View Learning Framework_diagram.jpg",
+      "sha256": "a2818cf66cd8bbe16c7253a2c410bc95294a06fa56d10d082d5e3266cca4fb34"
+    },
+    {
+      "id": "ref_110",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\GRIFFIN Effective Token Alignment for Faster Speculative Decoding_diagram.jpg",
+      "prepared_path": "images/GRIFFIN Effective Token Alignment for Faster Speculative Decoding_diagram.jpg",
+      "sha256": "12f1dc8083826e28c074ca7697cb2b01ced697435168172c76be24c4fef99504"
+    },
+    {
+      "id": "ref_111",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Generative Graph Pattern Machine_diagram.jpg",
+      "prepared_path": "images/Generative Graph Pattern Machine_diagram.jpg",
+      "sha256": "b0073a156d8cf3fbed59b7b95414efc59cc6d7a46537f16c0dde37515a83e881"
+    },
+    {
+      "id": "ref_112",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Geometric Algorithms for Neural Combinatorial Optimization with Constraints_diagram.jpg",
+      "prepared_path": "images/Geometric Algorithms for Neural Combinatorial Optimization with Constraints_diagram.jpg",
+      "sha256": "c73c589f85a40efc5968848cbdebc998e5140d6b3019bc59bd96e0d676246851"
+    },
+    {
+      "id": "ref_113",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Geometry Aware Operator Transformer as an efficient and accurate neural surrogate for PDEs on arbitrary domains_diagram.jpg",
+      "prepared_path": "images/Geometry Aware Operator Transformer as an efficient and accurate neural surrogate for PDEs on arbitrary domains_diagram.jpg",
+      "sha256": "e28b2b7949c492215ec57cd5b28dfbfc55588d44315346ac9717d2ad2cd3d38e"
+    },
+    {
+      "id": "ref_114",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\HAIF-GS Hierarchical and Induced Flow-Guided Gaussian Splatting for Dynamic Scene_diagram.jpg",
+      "prepared_path": "images/HAIF-GS Hierarchical and Induced Flow-Guided Gaussian Splatting for Dynamic Scene_diagram.jpg",
+      "sha256": "fcff5959feca8cddf0eb5c43103d97a2414b3c3589ea9bd9fd4977eae7938812"
+    },
+    {
+      "id": "ref_115",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\HBLLM Wavelet-Enhanced High-Fidelity 1-Bit Quantization for LLMs_diagram.jpg",
+      "prepared_path": "images/HBLLM Wavelet-Enhanced High-Fidelity 1-Bit Quantization for LLMs_diagram.jpg",
+      "sha256": "03664aebda331a09bdcb5fb0bd175e84524c55eeff178fb8fa5a302c69947f70"
+    },
+    {
+      "id": "ref_116",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\HCRMP An LLM-Hinted Contextual Reinforcement Learning Framework for Autonomous Driving_diagram.jpg",
+      "prepared_path": "images/HCRMP An LLM-Hinted Contextual Reinforcement Learning Framework for Autonomous Driving_diagram.jpg",
+      "sha256": "e76565da7643333b65e025fd3c2455455aa2f9904c4b3fb626df5687adbcfc62"
+    },
+    {
+      "id": "ref_117",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Harnessing the Computation Redundancy in ViTs to Boost Adversarial Transferability_diagram.jpg",
+      "prepared_path": "images/Harnessing the Computation Redundancy in ViTs to Boost Adversarial Transferability_diagram.jpg",
+      "sha256": "8cc62d9e6b708688e4a019c3309cd2af541062b29679c8d33bb610b19ab686ff"
+    },
+    {
+      "id": "ref_118",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Hierarchical Demonstration Order Optimization for Many-shot In-Context Learning_diagram.jpg",
+      "prepared_path": "images/Hierarchical Demonstration Order Optimization for Many-shot In-Context Learning_diagram.jpg",
+      "sha256": "b025fb929cb705fe51d6c90e022a013aeacda99e13d4adcddaf0103b5779bb62"
+    },
+    {
+      "id": "ref_119",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\High-Performance Arithmetic Circuit Optimization via Differentiable Architecture Search_diagram.jpg",
+      "prepared_path": "images/High-Performance Arithmetic Circuit Optimization via Differentiable Architecture Search_diagram.jpg",
+      "sha256": "052614b8775c9d594a525da83b6d94c12b0219fab7f79887a5975c814780bfbf"
+    },
+    {
+      "id": "ref_120",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\HoliTom Holistic Token Merging for Fast Video Large Language Models_diagram.jpg",
+      "prepared_path": "images/HoliTom Holistic Token Merging for Fast Video Large Language Models_diagram.jpg",
+      "sha256": "a749b224d4d0cbc6e2cad463efb4b4e07236766733a0d473e61fae683400d07b"
+    },
+    {
+      "id": "ref_121",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Holistic Large-Scale Scene Reconstruction via Mixed Gaussian Splatting_diagram.jpg",
+      "prepared_path": "images/Holistic Large-Scale Scene Reconstruction via Mixed Gaussian Splatting_diagram.jpg",
+      "sha256": "dadc5ce6ec4e1c5d121bf3defb42f2782356c603ec0f072a222051f6b6e67a2e"
+    },
+    {
+      "id": "ref_122",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\How Does Sequence Modeling Architecture Influence Base Capabilities of Pre-trained Language Models Exploring Key Architecture Design Principles to Avo_diagram.jpg",
+      "prepared_path": "images/How Does Sequence Modeling Architecture Influence Base Capabilities of Pre-trained Language Models Exploring Key Architecture Design Principles to Avo_diagram.jpg",
+      "sha256": "ea77c2845fb61b7baba3a2a5b891c45ea6b233c563cfe0cfa9f8a7f3ed9c084f"
+    },
+    {
+      "id": "ref_123",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\HyperGraphRAG Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation_diagram.jpg",
+      "prepared_path": "images/HyperGraphRAG Retrieval-Augmented Generation via Hypergraph-Structured Knowledge Representation_diagram.jpg",
+      "sha256": "bd85f1578c7e980b1a617557b0b3dcdc34c393882ef14d06928afc1cb22eaa68"
+    },
+    {
+      "id": "ref_124",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\IllumiCraft Unified Geometry and Illumination Diffusion for Controllable Video Generation_diagram.jpg",
+      "prepared_path": "images/IllumiCraft Unified Geometry and Illumination Diffusion for Controllable Video Generation_diagram.jpg",
+      "sha256": "91010b3c080c8add332010d15257e99628ea15de48c95ef105a392b23c981109"
+    },
+    {
+      "id": "ref_125",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Image as a World Generating Interactive World from Single Image via Panoramic Video Generation_diagram.jpg",
+      "prepared_path": "images/Image as a World Generating Interactive World from Single Image via Panoramic Video Generation_diagram.jpg",
+      "sha256": "b54322d2394c5823366dbdfb6c9dc1c80aaae56664ec9c0bec235dbcecdf991e"
+    },
+    {
+      "id": "ref_126",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Implicit Reward as the Bridge A Unified View of SFT and DPO Connections_diagram.jpg",
+      "prepared_path": "images/Implicit Reward as the Bridge A Unified View of SFT and DPO Connections_diagram.jpg",
+      "sha256": "e1438c7a24c32d431f1347b88794ea7890c2abc6b75153e1d63e294ac58997ba"
+    },
+    {
+      "id": "ref_127",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Improving Target Sound Extraction via Disentangled Codec Representations with Privileged Knowledge Distillation_diagram.jpg",
+      "prepared_path": "images/Improving Target Sound Extraction via Disentangled Codec Representations with Privileged Knowledge Distillation_diagram.jpg",
+      "sha256": "267a54f1df6b8cfda293a92d2b1110192a55794214a6b8e3b82448678e676d59"
+    },
+    {
+      "id": "ref_128",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\In-Context Compositional Learning vis Sparse Coding Transformer_diagram.jpg",
+      "prepared_path": "images/In-Context Compositional Learning vis Sparse Coding Transformer_diagram.jpg",
+      "sha256": "4c5a64ca6f288910ba07394398579a020c32eca4d924292a6e13139d8921e0df"
+    },
+    {
+      "id": "ref_129",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Incomplete Multi-view Clustering via Hierarchical Semantic Alignment and Cooperative Completion_diagram.jpg",
+      "prepared_path": "images/Incomplete Multi-view Clustering via Hierarchical Semantic Alignment and Cooperative Completion_diagram.jpg",
+      "sha256": "851417c3e7c2a62a26571d3232f086108bd60daf5f0ecf6558aa36bfefc99004"
+    },
+    {
+      "id": "ref_130",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\IneqSearch Hybrid Reasoning for Olympiad Inequality Proofs_diagram.jpg",
+      "prepared_path": "images/IneqSearch Hybrid Reasoning for Olympiad Inequality Proofs_diagram.jpg",
+      "sha256": "8202dc59abd4dd8a81cbf2087ba39d0b0882ed2a69f4303d12151dc7aeec2c2d"
+    },
+    {
+      "id": "ref_131",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Influence Guided Context Selection for Effective Retrieval-Augmented Generation_diagram.jpg",
+      "prepared_path": "images/Influence Guided Context Selection for Effective Retrieval-Augmented Generation_diagram.jpg",
+      "sha256": "165498711152a0681c0365056de350e01a89cb4ada85c558248ef6987e18ce6b"
+    },
+    {
+      "id": "ref_132",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Intrinsic Goals for Autonomous Agents Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics_diagram.jpg",
+      "prepared_path": "images/Intrinsic Goals for Autonomous Agents Model-Based Exploration in Virtual Zebrafish Predicts Ethological Behavior and Whole-Brain Dynamics_diagram.jpg",
+      "sha256": "3e8df9c716a748816decad94abe2cfae2e4520097072f7e1f52df112392b0732"
+    },
+    {
+      "id": "ref_133",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\JAMUN Bridging Smoothed Molecular Dynamics and Score-Based Learning for Conformational Ensemble Generation_diagram.jpg",
+      "prepared_path": "images/JAMUN Bridging Smoothed Molecular Dynamics and Score-Based Learning for Conformational Ensemble Generation_diagram.jpg",
+      "sha256": "c04c98a7104e9548b204a7ee338d18cb6120b775847887324f3e008738ecd1b1"
+    },
+    {
+      "id": "ref_134",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\JanusDNA A Powerful Bi-directional Hybrid DNA Foundation Model_diagram.jpg",
+      "prepared_path": "images/JanusDNA A Powerful Bi-directional Hybrid DNA Foundation Model_diagram.jpg",
+      "sha256": "6ad951c19f3f38786a05dd3b3d9db6e61933f95a129de543481744d907e0c965"
+    },
+    {
+      "id": "ref_135",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Joint Velocity-Growth Flow Matching for Single-Cell Dynamics Modeling_diagram.jpg",
+      "prepared_path": "images/Joint Velocity-Growth Flow Matching for Single-Cell Dynamics Modeling_diagram.jpg",
+      "sha256": "191e311274c574cccc4cdbfc70fd810662532a54a67b4696d4c8d893df7fe391"
+    },
+    {
+      "id": "ref_136",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\KScope A Framework for Characterizing the Knowledge Status of Language Models_diagram.jpg",
+      "prepared_path": "images/KScope A Framework for Characterizing the Knowledge Status of Language Models_diagram.jpg",
+      "sha256": "2c2df4e9a8574ffeda740c6b231120f864a01b94b41f11de6c66a8e6a9219258"
+    },
+    {
+      "id": "ref_137",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\KTAE A Model-Free Algorithm to Key-Tokens Advantage Estimation in Mathematical Reasoning_diagram.jpg",
+      "prepared_path": "images/KTAE A Model-Free Algorithm to Key-Tokens Advantage Estimation in Mathematical Reasoning_diagram.jpg",
+      "sha256": "c13b2f74aa85c2f3a711f03029b4b026f31eaaa09755d9f4638d663da7423621"
+    },
+    {
+      "id": "ref_138",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Kinaema a recurrent sequence model for memory and pose in motion_diagram.jpg",
+      "prepared_path": "images/Kinaema a recurrent sequence model for memory and pose in motion_diagram.jpg",
+      "sha256": "d49f5de9fe3da9c46bc8492836f89a8c4db898fb5471b28148d2393473339f8b"
+    },
+    {
+      "id": "ref_139",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Knowledge Starts with Practice Knowledge-Aware Exercise Generative Recommendation with Adaptive Multi-Agent Cooperation_diagram.jpg",
+      "prepared_path": "images/Knowledge Starts with Practice Knowledge-Aware Exercise Generative Recommendation with Adaptive Multi-Agent Cooperation_diagram.jpg",
+      "sha256": "0f7ab4c8363bd4c00147163e3295d09842bf14d4f7b6aa59e9f7630c4dbc7f87"
+    },
+    {
+      "id": "ref_140",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LLM-DAMVC A Large Language Model Assisted Dynamic Agent for Multi-View Clustering_diagram.jpg",
+      "prepared_path": "images/LLM-DAMVC A Large Language Model Assisted Dynamic Agent for Multi-View Clustering_diagram.jpg",
+      "sha256": "230f13dfe2f70310036f3b06ced59f74fa810715bb4260a357af0762d58986c0"
+    },
+    {
+      "id": "ref_141",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LUNA Efficient and Topology-Agnostic Foundation Model for EEG Signal Analysis_diagram.jpg",
+      "prepared_path": "images/LUNA Efficient and Topology-Agnostic Foundation Model for EEG Signal Analysis_diagram.jpg",
+      "sha256": "d767585b44712a64aeda531693daccd6fecc14b7021a334f92e8e65e7b558087"
+    },
+    {
+      "id": "ref_142",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LabelAny3D Label Any Object 3D in the Wild_diagram.jpg",
+      "prepared_path": "images/LabelAny3D Label Any Object 3D in the Wild_diagram.jpg",
+      "sha256": "250bc95df4891bb8543493d8de8bdceeb1d6203b0bac9e006fa2658728ba331b"
+    },
+    {
+      "id": "ref_143",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LangHOPS Language Grounded Hierarchical Open-Vocabulary Part Segmentation_diagram.jpg",
+      "prepared_path": "images/LangHOPS Language Grounded Hierarchical Open-Vocabulary Part Segmentation_diagram.jpg",
+      "sha256": "018ed50da49505d57bef622cde72ed8e1e90756e3732f817499449f172003636"
+    },
+    {
+      "id": "ref_144",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Language Models can Self-Improve at State-Value Estimation for Better Search_diagram.jpg",
+      "prepared_path": "images/Language Models can Self-Improve at State-Value Estimation for Better Search_diagram.jpg",
+      "sha256": "a288cea6b0ee8dffb6fc6d1cf9520249754d8380c8c8718483a9b867fff8aa7d"
+    },
+    {
+      "id": "ref_145",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Lattice Boltzmann Model for Learning Real-World Pixel Dynamicity_diagram.jpg",
+      "prepared_path": "images/Lattice Boltzmann Model for Learning Real-World Pixel Dynamicity_diagram.jpg",
+      "sha256": "a9e4ba52bdf6bcbaa8c5871041227e04f7e19ec07c9ce291aefb3121b118591d"
+    },
+    {
+      "id": "ref_146",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Layer as Puzzle Pieces Compressing Large Language Models through Layer Concatenation_diagram.jpg",
+      "prepared_path": "images/Layer as Puzzle Pieces Compressing Large Language Models through Layer Concatenation_diagram.jpg",
+      "sha256": "5eb9342eb272dadc08c63f105fd8a29ebad6926af4380fb93f43e39793d8bfbd"
+    },
+    {
+      "id": "ref_149",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Learning Task-Agnostic Representations through Multi-Teacher Distillation_diagram.jpg",
+      "prepared_path": "images/Learning Task-Agnostic Representations through Multi-Teacher Distillation_diagram.jpg",
+      "sha256": "44ea2ae1f6d3d425ca97c13e89dd9eedd97bb067e077608a8cd693c5989c0450"
+    },
+    {
+      "id": "ref_150",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Learning from Videos for 3D World Enhancing MLLMs with 3D Vision Geometry Priors_diagram.jpg",
+      "prepared_path": "images/Learning from Videos for 3D World Enhancing MLLMs with 3D Vision Geometry Priors_diagram.jpg",
+      "sha256": "02a964e6ac921fc424400bf62c1fa8a47256562c7104af86b270f51ff2bb9810"
+    },
+    {
+      "id": "ref_151",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Learning to Factorize Spatio-Temporal Foundation Models_diagram.jpg",
+      "prepared_path": "images/Learning to Factorize Spatio-Temporal Foundation Models_diagram.jpg",
+      "sha256": "3de598e648e3b8698771a4073b2fb1ca0e09f6d16fae1a2cd0fdd7ed3061c972"
+    },
+    {
+      "id": "ref_152",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Learning to Reason under Off-Policy Guidance_diagram.jpg",
+      "prepared_path": "images/Learning to Reason under Off-Policy Guidance_diagram.jpg",
+      "sha256": "d397e9435dead48a1352233ade70479b5f6a6c39f00ae3ba9f3e0866ff52953d"
+    },
+    {
+      "id": "ref_153",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Learning to Steer Input-dependent Steering for Multimodal LLMs_diagram.jpg",
+      "prepared_path": "images/Learning to Steer Input-dependent Steering for Multimodal LLMs_diagram.jpg",
+      "sha256": "e37a3d8bc9a5100e5e7a4b0bbb4810c83ccdacdd7f05d07d8c01be4ad6b971dd"
+    },
+    {
+      "id": "ref_154",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Leaving No OOD Instance Behind Instance-Level OOD Fine-Tuning for Anomaly Segmentation_diagram.jpg",
+      "prepared_path": "images/Leaving No OOD Instance Behind Instance-Level OOD Fine-Tuning for Anomaly Segmentation_diagram.jpg",
+      "sha256": "cd1c676eddf3aa5987450f5b32a6605e025c33d97470a216e47115a372c1ab12"
+    },
+    {
+      "id": "ref_155",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LightFair Towards an Efficient Alternative for Fair T2I Diffusion via Debiasing Pre-trained Text Encoders_diagram.jpg",
+      "prepared_path": "images/LightFair Towards an Efficient Alternative for Fair T2I Diffusion via Debiasing Pre-trained Text Encoders_diagram.jpg",
+      "sha256": "2c2fbf6c1fc4a2180aef38cc08c463b48b945671b93bec598ede84fa8db5315c"
+    },
+    {
+      "id": "ref_156",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LittleBit Ultra Low-Bit Quantization via Latent Factorization_diagram.jpg",
+      "prepared_path": "images/LittleBit Ultra Low-Bit Quantization via Latent Factorization_diagram.jpg",
+      "sha256": "ddacf16a5b5b012381fe9d01b99fce4518c74d422370431506232e1db85dabad"
+    },
+    {
+      "id": "ref_157",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\LogicTree Improving Complex Reasoning of LLMs via Instantiated Multi-step Synthetic Logical Data_diagram.jpg",
+      "prepared_path": "images/LogicTree Improving Complex Reasoning of LLMs via Instantiated Multi-step Synthetic Logical Data_diagram.jpg",
+      "sha256": "6226dccfd32a03ed852087784a6c98a660b9c5fa27229f7355f772b0be666288"
+    },
+    {
+      "id": "ref_159",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Lyapunov-Stable Adaptive Control for Multimodal Concept Drift_diagram.jpg",
+      "prepared_path": "images/Lyapunov-Stable Adaptive Control for Multimodal Concept Drift_diagram.jpg",
+      "sha256": "1dc8415e692dc7c85a1da7a2f7e531aeec97d95cec1b1ef17eb7440d3c25a5a1"
+    },
+    {
+      "id": "ref_160",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MASTER Enhancing Large Language Model via Multi-Agent Simulated Teaching_diagram.jpg",
+      "prepared_path": "images/MASTER Enhancing Large Language Model via Multi-Agent Simulated Teaching_diagram.jpg",
+      "sha256": "c63e4d9579723c4fca3f07c4ebe74fc96715f08c76d09d82962faec78a688a4a"
+    },
+    {
+      "id": "ref_161",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MEGADance Mixture-of-Experts Architecture for Genre-Aware 3D Dance Generation_diagram.jpg",
+      "prepared_path": "images/MEGADance Mixture-of-Experts Architecture for Genre-Aware 3D Dance Generation_diagram.jpg",
+      "sha256": "14226ed7237f86db60bbac0fd245ca8e3157a9422c063d9463e198b644670fd4"
+    },
+    {
+      "id": "ref_162",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MINT-CoT Enabling Interleaved Visual Tokens in Mathematical Chain-of-Thought Reasoning_diagram.jpg",
+      "prepared_path": "images/MINT-CoT Enabling Interleaved Visual Tokens in Mathematical Chain-of-Thought Reasoning_diagram.jpg",
+      "sha256": "ab44c0c419f90df85bbb2f620924bf27eb4d58889668fd1efb4d8b433f0a66c4"
+    },
+    {
+      "id": "ref_163",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MODEM A Morton-Order Degradation Estimation Mechanism for Adverse Weather Image Recovery_diagram.jpg",
+      "prepared_path": "images/MODEM A Morton-Order Degradation Estimation Mechanism for Adverse Weather Image Recovery_diagram.jpg",
+      "sha256": "b73182c49c454450565e5c447c660e0d6dfaee3ec37b2c18b4cf5c1d8a5bb6eb"
+    },
+    {
+      "id": "ref_164",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MOSDT Self-Distillation-Based Decision Transformer for Multi-Agent Offline Safe Reinforcement Learning_diagram.jpg",
+      "prepared_path": "images/MOSDT Self-Distillation-Based Decision Transformer for Multi-Agent Offline Safe Reinforcement Learning_diagram.jpg",
+      "sha256": "d0be801cb6da489b9021114b235be7dc1b2d36b23692f671a6f7fa90fe1be386"
+    },
+    {
+      "id": "ref_165",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MPMAvatar Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics_diagram.jpg",
+      "prepared_path": "images/MPMAvatar Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics_diagram.jpg",
+      "sha256": "0320a4f0b60b3c1f9e8076f5b2697f076372a97e57433bdd6aa1d52657c01706"
+    },
+    {
+      "id": "ref_166",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\MURKA Multi-Reward Reinforcement Learning with Knowledge Alignment for Optimization Tasks_diagram.jpg",
+      "prepared_path": "images/MURKA Multi-Reward Reinforcement Learning with Knowledge Alignment for Optimization Tasks_diagram.jpg",
+      "sha256": "bdb0df4315f4d449a379d962b28f896b332d1398cc7ed7943244614f3a163ae1"
+    },
+    {
+      "id": "ref_167",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Manipulating 3D Molecules in a Fixed-Dimensional E(3)-Equivariant Latent Space_diagram.jpg",
+      "prepared_path": "images/Manipulating 3D Molecules in a Fixed-Dimensional E(3)-Equivariant Latent Space_diagram.jpg",
+      "sha256": "d798c5bc77481223fe93a9b1c37b8ca0554166a926ac4d4dcb2fd2b2cf5a009a"
+    },
+    {
+      "id": "ref_168",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Many LLMs Are More Utilitarian Than One_diagram.jpg",
+      "prepared_path": "images/Many LLMs Are More Utilitarian Than One_diagram.jpg",
+      "sha256": "8eef071610e4a707e2a357188a52316d3d98c22173c20821913f33c151f061cf"
+    },
+    {
+      "id": "ref_170",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Multivariate Time Series Anomaly Detection with Idempotent Reconstruction_diagram.jpg",
+      "prepared_path": "images/Multivariate Time Series Anomaly Detection with Idempotent Reconstruction_diagram.jpg",
+      "sha256": "ff5c5ed22bb48fd0e006ff31847afc9b93df86e7c5bde36b43c364c900cb2b9b"
+    },
+    {
+      "id": "ref_171",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Mysteries of the Deep Role of Intermediate Representations in Out of Distribution Detection_diagram.jpg",
+      "prepared_path": "images/Mysteries of the Deep Role of Intermediate Representations in Out of Distribution Detection_diagram.jpg",
+      "sha256": "1051b9e1f06df195a3ceb2f8d3f340a97fd4408acdd52026f6a2284096f7a371"
+    },
+    {
+      "id": "ref_172",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\NEED Cross-Subject and Cross-Task Generalization for Video and Image Reconstruction from EEG Signals_diagram.jpg",
+      "prepared_path": "images/NEED Cross-Subject and Cross-Task Generalization for Video and Image Reconstruction from EEG Signals_diagram.jpg",
+      "sha256": "2f1daa68af6a7c184c98a9e794bf854a5d05257b8e925ed01fd7b26fb0b18f6c"
+    },
+    {
+      "id": "ref_173",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\NOBLE - Neural Operator with Biologically-informed Latent Embeddings to Capture Experimental Variability in Biological Neuron Models_diagram.jpg",
+      "prepared_path": "images/NOBLE - Neural Operator with Biologically-informed Latent Embeddings to Capture Experimental Variability in Biological Neuron Models_diagram.jpg",
+      "sha256": "865dd3ccb971e20f03912cfe1613f4398adf8446d2a641562c737e5bfaf992f8"
+    },
+    {
+      "id": "ref_174",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Native-Resolution Image Synthesis_diagram.jpg",
+      "prepared_path": "images/Native-Resolution Image Synthesis_diagram.jpg",
+      "sha256": "5c69ea8b4366b23677a5a3acdd97230ea5c3477c547b7674bec60d57798ea2b4"
+    },
+    {
+      "id": "ref_175",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Negative Feedback Really Matters Signed Dual-Channel Graph Contrastive Learning Framework for Recommendation_diagram.jpg",
+      "prepared_path": "images/Negative Feedback Really Matters Signed Dual-Channel Graph Contrastive Learning Framework for Recommendation_diagram.jpg",
+      "sha256": "cc2405ea7b8012f03a527751e2996d4247ae758aa2ed57902507d8b4b4a20857"
+    },
+    {
+      "id": "ref_176",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\NeuroPath Neurobiology-Inspired Path Tracking and Reflection for Semantically Coherent Retrieval_diagram.jpg",
+      "prepared_path": "images/NeuroPath Neurobiology-Inspired Path Tracking and Reflection for Semantically Coherent Retrieval_diagram.jpg",
+      "sha256": "c4213cf4571b30adaba054fb0b66e77eb17b0a27879be885a8695d309f5116d4"
+    },
+    {
+      "id": "ref_177",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Normalized Attention Guidance Universal Negative Guidance for Diffusion Models_diagram.jpg",
+      "prepared_path": "images/Normalized Attention Guidance Universal Negative Guidance for Diffusion Models_diagram.jpg",
+      "sha256": "850435394b374a89d7cd5356f4799eac5ff67c0ad98f631d60e0acd3208b9f4a"
+    },
+    {
+      "id": "ref_178",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Novel View Synthesis from A Few Glimpses via Test-Time Natural Video Completion_diagram.jpg",
+      "prepared_path": "images/Novel View Synthesis from A Few Glimpses via Test-Time Natural Video Completion_diagram.jpg",
+      "sha256": "c6315b123ccfb8e31acee8325230373d029daae095d4671356451bc93a54d307"
+    },
+    {
+      "id": "ref_179",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OOD Detection with Relative Angles_diagram.jpg",
+      "prepared_path": "images/OOD Detection with Relative Angles_diagram.jpg",
+      "sha256": "e6ebef3003445b7a5dc6a27a253667ce2a1a9fcee5b631021d249455e84ab8ff"
+    },
+    {
+      "id": "ref_180",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OPMapper Enhancing Open-Vocabulary Semantic Segmentation with Multi-Guidance Information_diagram.jpg",
+      "prepared_path": "images/OPMapper Enhancing Open-Vocabulary Semantic Segmentation with Multi-Guidance Information_diagram.jpg",
+      "sha256": "b245c705738b958dff15856cf9b0f6421be3f7f54dff836ee69ccb3fa9599473"
+    },
+    {
+      "id": "ref_181",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OPTFM A Scalable Multi-View Graph Transformer for Hierarchical Pre-Training in Combinatorial Optimization_diagram.jpg",
+      "prepared_path": "images/OPTFM A Scalable Multi-View Graph Transformer for Hierarchical Pre-Training in Combinatorial Optimization_diagram.jpg",
+      "sha256": "8aec4bd6dcbdb7fff1f2448e3096d8b79a4a62fa579dfce47829960ff4e6de97"
+    },
+    {
+      "id": "ref_182",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OSVI-WM One-Shot Visual Imitation for Unseen Tasks using World-Model-Guided Trajectory Generation_diagram.jpg",
+      "prepared_path": "images/OSVI-WM One-Shot Visual Imitation for Unseen Tasks using World-Model-Guided Trajectory Generation_diagram.jpg",
+      "sha256": "8c39ce69dd7cb92a37b60b303da50cefb309115237313dd6983e2e56ca9bc71b"
+    },
+    {
+      "id": "ref_183",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Omni-Mol Multitask Molecular Model for Any-to-any Modalities_diagram.jpg",
+      "prepared_path": "images/Omni-Mol Multitask Molecular Model for Any-to-any Modalities_diagram.jpg",
+      "sha256": "9a2f730ba830c42e51108778cba95f562def5b90ec8a45f9c8056a7f8571e417"
+    },
+    {
+      "id": "ref_184",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OmniResponse Online Multimodal Conversational Response Generation in Dyadic Interactions_diagram.jpg",
+      "prepared_path": "images/OmniResponse Online Multimodal Conversational Response Generation in Dyadic Interactions_diagram.jpg",
+      "sha256": "d79d4779389129604a863eb704188ba9989b2d68abc2d7ffa8345e090fdb6986"
+    },
+    {
+      "id": "ref_185",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OmniSVG  A Unified Scalable Vector Graphics Generation Model_diagram.jpg",
+      "prepared_path": "images/OmniSVG  A Unified Scalable Vector Graphics Generation Model_diagram.jpg",
+      "sha256": "eb5e2d937cd7bbe67882fa5c2f28bb7dc40ce96ea28b530fb78e2b88c4fc0ae8"
+    },
+    {
+      "id": "ref_186",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OmniVCus Feedforward Subject-driven Video Customization with Multimodal Control Conditions_diagram.jpg",
+      "prepared_path": "images/OmniVCus Feedforward Subject-driven Video Customization with Multimodal Control Conditions_diagram.jpg",
+      "sha256": "efc1d337e4ff86ef71b77b902b0f100d8ed6ecfe3d3282a260c09ab8c3050b7e"
+    },
+    {
+      "id": "ref_187",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\One Head to Rule Them All Amplifying LVLM Safety through a Single Critical Attention Head_diagram.jpg",
+      "prepared_path": "images/One Head to Rule Them All Amplifying LVLM Safety through a Single Critical Attention Head_diagram.jpg",
+      "sha256": "52f93ea7dc33667db3a962121fd0aae6e5405b1ff297316499e5e68c5e8b6656"
+    },
+    {
+      "id": "ref_188",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\One SPACE to Rule Them All Jointly Mitigating Factuality and Faithfulness Hallucinations in LLMs_diagram.jpg",
+      "prepared_path": "images/One SPACE to Rule Them All Jointly Mitigating Factuality and Faithfulness Hallucinations in LLMs_diagram.jpg",
+      "sha256": "069925c72372c5a15a12a5dd45017ecc59633801e3859783a3dd84c066aae8d8"
+    },
+    {
+      "id": "ref_189",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OpenHype Hyperbolic Embeddings for Hierarchical Open-Vocabulary Radiance Fields_diagram.jpg",
+      "prepared_path": "images/OpenHype Hyperbolic Embeddings for Hierarchical Open-Vocabulary Radiance Fields_diagram.jpg",
+      "sha256": "3f5e22544d0ee6a3a4871a0915e7036777078be1b44f9ce8b33475e420024a48"
+    },
+    {
+      "id": "ref_190",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OpenVLThinker Complex Vision-Language Reasoning via Iterative SFT-RL Cycles_diagram.jpg",
+      "prepared_path": "images/OpenVLThinker Complex Vision-Language Reasoning via Iterative SFT-RL Cycles_diagram.jpg",
+      "sha256": "c4db07575ece66f4c4d1515cccc323449b1c817a119e17cafaef8a470af414ee"
+    },
+    {
+      "id": "ref_191",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OpenWorldSAM Extending SAM2 for Universal Image Segmentation with Language Prompts_diagram.jpg",
+      "prepared_path": "images/OpenWorldSAM Extending SAM2 for Universal Image Segmentation with Language Prompts_diagram.jpg",
+      "sha256": "b9b902d8591f8c1005bc118999483a1cceb1fdba28b99b02b17ed8c6c1bbc5cf"
+    },
+    {
+      "id": "ref_192",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OptiScene LLM-driven Indoor Scene Layout Generation via Scaled Human-aligned Data Synthesis and Multi-Stage Preference Optimization_diagram.jpg",
+      "prepared_path": "images/OptiScene LLM-driven Indoor Scene Layout Generation via Scaled Human-aligned Data Synthesis and Multi-Stage Preference Optimization_diagram.jpg",
+      "sha256": "5f57d95e095c0fdf371f88ab646596facf98bd3431a4635c75ffdd31eb5ebe1e"
+    },
+    {
+      "id": "ref_193",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\OptiTree Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling_diagram.jpg",
+      "prepared_path": "images/OptiTree Hierarchical Thoughts Generation with Tree Search for LLM Optimization Modeling_diagram.jpg",
+      "sha256": "67f5fc2aaec68cb23bc9c39bb4b8b57d10cfd6a14722c9ab75f617ddd479cfd4"
+    },
+    {
+      "id": "ref_194",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Orochi Versatile Biomedical Image Processor_diagram.jpg",
+      "prepared_path": "images/Orochi Versatile Biomedical Image Processor_diagram.jpg",
+      "sha256": "701a03de1afac6f1df15e2e2883063ae43acf6f5fd4422246194590610046093"
+    },
+    {
+      "id": "ref_195",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PC-Net Weakly Supervised Compositional Moment Retrieval via Proposal-Centric Network_diagram.jpg",
+      "prepared_path": "images/PC-Net Weakly Supervised Compositional Moment Retrieval via Proposal-Centric Network_diagram.jpg",
+      "sha256": "24ffcdcabeb43c4b0cf29654f2ec97551897585fd7ae10d09d5526c83735d0fc"
+    },
+    {
+      "id": "ref_196",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PROFIT A Specialized Optimizer for Deep Fine Tuning_diagram.jpg",
+      "prepared_path": "images/PROFIT A Specialized Optimizer for Deep Fine Tuning_diagram.jpg",
+      "sha256": "445c5a8205f73595b5a9ba2513ad7ed95b3000d9f12c9cdc426837f4dba9d30f"
+    },
+    {
+      "id": "ref_197",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Part-Aware Bottom-Up Group Reasoning for Fine-Grained Social Interaction Detection_diagram.jpg",
+      "prepared_path": "images/Part-Aware Bottom-Up Group Reasoning for Fine-Grained Social Interaction Detection_diagram.jpg",
+      "sha256": "5bb41e16e660c41a61bc0d723e8e182141841c0dc903ce63809f1a5a32ee878b"
+    },
+    {
+      "id": "ref_198",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Partition to Evolve Niching-enhanced Evolution with LLMs for Automated Algorithm Discovery_diagram.jpg",
+      "prepared_path": "images/Partition to Evolve Niching-enhanced Evolution with LLMs for Automated Algorithm Discovery_diagram.jpg",
+      "sha256": "2e3dd2d209c39cbda5cf722c8c76d97c0c582974e865ab7f7c9fa3aa1d74568e"
+    },
+    {
+      "id": "ref_199",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PeRL Permutation-Enhanced Reinforcement Learning for Interleaved Vision-Language Reasoning_diagram.jpg",
+      "prepared_path": "images/PeRL Permutation-Enhanced Reinforcement Learning for Interleaved Vision-Language Reasoning_diagram.jpg",
+      "sha256": "dc25c201caa851d0367eed96bdd00dafc2c6f383f788b82bccc2118cf56d31ec"
+    },
+    {
+      "id": "ref_200",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Permissioned LLMs Enforcing Access Control in Large Language Models_diagram.jpg",
+      "prepared_path": "images/Permissioned LLMs Enforcing Access Control in Large Language Models_diagram.jpg",
+      "sha256": "1fab5a088545234cfd593c47b080345c68696285aba55a5ce7fbf4838144539f"
+    },
+    {
+      "id": "ref_201",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Personalized Subgraph Federated Learning with Differentiable Auxiliary Projections_diagram.jpg",
+      "prepared_path": "images/Personalized Subgraph Federated Learning with Differentiable Auxiliary Projections_diagram.jpg",
+      "sha256": "4883922a45bb9076916e1584b59a69ae29e80fbb0855f1f1719e1c77b9857433"
+    },
+    {
+      "id": "ref_202",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Planning with Quantized Opponent Models_diagram.jpg",
+      "prepared_path": "images/Planning with Quantized Opponent Models_diagram.jpg",
+      "sha256": "bbfdabccb2b50aa7957e804217f16a90b636e7be3ea3ac300e2354eecbd0dd95"
+    },
+    {
+      "id": "ref_203",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PocketSR The Super-Resolution Expert in Your Pocket Mobiles_diagram.jpg",
+      "prepared_path": "images/PocketSR The Super-Resolution Expert in Your Pocket Mobiles_diagram.jpg",
+      "sha256": "2334dcea2983d9d015b0f0c3e9b9011f458fd99eea3dd26621dd24096f28fea1"
+    },
+    {
+      "id": "ref_204",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PolarQuant Leveraging Polar Transformation for Key Cache Quantization and Decoding Acceleration_diagram.jpg",
+      "prepared_path": "images/PolarQuant Leveraging Polar Transformation for Key Cache Quantization and Decoding Acceleration_diagram.jpg",
+      "sha256": "d66fd82003055cc190d2f9863fcd3b6641d1f1aae80cff5f781b913b004ff01e"
+    },
+    {
+      "id": "ref_205",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PolyPose Deformable 2D3D Registration via Polyrigid Transformations_diagram.jpg",
+      "prepared_path": "images/PolyPose Deformable 2D3D Registration via Polyrigid Transformations_diagram.jpg",
+      "sha256": "8ea8300437fa7b69d05b1ce74db905411700a75010b7a9497c14b93ce1425577"
+    },
+    {
+      "id": "ref_206",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Precise Diffusion Inversion Towards Novel Samples and Few-Step Models_diagram.jpg",
+      "prepared_path": "images/Precise Diffusion Inversion Towards Novel Samples and Few-Step Models_diagram.jpg",
+      "sha256": "fa0943454c3633e20abb5ac573b8c5cb833d99134f2ac6a73232257db397774a"
+    },
+    {
+      "id": "ref_207",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Prior-Guided Flow Matching for Target-Aware Molecule Design with Learnable Atom Number_diagram.jpg",
+      "prepared_path": "images/Prior-Guided Flow Matching for Target-Aware Molecule Design with Learnable Atom Number_diagram.jpg",
+      "sha256": "58f437b77427ac1e46e63909a30b9ec80b5358ae79951df2bf477029ecfd1214"
+    },
+    {
+      "id": "ref_208",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Prompt Tuning Decision Transformers with Structured and Scalable Bandits_diagram.jpg",
+      "prepared_path": "images/Prompt Tuning Decision Transformers with Structured and Scalable Bandits_diagram.jpg",
+      "sha256": "4ceb9fa53358953654ebaf12e6583ad979af27cff768b25efd4144b0df9dd960"
+    },
+    {
+      "id": "ref_209",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Prot2Text-V2 Protein Function Prediction with Multimodal Contrastive Alignment_diagram.jpg",
+      "prepared_path": "images/Prot2Text-V2 Protein Function Prediction with Multimodal Contrastive Alignment_diagram.jpg",
+      "sha256": "7808c8b7cbf1ef28999e7fdd97190599baf5ea36c2d015b3f3873bbc136ec603"
+    },
+    {
+      "id": "ref_210",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Protein Inverse Folding From Structure Feedback_diagram.jpg",
+      "prepared_path": "images/Protein Inverse Folding From Structure Feedback_diagram.jpg",
+      "sha256": "a113cf76be4353e3a0107b9ea172c06ea4d10b9f19569e8f3c3155c3a0ded265"
+    },
+    {
+      "id": "ref_211",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\PyraMotion Attentional Pyramid-Structured Motion Integration for Co-Speech 3D Gesture Synthesis_diagram.jpg",
+      "prepared_path": "images/PyraMotion Attentional Pyramid-Structured Motion Integration for Co-Speech 3D Gesture Synthesis_diagram.jpg",
+      "sha256": "6ca45d6f33fc0059b7bf45ad8b689bc4c30ec641364ccfff86a4e67d42eed156"
+    },
+    {
+      "id": "ref_212",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Quantifying Cross-Modality Memorization in Vision-Language Models_diagram.jpg",
+      "prepared_path": "images/Quantifying Cross-Modality Memorization in Vision-Language Models_diagram.jpg",
+      "sha256": "5b7ce7c0b0ac53e6bb439f2809ce299896220d116f055a41a903c7110a07a5d8"
+    },
+    {
+      "id": "ref_213",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RAD Training an End-to-End Driving Policy via Large-Scale 3DGS-based Reinforcement Learning_diagram.jpg",
+      "prepared_path": "images/RAD Training an End-to-End Driving Policy via Large-Scale 3DGS-based Reinforcement Learning_diagram.jpg",
+      "sha256": "f779ed7a3eeddc5744ca75f06299ca04e69f25ad08bf6ae5667d5a120b7710e5"
+    },
+    {
+      "id": "ref_214",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RDD Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks_diagram.jpg",
+      "prepared_path": "images/RDD Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks_diagram.jpg",
+      "sha256": "4b2fea81789855b4af6df993b36b151678dc9fae918adce1aa5dd1f1c8aaa55d"
+    },
+    {
+      "id": "ref_215",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Raw2Drive Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2)_diagram.jpg",
+      "prepared_path": "images/Raw2Drive Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2)_diagram.jpg",
+      "sha256": "11e23627e5d77e81467d18a9203768334790770619d3c5faf891987ef2ce686c"
+    },
+    {
+      "id": "ref_216",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RaySt3R Predicting Novel Depth Maps for Zero-Shot Object Completion_diagram.jpg",
+      "prepared_path": "images/RaySt3R Predicting Novel Depth Maps for Zero-Shot Object Completion_diagram.jpg",
+      "sha256": "4bdaab51473b05135ab527859130612824339c8e88b8c3c46b41c25711399476"
+    },
+    {
+      "id": "ref_217",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ReSim Reliable World Simulation for Autonomous Driving_diagram.jpg",
+      "prepared_path": "images/ReSim Reliable World Simulation for Autonomous Driving_diagram.jpg",
+      "sha256": "ec6587804981884437827384943c79ed3dd7e7ea29da80cf5bdb0f93ab5be2ce"
+    },
+    {
+      "id": "ref_218",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reason-RFT Reinforcement Fine-Tuning for Visual Reasoning of Vision Language Models_diagram.jpg",
+      "prepared_path": "images/Reason-RFT Reinforcement Fine-Tuning for Visual Reasoning of Vision Language Models_diagram.jpg",
+      "sha256": "36cfd135b75bbc3d98d3b5847fe2ba4163ad922f019b496c8d60ed453280d248"
+    },
+    {
+      "id": "ref_219",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reasoning Beyond Points A Visual Introspective Approach for Few-Shot 3D Segmentation_diagram.jpg",
+      "prepared_path": "images/Reasoning Beyond Points A Visual Introspective Approach for Few-Shot 3D Segmentation_diagram.jpg",
+      "sha256": "12e56b3ad7d9395c3d1fa2e1322b98c99622b9987af2d105e5302905e87641b3"
+    },
+    {
+      "id": "ref_220",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reasoning Planning for Language Models_diagram.jpg",
+      "prepared_path": "images/Reasoning Planning for Language Models_diagram.jpg",
+      "sha256": "61cadaa58dc8ba651caabbb4cce2f8d2a4576580ba52cdd4f1529a0a69e0dc68"
+    },
+    {
+      "id": "ref_221",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reframing Gaussian Splatting Densification with Complexity-Density Consistency of Primitives_diagram.jpg",
+      "prepared_path": "images/Reframing Gaussian Splatting Densification with Complexity-Density Consistency of Primitives_diagram.jpg",
+      "sha256": "26af5d0d68452bf2cd902c1913b1fa9cc3da998d806765faa1ba4962a94a65d0"
+    },
+    {
+      "id": "ref_222",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ResponseRank Data-Efficient Reward Modeling through Preference Strength Learning_diagram.jpg",
+      "prepared_path": "images/ResponseRank Data-Efficient Reward Modeling through Preference Strength Learning_diagram.jpg",
+      "sha256": "04163d747a38581112ad8790c1116dcb89c3bfdd7bde6b450ee036e6f2da2106"
+    },
+    {
+      "id": "ref_223",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Revisiting Semi-Supervised Learning in the Era of Foundation Models_diagram.jpg",
+      "prepared_path": "images/Revisiting Semi-Supervised Learning in the Era of Foundation Models_diagram.jpg",
+      "sha256": "a53ff7bbc10b8ef4b2ae2b65e7b6387f1a866e5b742e1bdcb41ab4b24dd6f40f"
+    },
+    {
+      "id": "ref_224",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models_diagram.jpg",
+      "prepared_path": "images/Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models_diagram.jpg",
+      "sha256": "acad71b8f967a33ff1af438f98b604a8af982c25a4bab3c63577610b3b68b697"
+    },
+    {
+      "id": "ref_225",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Reward Reasoning Models_diagram.jpg",
+      "prepared_path": "images/Reward Reasoning Models_diagram.jpg",
+      "sha256": "7be79affc593da20d671ce7457d09810f0c80c0015706364c01fd74fba7e5fce"
+    },
+    {
+      "id": "ref_226",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RiOSWorld Benchmarking the Risk of Multimodal Computer-Use Agents_diagram.jpg",
+      "prepared_path": "images/RiOSWorld Benchmarking the Risk of Multimodal Computer-Use Agents_diagram.jpg",
+      "sha256": "b9453584c38e07f3519f8c5bf3e66dfdae9202f1537fa0cbeef1f21ea7e952e9"
+    },
+    {
+      "id": "ref_227",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Right Question is Already Half the Answer Fully Unsupervised LLM Reasoning Incentivization_diagram.jpg",
+      "prepared_path": "images/Right Question is Already Half the Answer Fully Unsupervised LLM Reasoning Incentivization_diagram.jpg",
+      "sha256": "cc15d7f97dcf5e46b2cd19177d7386f7986e484e8893756f83ddfc36cd2c4fd4"
+    },
+    {
+      "id": "ref_228",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RoME Domain-Robust Mixture-of-Experts for MILP Solution Prediction across Domains_diagram.jpg",
+      "prepared_path": "images/RoME Domain-Robust Mixture-of-Experts for MILP Solution Prediction across Domains_diagram.jpg",
+      "sha256": "b6b4945a2ccd83db3ca650abb1a43448b06dc3675a4b74ac46d284b1709e3cd9"
+    },
+    {
+      "id": "ref_229",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RoPECraft Training-Free Motion Transfer with Trajectory-Guided RoPE Optimization on Diffusion Transformers_diagram.jpg",
+      "prepared_path": "images/RoPECraft Training-Free Motion Transfer with Trajectory-Guided RoPE Optimization on Diffusion Transformers_diagram.jpg",
+      "sha256": "6962575c8a536fcdf549ad69f0dcc7d9f963f4644a4c7c19fa4b9a28669c0593"
+    },
+    {
+      "id": "ref_230",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RoboRefer Towards Spatial Referring with Reasoning in Vision-Language Models for Robotics_diagram.jpg",
+      "prepared_path": "images/RoboRefer Towards Spatial Referring with Reasoning in Vision-Language Models for Robotics_diagram.jpg",
+      "sha256": "71c513faed3f936675c4505a303f2b8e85bfa50b77c9ab2face78d62cf734b90"
+    },
+    {
+      "id": "ref_231",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\RoboScape Physics-informed Embodied World Model_diagram.jpg",
+      "prepared_path": "images/RoboScape Physics-informed Embodied World Model_diagram.jpg",
+      "sha256": "1ae25bc0aeaf85597f32f9d4386ef28979003b870df8f0d5c565e0fe6cbe3e41"
+    },
+    {
+      "id": "ref_232",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Robot-R1 Reinforcement Learning for Enhanced Embodied Reasoning in Robotics_diagram.jpg",
+      "prepared_path": "images/Robot-R1 Reinforcement Learning for Enhanced Embodied Reasoning in Robotics_diagram.jpg",
+      "sha256": "c1f7852a7c040d0861d8cb704c8a8e20d6f4088ba5fb09b5dd9b891550b212c1"
+    },
+    {
+      "id": "ref_233",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Robust Egocentric Referring Video Object Segmentation via Dual-Modal Causal Intervention_diagram.jpg",
+      "prepared_path": "images/Robust Egocentric Referring Video Object Segmentation via Dual-Modal Causal Intervention_diagram.jpg",
+      "sha256": "64c729f4737b7663374e718d925e05fe610d9ac7456f55b36813aef0be3249ec"
+    },
+    {
+      "id": "ref_234",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Rooms from Motion Un-posed Indoor 3D Object Detection as Localization and Mapping_diagram.jpg",
+      "prepared_path": "images/Rooms from Motion Un-posed Indoor 3D Object Detection as Localization and Mapping_diagram.jpg",
+      "sha256": "d677b57a72aefd78031740bd36b832b8209583e8916fe1e6da9c0bf37c502e39"
+    },
+    {
+      "id": "ref_235",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SALMONN-omni A Standalone Speech LLM without Codec Injection for Full-duplex Conversation_diagram.jpg",
+      "prepared_path": "images/SALMONN-omni A Standalone Speech LLM without Codec Injection for Full-duplex Conversation_diagram.jpg",
+      "sha256": "ae2178edafc0408966f1d5913515fd1bc1eaf8f36b0297dded7d7b58878a51bf"
+    },
+    {
+      "id": "ref_236",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SCAN Self-Denoising Monte Carlo Annotation for Robust Process Reward Learning_diagram.jpg",
+      "prepared_path": "images/SCAN Self-Denoising Monte Carlo Annotation for Robust Process Reward Learning_diagram.jpg",
+      "sha256": "7cf6093564bf75537ccf97d351fedbf43522f418b32c155927e03770ebc4de31"
+    },
+    {
+      "id": "ref_237",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SD-KDE Score-Debiased Kernel Density Estimation_diagram.jpg",
+      "prepared_path": "images/SD-KDE Score-Debiased Kernel Density Estimation_diagram.jpg",
+      "sha256": "6958e0e8494d5edc21771e0b91335bc8a280656e77f2d72d410ef4c628cff5b0"
+    },
+    {
+      "id": "ref_238",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SE-Agent Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents_diagram.jpg",
+      "prepared_path": "images/SE-Agent Self-Evolution Trajectory Optimization in Multi-Step Reasoning with LLM-Based Agents_diagram.jpg",
+      "sha256": "69d6ab70c915076900d92183d1d4345757de42a96262253dfd45f2ec408713cd"
+    },
+    {
+      "id": "ref_239",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SEGA Shaping Semantic Geometry for Robust Hashing under Noisy Supervision_diagram.jpg",
+      "prepared_path": "images/SEGA Shaping Semantic Geometry for Robust Hashing under Noisy Supervision_diagram.jpg",
+      "sha256": "4473653820dde2c5cd879bc9a7a532997df33bf2837187a3c623ff43f8138142"
+    },
+    {
+      "id": "ref_240",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SGN Shifted Window-Based Hierarchical Variable Grouping for Multivariate Time Series Classification_diagram.jpg",
+      "prepared_path": "images/SGN Shifted Window-Based Hierarchical Variable Grouping for Multivariate Time Series Classification_diagram.jpg",
+      "sha256": "f3e7d82ecaace53c986bf06a28dce95e9d24714032beae8d4a87da2aff24c909"
+    },
+    {
+      "id": "ref_241",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SQS Enhancing Sparse Perception Models via Query-based Splatting in Autonomous Driving_diagram.jpg",
+      "prepared_path": "images/SQS Enhancing Sparse Perception Models via Query-based Splatting in Autonomous Driving_diagram.jpg",
+      "sha256": "86c3d870b38df82070c82acda8e37b39d40d2d3af8abe56f547229e3faad3236"
+    },
+    {
+      "id": "ref_242",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SSR Enhancing Depth Perception in Vision-Language Models via Rationale-Guided Spatial Reasoning_diagram.jpg",
+      "prepared_path": "images/SSR Enhancing Depth Perception in Vision-Language Models via Rationale-Guided Spatial Reasoning_diagram.jpg",
+      "sha256": "c1ea17dd26217bbee5128aed9bb4dab4c7bf17a2c0dc0d9692d4a2884991f9bf"
+    },
+    {
+      "id": "ref_243",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\STRAP Spatio-Temporal Pattern Retrieval for Out-of-Distribution Generalization_diagram.jpg",
+      "prepared_path": "images/STRAP Spatio-Temporal Pattern Retrieval for Out-of-Distribution Generalization_diagram.jpg",
+      "sha256": "d5dc65c4e45f434cfabca1695a1f4cffd2ca72e88e1f94f8337acf4b803a3c20"
+    },
+    {
+      "id": "ref_244",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\STRIDER Navigation via Instruction-Aligned Structural Decision Space Optimization_diagram.jpg",
+      "prepared_path": "images/STRIDER Navigation via Instruction-Aligned Structural Decision Space Optimization_diagram.jpg",
+      "sha256": "1956795a77861cff0bd53f9ef6fb1305094c0da3f73019b624494f7e64503a09"
+    },
+    {
+      "id": "ref_245",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Scalable and Cost-Efficient de Novo Template-Based Molecular Generation_diagram.jpg",
+      "prepared_path": "images/Scalable and Cost-Efficient de Novo Template-Based Molecular Generation_diagram.jpg",
+      "sha256": "1423e2f22a9ef562aa027720247762c83ef60ffb935eaed328ba278b7412605b"
+    },
+    {
+      "id": "ref_246",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SceneForge Enhancing 3D-text alignment with Structured Scene Compositions_diagram.jpg",
+      "prepared_path": "images/SceneForge Enhancing 3D-text alignment with Structured Scene Compositions_diagram.jpg",
+      "sha256": "b9a903115187cb64a1b38c26242d2a7144ca2a98c0653d178e12a21a67bf5dd4"
+    },
+    {
+      "id": "ref_247",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Self-Refining Language Model Anonymizers via Adversarial Distillation_diagram.jpg",
+      "prepared_path": "images/Self-Refining Language Model Anonymizers via Adversarial Distillation_diagram.jpg",
+      "sha256": "022723ef77526dd17f5433ce1cbf01911a038444c6579d32bf5bef4939543574"
+    },
+    {
+      "id": "ref_248",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Self-Training with Dynamic Weighting for Robust Gradual Domain Adaptation_diagram.jpg",
+      "prepared_path": "images/Self-Training with Dynamic Weighting for Robust Gradual Domain Adaptation_diagram.jpg",
+      "sha256": "779147666c486b440c18bde8a40324945d35d266b04bba64d392a45299599832"
+    },
+    {
+      "id": "ref_249",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Sequential Multi-Agent Dynamic Algorithm Configuration_diagram.jpg",
+      "prepared_path": "images/Sequential Multi-Agent Dynamic Algorithm Configuration_diagram.jpg",
+      "sha256": "f56da19a18e2d111b3c640cec83411dc804b7155abb23b1067fddf42b6660d3c"
+    },
+    {
+      "id": "ref_250",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SignFlow Bipartite Subgraph Network For Large-Scale Graph Link Sign Prediction_diagram.jpg",
+      "prepared_path": "images/SignFlow Bipartite Subgraph Network For Large-Scale Graph Link Sign Prediction_diagram.jpg",
+      "sha256": "2b969e6dbdc75e5f1174865886f78c94bbecdc3878957484515138c424e2400f"
+    },
+    {
+      "id": "ref_251",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SpaceServe Spatial Multiplexing of Complementary Encoders and Decoders for Multimodal LLMs_diagram.jpg",
+      "prepared_path": "images/SpaceServe Spatial Multiplexing of Complementary Encoders and Decoders for Multimodal LLMs_diagram.jpg",
+      "sha256": "e1b75ea6e6f4c7f6eaa0dbf07dcf1a63697c317f2e537bf5ee03bbe27af81ea2"
+    },
+    {
+      "id": "ref_252",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Sparse Meets Dense Unified Generative Recommendations with Cascaded Sparse-Dense Representations_diagram.jpg",
+      "prepared_path": "images/Sparse Meets Dense Unified Generative Recommendations with Cascaded Sparse-Dense Representations_diagram.jpg",
+      "sha256": "c8f4fd0a1e5d22b602943dc462847b713009c62c46171c2276228ad6c791a882"
+    },
+    {
+      "id": "ref_253",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\SpecReason Fast and Accurate Inference-Time Compute via Speculative Reasoning_diagram.jpg",
+      "prepared_path": "images/SpecReason Fast and Accurate Inference-Time Compute via Speculative Reasoning_diagram.jpg",
+      "sha256": "e044177588e04020cacb1581aac62a0a0a179ac4fb45d496dbb6aac32714b87c"
+    },
+    {
+      "id": "ref_254",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Spectral Conditioning of Attention Improves Transformer Performance_diagram.jpg",
+      "prepared_path": "images/Spectral Conditioning of Attention Improves Transformer Performance_diagram.jpg",
+      "sha256": "46e78dff56fda922941dade99b4420845feb74c0c7115d18c11be661b9dbaa83"
+    },
+    {
+      "id": "ref_255",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Spike4DGS Towards High-Speed Dynamic Scene Rendering with 4D Gaussian Splatting via a Spike Camera Array_diagram.jpg",
+      "prepared_path": "images/Spike4DGS Towards High-Speed Dynamic Scene Rendering with 4D Gaussian Splatting via a Spike Camera Array_diagram.jpg",
+      "sha256": "70ca3378bcc6813408273fbe0847c636ae333b211186ac758875533e3a0c6173"
+    },
+    {
+      "id": "ref_256",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Spot the Fake Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation_diagram.jpg",
+      "prepared_path": "images/Spot the Fake Large Multimodal Model-Based Synthetic Image Detection with Artifact Explanation_diagram.jpg",
+      "sha256": "94fa89961ac602e8791c817e600ee593c29e27a3121040a5bf9c8fec9439b5ee"
+    },
+    {
+      "id": "ref_257",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\StarTrail Concentric Ring Sequence Parallelism for Efficient Near-Infinite-Context Transformer Model Training_diagram.jpg",
+      "prepared_path": "images/StarTrail Concentric Ring Sequence Parallelism for Efficient Near-Infinite-Context Transformer Model Training_diagram.jpg",
+      "sha256": "9bec1a7f344bd3b4da532c7b63b0f170e58580ff4dd5ad1c86a91003e39db481"
+    },
+    {
+      "id": "ref_258",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Structured Initialization for Vision Transformers_diagram.jpg",
+      "prepared_path": "images/Structured Initialization for Vision Transformers_diagram.jpg",
+      "sha256": "b3540f60d3fe81010ded8e6c28d2823f23c22deb26150960cb6840c5319779af"
+    },
+    {
+      "id": "ref_259",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Symmetry-Preserving Conformer Ensemble Networks for Molecular Representation Learning_diagram.jpg",
+      "prepared_path": "images/Symmetry-Preserving Conformer Ensemble Networks for Molecular Representation Learning_diagram.jpg",
+      "sha256": "0575feaaa0cf81d435f40fdc6c1b0d7551c45c9181b39a899661df2907a4acc4"
+    },
+    {
+      "id": "ref_260",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Synthetic Series-Symbol Data Generation for Time Series Foundation Models_diagram.jpg",
+      "prepared_path": "images/Synthetic Series-Symbol Data Generation for Time Series Foundation Models_diagram.jpg",
+      "sha256": "0e194385d5fef7444dce1dbf2514cedbb5ba9a03012c6df16566e535e58726c3"
+    },
+    {
+      "id": "ref_261",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\System Prompt Optimization with Meta-Learning_diagram.jpg",
+      "prepared_path": "images/System Prompt Optimization with Meta-Learning_diagram.jpg",
+      "sha256": "060832ea70d1ba707aa411351053c302ef4a7130c8d4cef889a9fb517625ece9"
+    },
+    {
+      "id": "ref_262",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TITAN A Trajectory-Informed Technique for Adaptive Parameter Freezing in Large-Scale VQE_diagram.jpg",
+      "prepared_path": "images/TITAN A Trajectory-Informed Technique for Adaptive Parameter Freezing in Large-Scale VQE_diagram.jpg",
+      "sha256": "0b4f697c771c009dddda82a62bb9fb31dfb8b1d580613ea63dbf5f10fa7e3097"
+    },
+    {
+      "id": "ref_263",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TP-MDDN Task-Preferenced Multi-Demand-Driven Navigation with Autonomous Decision-Making_diagram.jpg",
+      "prepared_path": "images/TP-MDDN Task-Preferenced Multi-Demand-Driven Navigation with Autonomous Decision-Making_diagram.jpg",
+      "sha256": "adb02ce391d055df9d68905b2a721b351d68df12b88c82a8ee73ef40160cd8d1"
+    },
+    {
+      "id": "ref_264",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TRiCo Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning_diagram.jpg",
+      "prepared_path": "images/TRiCo Triadic Game-Theoretic Co-Training for Robust Semi-Supervised Learning_diagram.jpg",
+      "sha256": "9d46c2de05435bcc2d73381eb68b95701de226decac72aa260666fd2617e35a6"
+    },
+    {
+      "id": "ref_265",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TRoVe Discovering Error-Inducing Static Feature Biases in Temporal Vision-Language Models_diagram.jpg",
+      "prepared_path": "images/TRoVe Discovering Error-Inducing Static Feature Biases in Temporal Vision-Language Models_diagram.jpg",
+      "sha256": "3aae6d8ac46d27701abe43da3fedd37a97506cb5837f9e41f08c973b2a159427"
+    },
+    {
+      "id": "ref_266",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Task-Specific Data Selection for Instruction Tuning via Monosemantic Neuronal Activations_diagram.jpg",
+      "prepared_path": "images/Task-Specific Data Selection for Instruction Tuning via Monosemantic Neuronal Activations_diagram.jpg",
+      "sha256": "a34206552b2703133738b5359c9fadfbdae3f8902ca06a0632d95618a729c08b"
+    },
+    {
+      "id": "ref_267",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TensorRL-QAS Reinforcement learning with tensor networks for improved quantum architecture search_diagram.jpg",
+      "prepared_path": "images/TensorRL-QAS Reinforcement learning with tensor networks for improved quantum architecture search_diagram.jpg",
+      "sha256": "764f497fd9fd2fef626cd48469b470c533ffd0f2914fec527ddb43a4b2009e7a"
+    },
+    {
+      "id": "ref_268",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\The Hawthorne Effect in Reasoning Models Evaluating and Steering Test Awareness_diagram.jpg",
+      "prepared_path": "images/The Hawthorne Effect in Reasoning Models Evaluating and Steering Test Awareness_diagram.jpg",
+      "sha256": "897a8325d0a7291bff748125339b37c70da0c87ce46bdcc8ff56abf23e682f4c"
+    },
+    {
+      "id": "ref_269",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\TopoPoint Enhance Topology Reasoning via Endpoint Detection in Autonomous Driving_diagram.jpg",
+      "prepared_path": "images/TopoPoint Enhance Topology Reasoning via Endpoint Detection in Autonomous Driving_diagram.jpg",
+      "sha256": "615dbc4b71f9517dd3b950159cc5f82bef5742ff66eb32786bb5f4e0ca2e3320"
+    },
+    {
+      "id": "ref_270",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Topology-Aware Learning of Tubular Manifolds via SE(3)-Equivariant Network on Ball B-Spline Curve_diagram.jpg",
+      "prepared_path": "images/Topology-Aware Learning of Tubular Manifolds via SE(3)-Equivariant Network on Ball B-Spline Curve_diagram.jpg",
+      "sha256": "1244a332c418e14c9c5fd18c8be2b33a501c61455db55d2c60b5d79cb5edbfdd"
+    },
+    {
+      "id": "ref_271",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Graph Foundation Models Training on Knowledge Graphs Enables Transferability to General Graphs_diagram.jpg",
+      "prepared_path": "images/Towards Graph Foundation Models Training on Knowledge Graphs Enables Transferability to General Graphs_diagram.jpg",
+      "sha256": "d72ea0d306025d7f1b7134ca97b23959d66d1c11a26e3b49cd890ee4480ca680"
+    },
+    {
+      "id": "ref_272",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Multiscale Graph-based Protein Learning with Geometric Secondary Structural Motifs_diagram.jpg",
+      "prepared_path": "images/Towards Multiscale Graph-based Protein Learning with Geometric Secondary Structural Motifs_diagram.jpg",
+      "sha256": "51e0e9d1e2fe4a95a5b76da7f3995a2c27fadd4d407fdfc570cca6b647174a0a"
+    },
+    {
+      "id": "ref_273",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Robust Parameter-Efficient Fine-Tuning for Federated Learning_diagram.jpg",
+      "prepared_path": "images/Towards Robust Parameter-Efficient Fine-Tuning for Federated Learning_diagram.jpg",
+      "sha256": "7dfa528357e8c9799641e4ec89b14323a3728d1a5546ba3f0e4143aef8f825b1"
+    },
+    {
+      "id": "ref_274",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Single-Source Domain Generalized Object Detection via Causal Visual Prompts_diagram.jpg",
+      "prepared_path": "images/Towards Single-Source Domain Generalized Object Detection via Causal Visual Prompts_diagram.jpg",
+      "sha256": "27078b964067c4c59f3116b2d8805d0d92d02778ff17b3b670ab346f54f7999f"
+    },
+    {
+      "id": "ref_275",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Syn-to-Real IQA A Novel Perspective on Reshaping Synthetic Data Distributions_diagram.jpg",
+      "prepared_path": "images/Towards Syn-to-Real IQA A Novel Perspective on Reshaping Synthetic Data Distributions_diagram.jpg",
+      "sha256": "72ed9a0c15daf98eb56c0740a3149ff7bb2165ebad2fd4c385a44d054c6f73b7"
+    },
+    {
+      "id": "ref_276",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Towards Understanding Safety Alignment A Mechanistic Perspective from Safety Neurons_diagram.jpg",
+      "prepared_path": "images/Towards Understanding Safety Alignment A Mechanistic Perspective from Safety Neurons_diagram.jpg",
+      "sha256": "4f0c5b25afb04d6909e2679a0124900085f5b334c6ec53f0938f117054cb9ed0"
+    },
+    {
+      "id": "ref_278",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Train on Pins and Test on Obstacles for Rectilinear Steiner Minimum Tree_diagram.jpg",
+      "prepared_path": "images/Train on Pins and Test on Obstacles for Rectilinear Steiner Minimum Tree_diagram.jpg",
+      "sha256": "63c5da760a21a97cd5bdafed6cd6d092cf1bc6a83b42221949da4bde8d31c735"
+    },
+    {
+      "id": "ref_279",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Tree-Based Premise Selection for Lean4_diagram.jpg",
+      "prepared_path": "images/Tree-Based Premise Selection for Lean4_diagram.jpg",
+      "sha256": "2bd8902639470c22c6fc03b1b7ce3a914026501bcf1d124cea62115d533b8afd"
+    },
+    {
+      "id": "ref_280",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Tru-POMDP Task Planning Under Uncertainty via Tree of Hypotheses and Open-Ended POMDPs_diagram.jpg",
+      "prepared_path": "images/Tru-POMDP Task Planning Under Uncertainty via Tree of Hypotheses and Open-Ended POMDPs_diagram.jpg",
+      "sha256": "300e044913b297500340184a3ad127a54606ec3bce90f9494999081061363123"
+    },
+    {
+      "id": "ref_281",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\UltraLED Learning to See Everything in Ultra-High Dynamic Range Scenes_diagram.jpg",
+      "prepared_path": "images/UltraLED Learning to See Everything in Ultra-High Dynamic Range Scenes_diagram.jpg",
+      "sha256": "dac5a14aa93963f819d3353764f01c64397210e8198b44eee705bcb26cc8117f"
+    },
+    {
+      "id": "ref_282",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Under the Shadow Exploiting Opacity Variation for Fine-grained Shadow Detection_diagram.jpg",
+      "prepared_path": "images/Under the Shadow Exploiting Opacity Variation for Fine-grained Shadow Detection_diagram.jpg",
+      "sha256": "50676d37b400b7f706b67927043eb988af5c7b8cff9999d217f7334fd889fbe7"
+    },
+    {
+      "id": "ref_283",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Uni-MuMER Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition_diagram.jpg",
+      "prepared_path": "images/Uni-MuMER Unified Multi-Task Fine-Tuning of Vision-Language Model for Handwritten Mathematical Expression Recognition_diagram.jpg",
+      "sha256": "fbbd9560ca75c4a85a4043cd3c20763d6ce74abf51759baa75581e27c8cd77ea"
+    },
+    {
+      "id": "ref_284",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\UniGTE Unified Graph–Text Encoding for Zero-Shot Generalization across Graph Tasks and Domains_diagram.jpg",
+      "prepared_path": "images/UniGTE Unified Graph–Text Encoding for Zero-Shot Generalization across Graph Tasks and Domains_diagram.jpg",
+      "sha256": "6d58f6135f4ae16002804281c37896c9320a8cae276305e6af6f212e883ad0e9"
+    },
+    {
+      "id": "ref_285",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\UniMRSeg Unified Modality-Relax Segmentation via Hierarchical Self-Supervised Compensation_diagram.jpg",
+      "prepared_path": "images/UniMRSeg Unified Modality-Relax Segmentation via Hierarchical Self-Supervised Compensation_diagram.jpg",
+      "sha256": "a1fb52dba815f258ac5a781ed107d66a54dc3cb9df8406815c63a2ce88486241"
+    },
+    {
+      "id": "ref_286",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Universal Causal Inference in a Topos_diagram.jpg",
+      "prepared_path": "images/Universal Causal Inference in a Topos_diagram.jpg",
+      "sha256": "03bb96e1723a16704dd36d6414c055d46871e8872dabd2480c038185454d346b"
+    },
+    {
+      "id": "ref_287",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Unraveling Metameric Dilemma for Spectral Reconstruction A High-Fidelity Approach via Semi-Supervised Learning_diagram.jpg",
+      "prepared_path": "images/Unraveling Metameric Dilemma for Spectral Reconstruction A High-Fidelity Approach via Semi-Supervised Learning_diagram.jpg",
+      "sha256": "5339ee58f9c2a468792fdbff3aceb9524cd399c4b5cca69e7781f3365a96c053"
+    },
+    {
+      "id": "ref_288",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VFRTok Variable Frame Rates Video Tokenizer with Duration-Proportional Information Assumption_diagram.jpg",
+      "prepared_path": "images/VFRTok Variable Frame Rates Video Tokenizer with Duration-Proportional Information Assumption_diagram.jpg",
+      "sha256": "1cee6f1dbe3f54c0cd6f3bddb712dbf7fc753097fd6d53ab8aed493745eac2db"
+    },
+    {
+      "id": "ref_289",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VITRIX-CLIPIN Enhancing Fine-Grained Visual Understanding in CLIP via Instruction-Editing Data and Long Captions_diagram.jpg",
+      "prepared_path": "images/VITRIX-CLIPIN Enhancing Fine-Grained Visual Understanding in CLIP via Instruction-Editing Data and Long Captions_diagram.jpg",
+      "sha256": "fdbebcb280d19a42e1079f51f68ab76c9c80a41308aaa177f885da3bd86d5466"
+    },
+    {
+      "id": "ref_290",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VLForgery Face Triad Detection, Localization and Attribution via Multimodal Large Language Models_diagram.jpg",
+      "prepared_path": "images/VLForgery Face Triad Detection, Localization and Attribution via Multimodal Large Language Models_diagram.jpg",
+      "sha256": "1e1f1a7757b5a873c756e591264ad6679e88566c4dc64f0c62277ffccbd9754b"
+    },
+    {
+      "id": "ref_291",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VTON-VLLM Aligning Virtual Try-On Models with Human Preferences_diagram.jpg",
+      "prepared_path": "images/VTON-VLLM Aligning Virtual Try-On Models with Human Preferences_diagram.jpg",
+      "sha256": "e3e6370f34d31915f5e5d3af7da81466d4b176e552663de30fdf35c6c013fbad"
+    },
+    {
+      "id": "ref_292",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Vad-R1 Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought_diagram.jpg",
+      "prepared_path": "images/Vad-R1 Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought_diagram.jpg",
+      "sha256": "d5ad1bf237d99826f824759d9527e44281718550c8fdf3ddad57f221e58865c2"
+    },
+    {
+      "id": "ref_293",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VarFlow Proper Scoring-Rule Diffusion Distillation via Energy Matching_diagram.jpg",
+      "prepared_path": "images/VarFlow Proper Scoring-Rule Diffusion Distillation via Energy Matching_diagram.jpg",
+      "sha256": "e7f234530d1ea61a7b7d965efb82474a55422d430fbf75a8a4aadf9fdba4ccb4"
+    },
+    {
+      "id": "ref_294",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Versatile Transferable Unlearnable Example Generator_diagram.jpg",
+      "prepared_path": "images/Versatile Transferable Unlearnable Example Generator_diagram.jpg",
+      "sha256": "81f932692ce4d676ba2f64e80a1980bbe2f8855f0c3175452c603d7324236969"
+    },
+    {
+      "id": "ref_295",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Video World Models with Long-term Spatial Memory_diagram.jpg",
+      "prepared_path": "images/Video World Models with Long-term Spatial Memory_diagram.jpg",
+      "sha256": "eaa80da88829748085a1816d55d823a4e3c17cf562945d0e657f1baa675a3204"
+    },
+    {
+      "id": "ref_296",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Video-RAG Visually-aligned Retrieval-Augmented Long Video Comprehension_diagram.jpg",
+      "prepared_path": "images/Video-RAG Visually-aligned Retrieval-Augmented Long Video Comprehension_diagram.jpg",
+      "sha256": "16f5c7596507091d530d3e09f21967c3c9ca0083c105b5c5899747f2f36c92e0"
+    },
+    {
+      "id": "ref_297",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VideoChat-R1.5 Visual Test-Time Scaling to Reinforce Multimodal Reasoning by Iterative Perception_diagram.jpg",
+      "prepared_path": "images/VideoChat-R1.5 Visual Test-Time Scaling to Reinforce Multimodal Reasoning by Iterative Perception_diagram.jpg",
+      "sha256": "da5f2d3bd2d274db2e0af9da36b60ea7d51f1bb5e12832cc9309423c7502dc8c"
+    },
+    {
+      "id": "ref_298",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Vision Transformers with Self-Distilled Registers_diagram.jpg",
+      "prepared_path": "images/Vision Transformers with Self-Distilled Registers_diagram.jpg",
+      "sha256": "925b77a468e2388d95c92357899c32d136cedab44069657b3017d989c709272d"
+    },
+    {
+      "id": "ref_299",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VisionThink Smart and Efficient Vision Language Model via Reinforcement Learning_diagram.jpg",
+      "prepared_path": "images/VisionThink Smart and Efficient Vision Language Model via Reinforcement Learning_diagram.jpg",
+      "sha256": "40abfb4f8fdd476151a04448a10789bed64eedcc42c90f078c4b7bab65e30571"
+    },
+    {
+      "id": "ref_301",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VisualLens Personalization through Task-Agnostic Visual History_diagram.jpg",
+      "prepared_path": "images/VisualLens Personalization through Task-Agnostic Visual History_diagram.jpg",
+      "sha256": "5785440ec5790dec1eb7d7c0d606bb418b39cf691fe9f366c1dc1c9c84f27509"
+    },
+    {
+      "id": "ref_302",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\VividFace A Robost and High-Fidelity Video Face Swapping Framework_diagram.jpg",
+      "prepared_path": "images/VividFace A Robost and High-Fidelity Video Face Swapping Framework_diagram.jpg",
+      "sha256": "30959ba0823140b4db9158edcf8cd8c64f8e00082b363dd4c483adaa6d0e71d5"
+    },
+    {
+      "id": "ref_303",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram.jpg",
+      "prepared_path": "images/Watch and Listen Understanding Audio-Visual-Speech Moments with Multimodal LLM_diagram.jpg",
+      "sha256": "428a7f8aa5f3d7b6b2c324bcdbabbd5215857d18ced0e9e61247a8a6bdbb443f"
+    },
+    {
+      "id": "ref_304",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\What Really is a Member Discrediting Membership Inference via Poisoning_diagram.jpg",
+      "prepared_path": "images/What Really is a Member Discrediting Membership Inference via Poisoning_diagram.jpg",
+      "sha256": "1bc19aabf38b08cae7a379152199212f49476813a53a753fd8257eabacff477d"
+    },
+    {
+      "id": "ref_305",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\What is Your Data Worth to GPT LLM-Scale Data Valuation with Influence Functions_diagram.jpg",
+      "prepared_path": "images/What is Your Data Worth to GPT LLM-Scale Data Valuation with Influence Functions_diagram.jpg",
+      "sha256": "44620d190a970f3cd0dc69b3114574f31aa85279fc98f43276f2d8f92e50549f"
+    },
+    {
+      "id": "ref_306",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram.jpg",
+      "prepared_path": "images/Who You Are Matters Bridging Interests and Social Roles via LLM-Enhanced Logic Recommendation_diagram.jpg",
+      "sha256": "f2c3f59d105d04ff853b242caecc91b7e6feaeaa64c10880807c637f267439ad"
+    },
+    {
+      "id": "ref_307",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Wonder Wins Ways Curiosity-Driven Exploration through Multi-Agent Contextual Calibration_diagram.jpg",
+      "prepared_path": "images/Wonder Wins Ways Curiosity-Driven Exploration through Multi-Agent Contextual Calibration_diagram.jpg",
+      "sha256": "4d6162e82cd5fddda0541a97629690a6cf40da41b94715072289f49ca00ca987"
+    },
+    {
+      "id": "ref_308",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\ZeCO Zero-Communication Overhead Sequence Parallelism for Linear Attention_diagram.jpg",
+      "prepared_path": "images/ZeCO Zero-Communication Overhead Sequence Parallelism for Linear Attention_diagram.jpg",
+      "sha256": "9ea0ed9a1a33be8518a90219874d59143e67c5ae4c8598f6338a56da26a676be"
+    },
+    {
+      "id": "ref_309",
+      "source_path": "C:\\WIP\\PaperSketch\\data\\MTPaperBananaBench\\images\\Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg",
+      "prepared_path": "images/Navigating the MIL Trade-Off Flexible Pooling for Whole Slide Image Classification_diagram.jpg",
+      "sha256": "f1fab239c4cdec8708e90451bd3632ea57a1ca8bfbd9fe489e182a1895e2af74"
+    }
+  ]
+}
