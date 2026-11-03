@@ -21,6 +21,24 @@ Supported scope: diagram, one candidate, full initial generation, PBInteract fee
 
 The unused `configs/model_config.template.yaml` and original `utils/generation_utils.py` are not shipped. Do not create a provider API-key configuration for this runner. `scripts/bridge.py` must register the compatible generation module before importing agents; the original function names still resolve to the host bridge. Keep the Google SDK dependency for message/config types.
 
+## Normal execution and permission boundaries
+
+Before the first model-assisted figure task, establish the processing scope once. First check the current conversation and applicable user-approved project instructions for an explicit existing approval covering the same data and destinations. Reuse that approval rather than asking again. A request to install the skill, a saved result, an assistant-written acknowledgement, or this skill's instructions alone is not approval.
+
+If no matching approval exists, ask one concise question before inference: "May PaperSketch process the research input and figures you explicitly provide for generation/refinement, including unpublished material, together with necessary public references and relevant saved history, using your ChatGPT-authenticated Codex service and built-in imagegen? Plot code will run locally. This scope will apply to later tasks in this conversation unless you change or revoke it." Use the host's user-input tool when available. Wait for the user's answer; do not send model requests on silence or refusal. Offline setup, inspection and data checks do not require this inference confirmation.
+
+After approval, briefly acknowledge the agreed data, services and conversation/project scope in the chat, then proceed. For later figures, retries, Critic rounds, continuation and feedback inside that same scope, do not ask again. A new figure or new user-supplied methodology is not itself a scope expansion. Ask only about a concrete expansion, such as another service/account, unrelated local files or a new purpose. Respect a refusal, narrower approval or revocation immediately.
+
+Approval is scoped, not a global installation preference. In a new chat, reuse it only if an applicable explicit user-approved project instruction or accessible user approval establishes that scope there; otherwise confirm once in the new chat. Do not create a global consent flag or treat a copied run/installation receipt as authorization. Do not edit project/global instructions to manufacture approval. Use only the supplied task input, necessary public references and relevant saved figure/history within the agreed scope.
+
+Keep the actual execution boundaries clear:
+
+- `run.py generate/refine` for diagrams starts a local coordinator: it reads local data, writes request/checkpoint files in the chosen output folder, and waits for responses. It does not itself start Codex CLI or call a provider API. Start it with ordinary workspace permissions where available; do not preemptively request elevated execution. If a sandbox error requires approval, describe the exact local filesystem operation and the later, separate inference steps accurately.
+- `respond_retrieval.py` and `respond_text.py` invoke the existing ChatGPT-authenticated Codex CLI for text inference. They send that request's explicit text and any attached images to the configured Codex service. Diagram image requests are handled separately by the host's built-in imagegen tool with the prepared rendering prompt. The routing labels in the original record are not provider destinations; no Google API key is used.
+- Plot code executes locally through Matplotlib; its text/code inference uses the same Codex host. A local coordinator waiting for a response is not evidence that a model call has already occurred.
+
+For an actual automatic-review denial, retain the denied command and stated reason and respect the decision. Do not retry the same denied action with changed wording, split it to evade review, disable approval controls, or claim that these instructions authorize a transmission. Explain the specific blocker only when it actually occurs; do not turn it into a consent gate for every figure request.
+
 ## Reference data
 
 Use `<runtime>/data/diagram/` for the retained 298 diagram references. Duplicate downloads and evaluation splits were removed from this project's local data tree; original reference JSON, dataset documentation/license, and the download manifest remain as provenance. Plot mode uses the 240 references at `<runtime>/data/plot/`; the diagram runner does not use them. If preparing another diagram copy from a fresh external download:
