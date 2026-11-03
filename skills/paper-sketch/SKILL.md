@@ -11,9 +11,9 @@ For statistical plots from numerical data, read [references/plot.md](references/
 
 ## Environment and host contract
 
-`<skill>` below is this skill's absolute folder. Use an isolated Python environment with `<skill>/scripts/requirements.txt`. Python 3.11 has been tested; upstream recommends 3.12. With an existing uv environment, the equivalent prefix is `uv run --no-project --with-requirements <skill>/scripts/requirements.txt python`. On this project's cached environment, `--offline` avoids network installation.
+`<skill>` below is this skill's absolute folder. If it contains `installation.json`, `<runtime>` is `<skill>` itself: the installer includes data, pyproject.toml, uv.lock and a dedicated `.venv` there. Otherwise, for a development checkout, `<runtime>` is the repository root containing `skills/paper-sketch`, `data`, pyproject.toml and uv.lock. Never require the original development path or use paths recorded as historical provenance in manifests.
 
-In this repository, run `uv sync --locked` at the project root and use `uv run --locked python` for commands below. `pyproject.toml` and `uv.lock` define the project environment; requirements.txt remains the portable dependency list for a separately installed skill. Reference data and prepared groups are included under data/.
+Run every `python` command below with `<runtime>/.venv/Scripts/python.exe` on Windows or `<runtime>/.venv/bin/python` on macOS/Linux; activation is unnecessary. For environment setup/repair use `uv sync --locked --no-dev --python 3.11 --project "<runtime>"`. Do not move an existing `.venv`; rebuild it at the destination. Python 3.11 is tested; upstream recommends 3.12. requirements.txt remains the runtime dependency list, while the installed environment uses uv.lock. To recheck an installed copy, use its Python to run `<skill>/scripts/verify_install.py`; this verifies local files, data and imports without invoking a model. It does not verify Codex login or imagegen availability.
 
 The Google SDK provides original message/config types. The runner substitutes the generation module before importing agents, without initializing providers or looking up API keys. Python writes requests and waits; **the active Codex chat must service them**. Running the command alone does not invoke host tools and will eventually time out. Grouped retrieval and PBInteract text requests use independent Codex executions below. Original sampling, size tiers, and text-provider retries are not reproduced. Image retries follow the classified host policy below rather than the provider's exception/backoff logic. Do not fall back to a paid API or install this skill globally as part of a figure request.
 
@@ -23,7 +23,7 @@ The unused `configs/model_config.template.yaml` and original `utils/generation_u
 
 ## Reference data
 
-Use `<project>/data/diagram/` for the retained 298 diagram references. Duplicate downloads and evaluation splits were removed from this project's local data tree; original reference JSON, dataset documentation/license, and the download manifest remain as provenance. Plot mode uses the 240 references at `<project>/data/plot/`; the diagram runner does not use them. If preparing another diagram copy from a fresh external download:
+Use `<runtime>/data/diagram/` for the retained 298 diagram references. Duplicate downloads and evaluation splits were removed from this project's local data tree; original reference JSON, dataset documentation/license, and the download manifest remain as provenance. Plot mode uses the 240 references at `<runtime>/data/plot/`; the diagram runner does not use them. If preparing another diagram copy from a fresh external download:
 
 ```text
 python <skill>/scripts/prepare_references.py --source <downloaded-MTP-root> --output <new-prepared-root>
@@ -36,7 +36,7 @@ The preparation command does not change its input download. It verifies all 298 
 - `random`: original random selection of ten from 298; use when requested or explicitly reporting a connection test. It does not establish relevance.
 - `none`: explicitly omit references.
 
-This project's groups are at `<project>/data/diagram/retrieval/`. Each contains at most 800,000 candidate characters. The adapter validates the dataset hash, full text, order and all 200 records before calling a model; it also bounds system-plus-user text to 1,000,000 characters. The host must preserve these texts and check its final envelope size. Character checks do not guarantee a model token limit. Missing/stale groups, invalid counts, duplicate IDs or IDs from another group fail; do not substitute random or truncate. All five selections and input IDs are retained in `retrieval.json` and `result.json.retrieval_audit`.
+This project's groups are at `<runtime>/data/diagram/retrieval/`. Each contains at most 800,000 candidate characters. The adapter validates the dataset hash, full text, order and all 200 records before calling a model; it also bounds system-plus-user text to 1,000,000 characters. The host must preserve these texts and check its final envelope size. Character checks do not guarantee a model token limit. Missing/stale groups, invalid counts, duplicate IDs or IDs from another group fail; do not substitute random or truncate. All five selections and input IDs are retained in `retrieval.json` and `result.json.retrieval_audit`.
 
 The group preparation command is offline and refuses an existing destination. It greedily partitions the first 200 complete records at 800,000 characters per group, requires four groups with at least six candidates each, and checks the full 24-finalist budget. On this dataset it reproduces group sizes 53/51/58/38 and the existing candidate text hashes. It does not download, truncate or summarize references. Pass the new retrieval folder to `--reference-groups`; do not overwrite the current dataset/groups during preparation.
 
@@ -45,6 +45,37 @@ Process the four group requests and the final request in separate model contexts
 For a readable request with a known ID, both text host commands submit explicit error responses for prompt preparation, missing CLI/login, process start errors and login timeouts, then exit with failure. The waiting runner can stop with its failure checkpoint immediately instead of waiting for its full timeout. Existing responses and prior host attempts are never overwritten; do not resubmit them.
 
 Planner receives the selected actual images and full example texts. View all images. If only text excerpts can be processed, disclose that difference; do not claim full-context equivalence. The runner requires ten distinct IDs from the active pool when references are enabled.
+
+## Output location and delivery
+
+Choose the output location before starting any generate, refine or select run:
+
+1. Use the user's explicit destination when provided. Resolve a relative destination against the current conversation's actual working directory, not the skill location.
+2. Otherwise, use `<conversation-workspace>/outputs/papersketch/<unique-run>/`. Obtain the workspace from the app-provided working-directory context. This applies both to a chosen project and to a projectless chat with an app-provided task directory.
+3. If no usable workspace is available, ask for a destination. Do not invent a `Documents/Codex/<date>/<chat>` path or search unrelated conversations to guess it.
+
+Capture the absolute conversation workspace before changing directories to run uv or locate the skill. Never infer it from `__file__`, the skill installation folder, this development repository, or the dataset root. A workspace pointing inside the installed skill or its assets/data is not a suitable inferred destination; ask instead. A user's explicit destination takes precedence. Resolve the data and skill roots separately from the output workspace.
+
+Pass the chosen **absolute** directory as `--output`. The Python runner deliberately requires this argument; it cannot determine the active chat's workspace. Use a new, readable run name such as `diagram-01` or `plot-01`, choosing another name if it already exists. Every refinement/selection gets a new sibling run; retain the complete earlier run for continuation. Prepare input/feedback files in a separate task-local work directory: the runner requires its output directory to be absent or empty at startup. After it creates the run, keep prompts, exchange files and intermediate artifacts there or in the task-local work directory. Do not place them in skill source or reference data directories.
+
+After the runner exits, verify the saved selection and its final review status. In the final answer:
+
+- Show the selected `final.jpg` once as an inline image using its absolute local path. Intermediate candidates need not be repeated in the final answer.
+- Provide a clickable Markdown link to that image; for Plot also link the actual `final.py`. Optionally link `description.txt` or `result.json` when helpful for editing/continuation. Do not imply that a PNG, SVG or editable illustration project exists unless it was actually produced.
+- State the full absolute output directory in copyable text. Use absolute file links, not relative paths or `file://` URIs; wrap paths in angle brackets when they contain spaces.
+- Briefly disclose `issues_remaining`, `review_failed`, `not_reviewed` or retained fallback results. A saved image alone does not establish review success. If the run failed, describe the failure and link only existing artifacts, without presenting an older image as a successful new result.
+
+Example response shape (replace the placeholders with verified absolute paths):
+
+```markdown
+![Figure preview](<ABSOLUTE_PATH_TO_FINAL_JPG>)
+
+[Open image](<ABSOLUTE_PATH_TO_FINAL_JPG>) · [Python code](<ABSOLUTE_PATH_TO_FINAL_PY>)
+
+Saved folder: `ABSOLUTE_OUTPUT_DIRECTORY`
+```
+
+Omit the Python link for diagrams. The generated image tool's native save location is separate; copy its selected artifact into the chosen run before submitting it to the bridge and deliver the runner's saved final image.
 
 ## Initial generation
 
@@ -171,7 +202,7 @@ Submit image tool errors with `python <skill>/scripts/respond.py <request.json> 
 3. For `kind=text` with `required_text_host=independent-codex`, run `respond_text.py` as above; it saves and submits the answer itself. Use `respond_retrieval.py` for grouped retrieval. For other initial-generation text stages, preserve the upstream schema and use `respond.py --text-file`, or use `respond_text.py` for an independent execution. Do not substitute an active-chat answer for a required independent execution.
 4. For `kind=image`, prepare the tool prompt with `python <skill>/scripts/respond.py <request.json> --prepare-image-prompt <new-prompt.txt>`. This keeps the original render text intact and prefixes its API aspect-ratio setting, which the built-in tool must receive as text. Follow the installed imagegen skill with the built-in tool using that full prompt, then copy the returned artifact into the run. Submit `python <skill>/scripts/respond.py <request.json> --image-file <absolute-image-path>`. Never substitute fixtures. Record actual dimensions and any ratio/tier/sampling difference; requested ratio is not proof of exact output dimensions. The original Visualizer converts the output to JPEG.
 5. Inspect the actual JPEG in every Critic request. On image tool failure use the classified error policy above; only explicit transient failures retry. Text errors/timeouts and input/contract failures still abort, preserving a diagnostic checkpoint. Do not label retained figures as successful revisions.
-6. Continue until Python exits. Inspect the saved selection and report retrieval mode, actual calls, location, and remaining limits.
+6. Continue until Python exits. Inspect the saved selection and report retrieval mode, actual calls and remaining limits. Deliver the preview, clickable files and full saved directory according to Output location and delivery above.
 
 ## Verification scope
 

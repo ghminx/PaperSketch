@@ -60,7 +60,20 @@ Diagram은 현재 그림을 새 요청뿐 아니라 이전 요구사항과도 �
 
 무엇을 입력하면 되는지 궁금하다면 [입력 예제와 사용 팁](docs/examples-and-tips.md)을 참고하세요. 원본 데모의 방법론·캡션 예제와 PaperSketch에서 바로 활용할 수 있는 요청 양식을 정리했습니다.
 
-## Quick Start
+## Installation
+
+아래 요청문을 Codex에 붙여넣으면 설치 계획 확인 후 스킬·참고 데이터·전용 uv 환경을 함께 준비할 수 있음. 비공개 저장소인 동안에는 해당 GitHub 계정의 저장소 읽기 권한이 필요함.
+
+```text
+Install PaperSketch from https://github.com/ghminx/PaperSketch
+for this coding agent, including its reference data and uv environment.
+Show me the installation plan before making changes, then verify the setup.
+Keep generated outputs in the current conversation's workspace.
+```
+
+설치기는 저장소 전체 대신 실행에 필요한 파일만 `~/.agents/skills/paper-sketch/`에 모음. 설치 후에는 개발 폴더 없이 사용할 수 있으며, 결과는 현재 대화의 작업 폴더 또는 사용자가 지정한 위치에 저장됨. 직접 설치하는 명령과 폴더 구성은 [설치 안내](docs/installation.md) 기준임.
+
+## Development Quick Start
 
 Python 환경과 패키지는 uv로 관리함. 저장소 루트에서 아래 명령으로 잠금 파일에 기록된 환경을 준비함.
 
@@ -81,10 +94,10 @@ Python 실행기는 모델 요청을 파일로 전달하고 응답을 기다리�
 
 ```shell
 # 구조도
-uv run --locked python skills/paper-sketch/scripts/run.py generate --input input.json --dataset-dir data/diagram --reference-groups data/diagram/retrieval --output runs/diagram --retrieval auto
+uv run --locked python skills/paper-sketch/scripts/run.py generate --input input.json --dataset-dir data/diagram --reference-groups data/diagram/retrieval --output "<absolute-output-dir>" --retrieval auto
 
 # 통계 그래프
-uv run --locked python skills/paper-sketch/scripts/run.py generate --task plot --input input.json --dataset-dir data/plot --output runs/plot --retrieval auto
+uv run --locked python skills/paper-sketch/scripts/run.py generate --task plot --input input.json --dataset-dir data/plot --output "<absolute-output-dir>" --retrieval auto
 ```
 
 입력 JSON은 `content`와 `visual_intent`를 사용함. Diagram은 방법론·캡션, Plot은 실제 수치·표현 의도를 각각 전달함. 출력 폴더는 실행마다 새 경로를 지정함.
@@ -92,6 +105,14 @@ uv run --locked python skills/paper-sketch/scripts/run.py generate --task plot -
 ```json
 {"content":{"A":10,"B":15,"C":12},"visual_intent":"값을 표시한 세로 막대그래프, y축은 0부터 시작, 제목 없음"}
 ```
+
+## Outputs
+
+사용자가 지정한 저장 위치를 우선 사용함. 지정이 없으면 프로젝트 선택 여부와 관계없이 앱이 현재 대화에 제공한 실제 작업 폴더의 `outputs/papersketch/<작업별 폴더>/`에 저장함. 해당 작업 경로를 확인할 수 없으면 저장 위치를 질문함.
+
+스킬 설치 경로나 개발 저장소를 저장 위치로 추측하지 않으며, 실행기를 다른 폴더에서 실행하더라도 확인한 절대 출력 경로를 유지함. `<absolute-output-dir>`은 이 규칙으로 정한 실제 경로로 교체함.
+
+결과 응답에는 최종 그림 미리보기·클릭하여 여는 이미지 링크·전체 저장 경로를 제공함. Plot은 실제 Python 코드 링크도 제공함. 중간 결과·설명·재개 정보는 해당 작업 폴더에 함께 보존하며, 검토상 문제가 남아 있으면 함께 안내함.
 
 ## Reference Data
 

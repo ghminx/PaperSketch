@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 runs/
+outputs/
 .venv/
 .uv-cache/
 .env

@@ -2,6 +2,8 @@
 
 Use this mode for numerical charts, such as bar charts, line charts, scatter plots and heatmaps. Architecture illustrations use the diagram mode. Plot mode does not invoke imagegen or PBInteract.
 
+Follow the Output location and delivery section of SKILL.md: user destination first, otherwise the app-provided conversation workspace's `outputs/papersketch/<unique-run>/`, and ask if that workspace is unavailable. Pass the resolved absolute directory as `--output` independently of where uv, the installed skill or the dataset lives. Return an inline preview of the saved final.jpg, clickable absolute image/code links, and the full output folder; report remaining or failed review states.
+
 ## Source and preserved behavior
 
 `assets/paperbanana_plot/` contains the PaperBanana implementation at `f1da3db8d5f4c3add947dfd3ddd93dddd3394dc3`. `SOURCE_MANIFEST.json` records source/vendored hashes and every source replacement; keep the Apache-2.0 license and copyright headers. The original Plot system prompts, style guide, Matplotlib worker and full pipeline are retained. Changes connect the dataset path, module namespace, and local execution hook. The existing Diagram implementation is separate.
@@ -17,7 +19,7 @@ Save UTF-8 JSON with `content` containing the actual numerical data and `visual_
 ```
 
 ```text
-python <skill>/scripts/run.py generate --task plot --input <input.json> --dataset-dir <project>/data/plot --output <new-run> --retrieval auto --critic-rounds 3 --plot-timeout 30 --timeout 1200
+python <skill>/scripts/run.py generate --task plot --input <input.json> --dataset-dir <runtime>/data/plot --output <new-run> --retrieval auto --critic-rounds 3 --plot-timeout 30 --timeout 1200
 ```
 
 `--task` defaults to `diagram`; specify `plot` explicitly. Use a fresh output directory. Negative critic limits and nonpositive execution timeouts are rejected. `--reference-groups` is not used for plots.
