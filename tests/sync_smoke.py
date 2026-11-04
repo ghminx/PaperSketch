@@ -60,6 +60,11 @@ def run_case(skill, work, task, *, prior=None, revise=False, image_failure=False
                     if path.with_name('response.json').exists():
                         continue
                     request = json.loads(path.read_text(encoding='utf-8'))
+                    if task == 'diagram' and request['kind'] == 'text':
+                        assert request['canvas_constraint']['aspect_ratio'] == '21:9'
+                        assert '21:9' in request['turns'][-1]['content'][-1]['text']
+                    if task == 'plot':
+                        assert 'canvas_constraint' not in request
                     if request['kind'] == 'image':
                         stages.append('image')
                         if image_failure:

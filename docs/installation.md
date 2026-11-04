@@ -67,6 +67,10 @@ macOS/Linux에서는 설치 폴더의 `.venv/bin/python` 사용이 필요함.
 
 ### Execution Approvals
 
+- Codex 텍스트 host는 사용자 출력 폴더 외에 자체 상태 DB·임시 파일·app-server 접근과 서비스 연결 권한이 필요함. 로컬 실행기와 `codex login status`의 성공만으로 실제 `codex exec` 시작 성공을 보장하지 않음.
+- 치명적 접근 거부는 `host_permission_denied`, `retryable=false`, 발생 단계로 기록함. DB 열기 실패 일반 메시지나 비치명적 경고만으로 권한 오류로 단정하지 않음.
+- 해당 요청은 재제출하지 않으며 동일 권한에서 새 그림 실행을 반복하지 않음. 구체적인 host 명령에 필요한 실행 권한을 앱의 승인 절차로 해결한 뒤 새 실행을 시작해야 함. 같은 연구 처리 범위에 대한 동의 재질문과는 별개임. 전역 설정·인증 정보는 자동 변경하지 않음.
+
 - 실제 ACT 생성 시험에서 거부된 명령은 설치된 Python의 `scripts/run.py generate ... --retrieval auto --critic-rounds 3 --timeout 1200` 실행이었음. `respond_text.py`나 imagegen 호출 단계의 거부는 아니었음.
 - 자동 검토 결과는 `risk_level=high`, `user_authorization=medium`, `outcome=deny`였음. 사유는 비공개일 수 있는 ACT 연구 입력의 외부 모델 전송과 목적지에 대한 명시적 승인 부족이었음.
 - `test_local_launch.py`는 합성 입력으로 Diagram auto 시작 경로를 검사함. 동기 실행의 설치 후 검증은 `tests/sync_smoke.py`에서 소켓 생성 자체를 금지하여 수행함.

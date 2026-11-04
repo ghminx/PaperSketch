@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 from bridge import write_json
+from image_ratio import canvas_instruction
 
 
 def image_prompt(request: dict) -> str:
@@ -13,7 +14,7 @@ def image_prompt(request: dict) -> str:
         raise ValueError('Only the original text-to-image Visualizer request is supported')
     original = '\n'.join(part['text'] for part in request['turns'][0]['content'])
     ratio = request['config']['image_config']['aspect_ratio']
-    return f'Image API setting: aspect_ratio = {ratio}. Use this canvas ratio.\n\n{original}'
+    return f'Image API setting: aspect_ratio = {ratio}. Use this canvas ratio.\n\n{original}\n\n{canvas_instruction(ratio)}'
 
 
 def main():

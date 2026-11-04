@@ -8,7 +8,7 @@ import sys
 from types import ModuleType
 import uuid
 
-from image_ratio import assess_ratio
+from image_ratio import assess_ratio, canvas_instruction
 from review_protocol import REVIEW_PLAN, ReviewDecision, ReviewResponseError, validate_review
 
 
@@ -27,6 +27,7 @@ class FileBridge:
         self.directory.mkdir(parents=True, exist_ok=True)
         self.timeout = timeout
         self.independent_text = independent_text
+        self.canvas_ratio = None
         self.image_calls = []
         self.image_blocked = None
         self.review_calls = []
@@ -170,6 +171,10 @@ class FileBridge:
         request = {'id': request_id, 'kind': kind, 'model_name': model_name,
                    'config': settings, 'retry_options': retry_options,
                    'turns': [self._turn(turn, directory) for turn in turns]}
+        if kind == 'text' and self.canvas_ratio is not None:
+            request['canvas_constraint'] = {'aspect_ratio': self.canvas_ratio}
+            request['turns'][-1]['content'].append(
+                {'type': 'text', 'text': canvas_instruction(self.canvas_ratio)})
         if kind == 'text' and (self.independent_text or (review_attempt and review_attempt['final'])):
             request['required_text_host'] = 'independent-codex'
         if review_attempt is not None:

@@ -5,6 +5,20 @@ from fractions import Fraction
 RATIO_RELATIVE_TOLERANCE = 0.005
 
 
+def canvas_instruction(ratio: str) -> str:
+    """설계·검토·렌더링에 동일한 캔버스 우선 조건 전달."""
+    assess_ratio(1, 1, ratio)
+    return (f'PaperSketch canvas constraint: the requested full-image aspect ratio is {ratio} (width:height). '
+            'This explicit setting takes precedence over conflicting canvas ratios or full-canvas dimensions '
+            'in reference examples, earlier descriptions, or earlier critique. '
+            f'Write and revise rendering descriptions for a {ratio} canvas; do not invent another canvas ratio. '
+            'Preserve the required modules and connections. Review against this requested ratio, '
+            'not an incompatible ratio invented by an earlier description. '
+            'Reference selection must still follow its original relevance criteria. '
+            'Generate on the requested canvas directly; do not crop, stretch or pad a finished image. '
+            'Keep the response format required by the current agent step.')
+
+
 def assess_ratio(width: int, height: int, requested: str | None) -> dict:
     """정확 일치와 0.5% 이내 반올림 오차를 구분한 측정 결과 반환."""
     actual = Fraction(width, height)

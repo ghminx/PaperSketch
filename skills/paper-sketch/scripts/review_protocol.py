@@ -11,6 +11,8 @@ def context_hash(data: dict) -> str:
     """방법론·캡션·사용자 요구가 같은 검토인지 식별하는 hash 반환."""
     value = {'content': data['content'], 'caption': data['visual_intent'],
              'requests': [t['content'] for t in data.get('chat_history', []) if t['role'] == 'user']}
+    if data.get('task_name') != 'plot':
+        value['canvas_ratio'] = data.get('additional_info', {}).get('rounded_ratio', '1:1')
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 

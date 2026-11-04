@@ -70,6 +70,10 @@ Process the four group requests and the final request in separate model contexts
 
 For a readable request with a known ID, both text host commands submit explicit error responses for prompt preparation, missing CLI/login, process start errors and login timeouts, then exit with failure. The waiting runner can stop with its failure checkpoint immediately instead of waiting for its full timeout. Existing responses and prior host attempts are never overwritten; do not resubmit them.
 
+The separate Codex text host needs access to its own local runtime (state database, temporary files and app-server) and its service connection, in addition to the coordinator's output folder. A passing local coordinator or `codex login status` does not prove `codex exec` can initialize. When the host requires an execution approval, describe the exact text-host command, request data and these side effects under the current host policy. Reuse the already agreed processing scope; do not add another research-data consent question for the same scope. Do not change global configuration, CODEX_HOME, credentials or the child's read-only/tool-isolation settings to evade restrictions.
+
+An actual fatal permission error is recorded as `error_type=host_permission_denied`, `retryable=false`, with `failure_phase` in response.json and available host metadata. Preserve its logs and let the runner stop. Do not repeat the same failed request or start another figure run under unchanged permissions. Correct the concrete host permission condition through the host's approval mechanism before explicitly starting a fresh run. Generic database failures and nonfatal warnings alone are not sufficient evidence of permission denial. This classification provides diagnostics, not automatic elevation or guaranteed approval.
+
 Planner receives the selected actual images and full example texts. View all images. If only text excerpts can be processed, disclose that difference; do not claim full-context equivalence. The runner requires ten distinct IDs from the active pool when references are enabled.
 
 ## Output location and delivery
@@ -106,6 +110,8 @@ Omit the Python link for diagrams. The generated image tool's native save locati
 ## Initial generation
 
 Save the methodology and desired caption as UTF-8 JSON: `{"content":"...", "visual_intent":"..."}`. When `additional_info` is omitted, `rounded_ratio` defaults to `21:9`, matching the upstream UI. Use `"additional_info":{"rounded_ratio":"16:9"}` for an explicit 16:9 run.
+
+The diagram bridge adds the requested canvas ratio as an explicit constraint to every text request, including Planner, Stylist, Critic, PBInteract and final review, without changing the original system prompts or source content. The constraint takes precedence over conflicting canvas ratios invented by earlier descriptions. Prepared image prompts repeat that priority after the complete rendering description. This is an intentional adapter change; original agents and iteration order remain intact. Refinement inherits the saved ratio. Review context hashes include the ratio, so a verdict for another ratio cannot be reused. Always measure the returned image: these instructions do not guarantee exact tool output, and mismatches remain recorded without cropping, stretching or padding.
 
 ```text
 python <skill>/scripts/run.py generate --input <input.json> --dataset-dir <prepared-root> --reference-groups <groups-root> --output <new-run> --retrieval auto --critic-rounds 3 --timeout 1200

@@ -376,7 +376,9 @@ class BridgeTests(unittest.IsolatedAsyncioTestCase):
                         self.assertEqual(request['config']['image_config']['aspect_ratio'], '21:9')
                         prompt = image_prompt(request)
                         self.assertIn('aspect_ratio = 21:9', prompt)
-                        self.assertTrue(prompt.endswith(request['turns'][0]['content'][0]['text']))
+                        original = request['turns'][0]['content'][0]['text']
+                        self.assertIn(original, prompt)
+                        self.assertIn('takes precedence', prompt.split(original, 1)[1])
                         reply = {'image_path': str(fixture)}
                     write_json(path.parent / 'response.json', {'id': request['id'], **reply})
                 _, stderr = await process.communicate()

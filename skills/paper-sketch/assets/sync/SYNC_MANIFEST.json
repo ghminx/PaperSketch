@@ -214,8 +214,8 @@
     },
     "scripts/bridge.py": {
       "source": "scripts/bridge.py",
-      "source_sha256": "f42ec7b4245ae2602fb3c230f47202fee75f5bafac4c8fb3b04e0fd1d57132eb",
-      "sha256": "632cfa36082d61cd7e19ae6af3a339616483ae263adee56a82960acbc56ee51c"
+      "source_sha256": "bdb806565a8d1689d88f02626880f2706e41318fbf19831991264744b2305686",
+      "sha256": "0b4aa5d00663aa431fab426987d9df79413cb3a4711bd52e21c796e7e5338b0b"
     },
     "scripts/execution.py": {
       "source": "scripts/execution.py",
@@ -229,8 +229,8 @@
     },
     "scripts/image_ratio.py": {
       "source": "scripts/image_ratio.py",
-      "source_sha256": "e029b6d32f720c46fe6f1aca5c8300f20a6ea6834af510fc5cd45527cc1efc7a",
-      "sha256": "a07747f3ae255a81066cd73f31f424e01a3f5ff3ace70285eec58430ea63c7bc"
+      "source_sha256": "c3f9cc228ed96a8eb25abf33d7178e3730baa25331d7aa595b4de21d8bbd3e7d",
+      "sha256": "f257e1ebc80a4de1f418dca04bf32819b728d4f725989fb59846aa3622831574"
     },
     "scripts/plot_code.py": {
       "source": "scripts/plot_code.py",
@@ -274,13 +274,13 @@
     },
     "scripts/respond.py": {
       "source": "scripts/respond.py",
-      "source_sha256": "cea9d5a0d51e9817b1793f2cbbd5c8683afbe49f8e6ccf5ec119a634b4f27e23",
-      "sha256": "d2098ecee4dee945259819e92150d2faf514f920f0e1a24e017c34e5cfcf31e9"
+      "source_sha256": "0a768deb54999f975b08319783205588526a4a549f2f9e28eed309704eddebc1",
+      "sha256": "cf327c3a38f544664fd957eddd64966fb410ae87b18b019fe205e3ea0997b3d0"
     },
     "scripts/respond_retrieval.py": {
       "source": "scripts/respond_retrieval.py",
-      "source_sha256": "03b35d881e38f425d741071ca01e8792b56461231fabaf73e9f4e34793694e9e",
-      "sha256": "65930520439e38def488013e6d52fbf58072dcb0328380781c5b51bae49523fa"
+      "source_sha256": "6ae683df96877e44923f766ba55629255bc6ef4850254a4cace220458940fbe0",
+      "sha256": "9d6f5aba39dfef65b2382d381bca41ab31ace0cef56060dde0ad27eaadfd54a1"
     },
     "scripts/respond_text.py": {
       "source": "scripts/respond_text.py",
@@ -294,13 +294,13 @@
     },
     "scripts/review_protocol.py": {
       "source": "scripts/review_protocol.py",
-      "source_sha256": "44ea1efab70ee26e3e67ca3fe2b9bba8648baea2ffbf3c2f6a4c9192f3a6a6b2",
-      "sha256": "7b896de2feb45752b7d7f31bfcae8006d2f34c2647779390b29ce4115dd04dba"
+      "source_sha256": "54c004ba313aa329d8dc43e5344cc72569af3fae3eaae8b1e9a65a3c9e297074",
+      "sha256": "576670dd38350ed3bf9f08bf63e4d49753b782fbd518c0363bf47166fe8f9e11"
     },
     "scripts/run.py": {
       "source": "scripts/run.py",
-      "source_sha256": "a57a772db91e2e367f62c1b491fa5db0592a985174a645c1f130bbab50dbc736",
-      "sha256": "59eb4743faf1393b2677b7bf1a6ba417c3224e763171c70bbd9d50aa747be420"
+      "source_sha256": "fd0ce5dbe9574c082c9e42944943b0b5514053b9c02620ab8b5a6a90472c5f34",
+      "sha256": "3b5692eb6823dd55ec6afcef8741573fccab16941620cb8edb7200e0b56b2ccf"
     },
     "scripts/run_plot.py": {
       "source": "scripts/run_plot.py",

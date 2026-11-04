@@ -5,6 +5,7 @@ import argparse
 import json
 from pathlib import Path
 from bridge import write_json
+from image_ratio import canvas_instruction
 
 def image_prompt(request: dict) -> str:
     """원문 렌더링 지시와 API 비율 설정을 내장 도구 입력으로 결합."""
@@ -14,7 +15,7 @@ def image_prompt(request: dict) -> str:
         raise ValueError('Only the original text-to-image Visualizer request is supported')
     original = '\n'.join((part['text'] for part in request['turns'][0]['content']))
     ratio = request['config']['image_config']['aspect_ratio']
-    return f'Image API setting: aspect_ratio = {ratio}. Use this canvas ratio.\n\n{original}'
+    return f'Image API setting: aspect_ratio = {ratio}. Use this canvas ratio.\n\n{original}\n\n{canvas_instruction(ratio)}'
 
 def main():
     """host 응답 제출 또는 비율 설정을 반영한 이미지 지시 준비."""

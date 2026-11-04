@@ -94,10 +94,12 @@ def run(args):
             source = json.loads(args.input.read_text(encoding='utf-8'))
             data.update({'content': source['content'], 'visual_intent': source['visual_intent'], 'additional_info': source.get('additional_info', {'rounded_ratio': '21:9'}), 'max_critic_rounds': args.critic_rounds})
             data['requested_image_ratio'] = data['additional_info'].get('rounded_ratio', '1:1')
+            bridge.canvas_ratio = data['requested_image_ratio']
             data = generate(processor, data)
         else:
             data = load_result(args.prior)
             begin_execution(args, data, parent=args.prior)
+            bridge.canvas_ratio = data.get('additional_info', {}).get('rounded_ratio', '1:1')
             data = refine(processor, data, args.feedback_file.read_text(encoding='utf-8'))
         if not data.get(data['eval_image_field']):
             valid = [k for k, v in data.items() if k.endswith('_base64_jpg') and v]
