@@ -47,12 +47,7 @@ python <checkout>/scripts/install.py --apply
 
 ## Verify
 
-실제 실행 전에 설치된 Python으로 `scripts/startup_check.py --timeout 5` 실행이 가능함. `run.py`도 같은 검사를 자동 수행함. 기본 샌드박스와 권한 확장 환경은 결과가 다를 수 있으므로 실제 생성에 사용할 환경에서 확인이 필요함.
-
-- 정상 초기화: `PAPER_SKETCH_STARTUP`의 `passed` 출력 후 원래 흐름 진행임.
-- 초기화 실패: 약 5초의 검사 제한 후 진단·stack을 출력하고 종료 코드 2로 중단함. 결과 폴더·모델 요청은 생성하지 않음.
-- `loopback_initialization_stalled`: Windows asyncio의 socketpair와 accept/connect 위치가 timeout stack에서 확인된 경우임. 원인 근거가 없으면 별도의 미확정 timeout으로 구분함.
-- 검사에는 모델·연구 입력 전송이 없으며 자동 재시도·권한 상승·전역 설정 변경도 없음. 시작 초기화 검사이므로 이후 모든 정지 상황의 감지를 보장하지 않음.
+기본 실행기는 순차 동기 방식임. `asyncio` 초기화·로컬 socketpair·비동기 사전 검사를 사용하지 않음. 원본 사본은 출처 및 회귀 비교용으로 보존하며, `assets/sync/`의 실행 사본을 설치함. 해당 사본과 원본의 hash 연결도 설치 검증 대상임.
 
 Windows PowerShell 예시임. 별도 가상환경 활성화는 불필요함.
 
@@ -74,7 +69,7 @@ macOS/Linux에서는 설치 폴더의 `.venv/bin/python` 사용이 필요함.
 
 - 실제 ACT 생성 시험에서 거부된 명령은 설치된 Python의 `scripts/run.py generate ... --retrieval auto --critic-rounds 3 --timeout 1200` 실행이었음. `respond_text.py`나 imagegen 호출 단계의 거부는 아니었음.
 - 자동 검토 결과는 `risk_level=high`, `user_authorization=medium`, `outcome=deny`였음. 사유는 비공개일 수 있는 ACT 연구 입력의 외부 모델 전송과 목적지에 대한 명시적 승인 부족이었음.
-- `test_local_launch.py`는 합성 입력으로 실제 Diagram auto 시작 경로를 검사함. 외부 네트워크·자식 프로세스 실행을 차단한 상태에서 첫 요청 파일 생성·응답 대기를 확인함. Windows asyncio 내부의 loopback 통신만 허용함.
+- `test_local_launch.py`는 합성 입력으로 Diagram auto 시작 경로를 검사함. 동기 실행의 설치 후 검증은 `tests/sync_smoke.py`에서 소켓 생성 자체를 금지하여 수행함.
 - SKILL.md에 최초 처리 범위 확인과 동일 범위의 승인 재사용, 로컬 실행기와 실제 Codex·imagegen 처리 경계, 실제 승인 거부 준수 지침을 명시함. 승인 우회나 승인 결과 보장은 포함하지 않음.
 - 실제 승인 검토의 재통과·Codex 추론·그림 생성은 이번 수정 시험에서 검증하지 않음. 기존 ACT 거부 명령은 재실행하지 않음.
 
@@ -103,6 +98,15 @@ macOS/Linux에서는 설치 폴더의 `.venv/bin/python` 사용이 필요함.
 ## Standalone Smoke Test
 
 - Windows에서 개발 폴더 밖에 코드·데이터·uv 환경을 실제 설치하여 검증함. macOS/Linux 실기 검증은 미수행임.
-- 자식 실행기의 개발 저장소 파일 접근을 차단하고 다른 작업 폴더에서 Diagram 자동 검색 5회·선택 이미지 10개의 Planner 전달·결과 저장·PBInteract 무변경 판단을 확인함.
+- 기존 독립 설치 시험은 개발 폴더 접근을 차단하여 수행함. 동기 실행은 별도 `tests/sync_smoke.py`에서 소켓 생성 자체를 차단한 CLI로 검증함.
 - Plot은 실제 참고 후보·이미지 연결과 Matplotlib 코드 렌더링을 확인함. 모델 텍스트·Diagram 이미지는 모의 응답이며 실제 모델 호출·생성 품질 시험은 아님.
 - 재현 도구는 저장소의 `tests/standalone_smoke.py`임. 설치된 Python으로 실행하며 `--skill <설치 폴더> --work <새 작업 폴더> --forbid <개발 저장소>` 지정이 필요함. 결과는 작업 폴더의 `report.json`에 저장됨.
+
+## Synchronous Runtime Maintenance
+
+- `assets/interact/`, `assets/paperbanana_plot/`의 원본 사본과 프롬프트 보존이 원칙임.
+- 동기 실행 사본은 개발 저장소의 `python scripts/build_sync_runtime.py`로 재생성함. 실행용 함수는 실제 동기 함수이며 coroutine을 별도 해석하는 방식은 아님.
+- `assets/sync/SYNC_MANIFEST.json`에 변환 전후 hash가 기록됨. 원본 연결 코드 수정 후 사본을 재생성하지 않으면 검증에서 실패함.
+- `tests/sync_smoke.py --skill <설치 폴더> --work <새 작업 폴더>`는 설치된 Python으로 실행함. 모델·이미지 응답은 모의 값이며 실제 데이터, Matplotlib, 상태 저장, 조회·선택·피드백 유지·수정·실패 복구는 실제 코드로 검증함.
+- 기본 샌드박스에서 socket 생성이 금지된 상태의 동작 확인이 필요함. 동기화만으로 모델 서비스 네트워크 권한이나 생성 품질이 보장되는 것은 아님.
+- 전체 unittest에는 원본 async 사본을 직접 호출하는 비교 시험이 포함됨. 해당 비교 시험에는 초기화 가능한 환경이 필요하며, 기본 샌드박스의 실제 실행 검증은 동기 smoke 도구로 구분하여 수행함.

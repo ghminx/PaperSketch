@@ -28,6 +28,13 @@ def verify(root: Path) -> dict:
             if hashlib.sha256((folder / name).read_bytes()).hexdigest() != expected:
                 raise ValueError(f'Vendored source mismatch: {vendor}/{name}')
     counts = {}
+    sync = root / 'assets/sync'
+    manifest = json.loads((sync / 'SYNC_MANIFEST.json').read_text(encoding='utf-8'))
+    for name, entry in manifest['files'].items():
+        if hashlib.sha256((sync / name).read_bytes()).hexdigest() != entry['sha256']:
+            raise ValueError(f'Synchronous runtime mismatch: {name}')
+        if hashlib.sha256((root / entry['source']).read_bytes()).hexdigest() != entry['source_sha256']:
+            raise ValueError(f'Synchronous runtime source is stale: {name}')
     for task, count in (('diagram', 298), ('plot', 240)):
         dataset = root / 'data' / task
         rows = json.loads((dataset / 'ref.json').read_text(encoding='utf-8'))
@@ -40,6 +47,7 @@ def verify(root: Path) -> dict:
             with Image.open(image) as opened:
                 opened.verify()
         counts[task] = len(rows)
+    sys.path.insert(0, str(sync / 'scripts'))
     from bridge import FileBridge, install_bridge
     with TemporaryDirectory(prefix='papersketch-verify-') as temporary:
         install_bridge(FileBridge(Path(temporary)))
@@ -53,7 +61,7 @@ def verify(root: Path) -> dict:
         for module in (diagram_planner, plot_planner):
             if not Path(module.__file__).resolve().is_relative_to(root / 'assets'):
                 raise ValueError('Agent imported from outside the installed skill')
-    return {'status': 'verified_offline', 'root': str(root), 'python': sys.executable,
+    return {'status': 'verified_offline', 'runtime': 'synchronous', 'root': str(root), 'python': sys.executable,
             'verified_files': len(receipt['files']), 'references': counts,
             'diagram_group_sizes': [len(rows) for rows, _ in groups],
             'codex_cli': shutil.which('codex'), 'codex_login': 'unverified',

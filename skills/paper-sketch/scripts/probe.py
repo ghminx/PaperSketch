@@ -1,3 +1,14 @@
+# BEGIN_SYNC_ENTRY
+# CLI는 동기 실행 사본 사용, 아래 원본 함수는 회귀 비교용 보존
+if __name__ == '__main__':
+    import runpy
+    import sys
+    from pathlib import Path
+    entry = Path(__file__).resolve().parents[1] / 'assets/sync/scripts' / Path(__file__).name
+    sys.path.insert(0, str(entry.parent))
+    runpy.run_path(str(entry), run_name='__main__')
+    raise SystemExit(0)
+# END_SYNC_ENTRY
 import argparse
 import asyncio
 import json

@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "description": "Sequential synchronous conversion; public prompts and agent ordering preserved",
+  "files": {
+    "assets/interact/agents/__init__.py": {
+      "source": "assets/interact/agents/__init__.py",
+      "source_sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30",
+      "sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30"
+    },
+    "assets/interact/agents/base_agent.py": {
+      "source": "assets/interact/agents/base_agent.py",
+      "source_sha256": "508c22dd7b982d3f515939cd4fc98970adc5da362f444d738074e51e64f1eecf",
+      "sha256": "7f5520ec2dcc7036c955c8478237a6aacc38012a43c9077e18915ea3acb91cd2"
+    },
+    "assets/interact/agents/critic_agent.py": {
+      "source": "assets/interact/agents/critic_agent.py",
+      "source_sha256": "6ba80bbbbce254e2a5b425968da5a29a21425c58d222a5d6de8aabda624d86f4",
+      "sha256": "c0f4032f41776d0b27f6711098706faa2fcea7075204b3c64a7087ddd57d33bf"
+    },
+    "assets/interact/agents/planner_agent.py": {
+      "source": "assets/interact/agents/planner_agent.py",
+      "source_sha256": "e58e956731c0d215ee72917ae9f25701386611c6399c64758bbe208804d8ce12",
+      "sha256": "0d80b51339f609f466dd43458f7d372009bb758bdcc58d77848e46bb5702c877"
+    },
+    "assets/interact/agents/polish_agent.py": {
+      "source": "assets/interact/agents/polish_agent.py",
+      "source_sha256": "35d2670c0a331deeff80ea85003052f765a2d8d25b6262c6cb7a9018bc497814",
+      "sha256": "644aae563fab991d2c4e78157922ce2bd86c215b471324d594b7db33d733edbf"
+    },
+    "assets/interact/agents/refiner/__init__.py": {
+      "source": "assets/interact/agents/refiner/__init__.py",
+      "source_sha256": "ab523966c06fc25340fed3938b67610b9a434c556b1454dbef16d50d9f14ad97",
+      "sha256": "0a695c2227fd695c816de97e2a933e55314915cc0d1cfb42bc4d4887b6d78815"
+    },
+    "assets/interact/agents/refiner/generative_refiner.py": {
+      "source": "assets/interact/agents/refiner/generative_refiner.py",
+      "source_sha256": "ae57c6befec9dce058501c0ad7264a4d4a23d5184206e285543029944ca2d03a",
+      "sha256": "a859a3275225ebc9362af5da53067fb0073e0ecc277e72b50959f35deb87fc56"
+    },
+    "assets/interact/agents/refiner/pb_directrefine.py": {
+      "source": "assets/interact/agents/refiner/pb_directrefine.py",
+      "source_sha256": "c49322fe62c76341f32324df07156e38e266b4d675332a4bdd778f8140859c98",
+      "sha256": "544a619c7a40e54bbcc3f6a84a4b5d967bfe07a1aff26a76228af883a315ac82"
+    },
+    "assets/interact/agents/refiner/pb_interact.py": {
+      "source": "assets/interact/agents/refiner/pb_interact.py",
+      "source_sha256": "3d83d8b2e670883519bcea099de9fc996bfabab2fa80231c6239d61a3eef7b04",
+      "sha256": "ab7d117de5023bf249baa60e16ce8248d9df2091dae6892b3c35709bac4d661c"
+    },
+    "assets/interact/agents/retriever_agent.py": {
+      "source": "assets/interact/agents/retriever_agent.py",
+      "source_sha256": "1e20125e63fb4992c93f2e0f5ef9c319cb9d7ceee79a13ca9a5d7c4fe229caab",
+      "sha256": "51a1c8d7d226d86fd8f4bb58af5111c1a75ea2c0c344e82e372c5476c53a843b"
+    },
+    "assets/interact/agents/stylist_agent.py": {
+      "source": "assets/interact/agents/stylist_agent.py",
+      "source_sha256": "6360eea92970f52ddb2d6c66030385454a415506ed273ad5c3a227615e366649",
+      "sha256": "f58b1710d9ae055783ea51fe048c3e9d7746c45ba3a5529466b15fee9450b1ba"
+    },
+    "assets/interact/agents/vanilla_agent.py": {
+      "source": "assets/interact/agents/vanilla_agent.py",
+      "source_sha256": "3542a3a3972bde8a46f1b997cca6132cdc44f7c074203180ea84f7c63f302baf",
+      "sha256": "e846310cbcf5fac28fcb53110237744ebe9e5f12117ea51e838b11ec6302c95b"
+    },
+    "assets/interact/agents/visualizer_agent.py": {
+      "source": "assets/interact/agents/visualizer_agent.py",
+      "source_sha256": "b534e439cc5d7b1b1af2d267443b06273e308b421561a5c973223e31999a8e64",
+      "sha256": "de4102f41cb8f5e8e16d0c93a486eff5ed5f64d50da65003b4867b0f926577b9"
+    },
+    "assets/interact/LICENSE": {
+      "source": "assets/interact/LICENSE",
+      "source_sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+      "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6"
+    },
+    "assets/interact/prompts/__init__.py": {
+      "source": "assets/interact/prompts/__init__.py",
+      "source_sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30",
+      "sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30"
+    },
+    "assets/interact/prompts/diagram_eval_prompts.py": {
+      "source": "assets/interact/prompts/diagram_eval_prompts.py",
+      "source_sha256": "cb077e031a93cf7c8cb4b155d842d1f0de9791a1f016287d30034a70eee4f4be",
+      "sha256": "2f5550acbdefebaf674a82fff6d4d8db3b26fa805f2757716ada214b8ca39177"
+    },
+    "assets/interact/prompts/req_eval_prompts.py": {
+      "source": "assets/interact/prompts/req_eval_prompts.py",
+      "source_sha256": "c233ddbb4c07ef2f1624639eaed61d938f283701daf2a9b7d927d2a42a20ba61",
+      "sha256": "af05332fb9191b9b2de3dbb42dfbb1fb4a119cf990368164f3bb298319a8e4ba"
+    },
+    "assets/interact/SOURCE_MANIFEST.json": {
+      "source": "assets/interact/SOURCE_MANIFEST.json",
+      "source_sha256": "12b73ddab52c1785d4d9e37d8b5d13ff091d7c1d08bedd9e0d2a6843a719513d",
+      "sha256": "942b271ffcd699ce8e8c442240ea1ffaf6cd9b636bb8bd485aa7b12746b5fc87"
+    },
+    "assets/interact/style_guides/generate_category_style_guide.py": {
+      "source": "assets/interact/style_guides/generate_category_style_guide.py",
+      "source_sha256": "81103992b1abc2845c1d81784b2bc0cd57f12fd6bf74ad7e88ff1c34f1171d9f",
+      "sha256": "81103992b1abc2845c1d81784b2bc0cd57f12fd6bf74ad7e88ff1c34f1171d9f"
+    },
+    "assets/interact/style_guides/neurips2025_diagram_style_guide.md": {
+      "source": "assets/interact/style_guides/neurips2025_diagram_style_guide.md",
+      "source_sha256": "b2aba93841287ceea3bc4752181641c5694ce887d0dd6d9e7de2a6bcb106f4f5",
+      "sha256": "b2aba93841287ceea3bc4752181641c5694ce887d0dd6d9e7de2a6bcb106f4f5"
+    },
+    "assets/interact/style_guides/neurips2025_plot_style_guide.md": {
+      "source": "assets/interact/style_guides/neurips2025_plot_style_guide.md",
+      "source_sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe",
+      "sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe"
+    },
+    "assets/interact/utils/__init__.py": {
+      "source": "assets/interact/utils/__init__.py",
+      "source_sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30",
+      "sha256": "1b5494f4e5adef0a53693eebdd96ae0aa9129a6961a52880fd24ac62e156fb30"
+    },
+    "assets/interact/utils/base64_rw_helper.py": {
+      "source": "assets/interact/utils/base64_rw_helper.py",
+      "source_sha256": "9224bbe2ca917e71c102f46c5313dd798ce7c4f2b73c75c990f6803f7c981b19",
+      "sha256": "cb5cd7dba7b937fc8b4eee58e4d9a3085cbe6d0f34f02c39ed744493b14bf440"
+    },
+    "assets/interact/utils/config.py": {
+      "source": "assets/interact/utils/config.py",
+      "source_sha256": "4363463ac6099644b02cf6517b396180502267c3be6a962d8c1df07dff30f941",
+      "sha256": "3131d4439fd2660daa1d88f5c758094dbe57d2a4af4b77cd5a439d2e46955b85"
+    },
+    "assets/interact/utils/eval_toolkits.py": {
+      "source": "assets/interact/utils/eval_toolkits.py",
+      "source_sha256": "3fe4d857eb6f6c55c7230664d1b656e880847b9360ecc36c13d9a91452b287b8",
+      "sha256": "d0851078dd3cf6fa91753c1dfcfaceff31cbfce6149bca45473e68c017dac673"
+    },
+    "assets/interact/utils/image_utils.py": {
+      "source": "assets/interact/utils/image_utils.py",
+      "source_sha256": "22fed2b9de6acf0cb2e92ffc78bc14e3eccd2730629ce1cc382fb49c3b366d81",
+      "sha256": "63c0d340cf7846093339ecec3416db908d9c5300e5ccabd5a7b951e2dd55092b"
+    },
+    "assets/interact/utils/paperviz_processor.py": {
+      "source": "assets/interact/utils/paperviz_processor.py",
+      "source_sha256": "8b49e4d4989ae928f0523c23372cb659bae2e4b749e4579c4533bd014ad9bd23",
+      "sha256": "a1da92a39feacc1090618e390f4e4506ed8d9fa37bd33cdd4d4065060a55bef5"
+    },
+    "assets/interact/utils/user_simulator.py": {
+      "source": "assets/interact/utils/user_simulator.py",
+      "source_sha256": "ad8ea2942424c5efce9fde6bb24480514b8ed7836c2ba1a90f286374c16626da",
+      "sha256": "a0f60df58525e1f9961496922470cfe9956330f29f6251b652d14ca4f8d41785"
+    },
+    "assets/interact/utils/user_simulator_multi_req.py": {
+      "source": "assets/interact/utils/user_simulator_multi_req.py",
+      "source_sha256": "6663baa77eeff3b3e0ee1cf34d7bb4ccb58c894200df7ae18201525e2ad4b6e3",
+      "sha256": "e39ac270d1db713e12f2af9fa8e6e50c60e1e847df9d7b9496698fdfceebd8cb"
+    },
+    "assets/paperbanana_plot/agents/base_agent.py": {
+      "source": "assets/paperbanana_plot/agents/base_agent.py",
+      "source_sha256": "0a62382df76daadad55b0f3584f065f2435356e855ae022b6c89274e81d8b236",
+      "sha256": "e1f59fcef32e60a8ff89ce462ebe6c5665267488b22b36c21cc8528dfca07f95"
+    },
+    "assets/paperbanana_plot/agents/critic_agent.py": {
+      "source": "assets/paperbanana_plot/agents/critic_agent.py",
+      "source_sha256": "b7a03aafd1fe3f3c7f1217e2f572ae86dee6f872bd68826bd1abee8fa076f41d",
+      "sha256": "6862558256c94e09978ff70b9abe9540a54cf597d3dc145f072242178ec5531d"
+    },
+    "assets/paperbanana_plot/agents/planner_agent.py": {
+      "source": "assets/paperbanana_plot/agents/planner_agent.py",
+      "source_sha256": "f47bcd87b9ccc444ee09257b76ba3ca86a3d4100885ebe4e4698e02a9b272d98",
+      "sha256": "d548f06806029d419781466bb0f4dd3aedd1c5ec599bedb006a171c045508975"
+    },
+    "assets/paperbanana_plot/agents/retriever_agent.py": {
+      "source": "assets/paperbanana_plot/agents/retriever_agent.py",
+      "source_sha256": "6cd4c7379a3d8c1049333c952f817918ecc1901b3a829b5a55bd22a6f633b2b0",
+      "sha256": "a5c125e0284347fe1b84c8bf05fe09bb4ec73dbab321d6b15af7c05d7d962ef1"
+    },
+    "assets/paperbanana_plot/agents/stylist_agent.py": {
+      "source": "assets/paperbanana_plot/agents/stylist_agent.py",
+      "source_sha256": "350c51c9837771c981d9eb6c84488ac8b9ea0d0a759ecde726eafec3960d2a3c",
+      "sha256": "501b8aa8c4f18554f4ff5b08c59fc3018d332db620a2c6785d138231c3af3558"
+    },
+    "assets/paperbanana_plot/agents/visualizer_agent.py": {
+      "source": "assets/paperbanana_plot/agents/visualizer_agent.py",
+      "source_sha256": "507517bca4bb74fd084af88122c480145196a70efb26c262c170a7dad0850b91",
+      "sha256": "43310a2ee8e0fd94606b44c7959bd59bdb44ff3d03f2459d2bfa09ff09f1ca78"
+    },
+    "assets/paperbanana_plot/LICENSE": {
+      "source": "assets/paperbanana_plot/LICENSE",
+      "source_sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e",
+      "sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e"
+    },
+    "assets/paperbanana_plot/SOURCE_MANIFEST.json": {
+      "source": "assets/paperbanana_plot/SOURCE_MANIFEST.json",
+      "source_sha256": "54421f39689e2883f54e4d461c2117ca48a73847bb4a99befc2820e98ced2d9c",
+      "sha256": "aa8ead78bdd410e9cbc662c4cfa33feca1ff9ecc50459b89ca0a36f18a9dad6e"
+    },
+    "assets/paperbanana_plot/style_guides/neurips2025_plot_style_guide.md": {
+      "source": "assets/paperbanana_plot/style_guides/neurips2025_plot_style_guide.md",
+      "source_sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe",
+      "sha256": "c5894fa35e1dcd5f2dd25a89849cf91571dad7660c956229411141af9c1eacbe"
+    },
+    "assets/paperbanana_plot/utils/critic_rounds.py": {
+      "source": "assets/paperbanana_plot/utils/critic_rounds.py",
+      "source_sha256": "a8df3cfda00c8c028d2f9e9184e02773636ad8891aa478d073173582c1f2622c",
+      "sha256": "6aa71c16fda403b3b2b779b24ab9fbc005f383bb98d228f620ffae042654968c"
+    },
+    "assets/paperbanana_plot/utils/legacy_generation_options.py": {
+      "source": "assets/paperbanana_plot/utils/legacy_generation_options.py",
+      "source_sha256": "aca175087c86cd18ddd0275c08317dd34c93cb98d4b54f3ff13122bf27782934",
+      "sha256": "3486cc076f90305f92392c24122f2dfed063042973925acfb92d201a9d6106cc"
+    },
+    "assets/paperbanana_plot/utils/paperviz_processor.py": {
+      "source": "assets/paperbanana_plot/utils/paperviz_processor.py",
+      "source_sha256": "e09384c9613c553bcb0ba2d71c2e23bd01ad1a4bd8e490a8e236b8678b3ebb45",
+      "sha256": "b9eeb32462ba89896be8480373045f6b98062fc02c927b0660592ef6fc082235"
+    },
+    "assets/paperbanana_plot/utils/plot_execution.py": {
+      "source": "assets/paperbanana_plot/utils/plot_execution.py",
+      "source_sha256": "9f3ee8582c4cdf9bc4ea85d3f09ffd3c9ffcfadbd9c239bba116149bf519b04b",
+      "sha256": "acfa07227fd9d4a51d297ce7168595a92b47a0aa155877cac7e5a8a9cb2f7fab"
+    },
+    "scripts/bridge.py": {
+      "source": "scripts/bridge.py",
+      "source_sha256": "f42ec7b4245ae2602fb3c230f47202fee75f5bafac4c8fb3b04e0fd1d57132eb",
+      "sha256": "632cfa36082d61cd7e19ae6af3a339616483ae263adee56a82960acbc56ee51c"
+    },
+    "scripts/execution.py": {
+      "source": "scripts/execution.py",
+      "source_sha256": "7bdb6d17221ddc4c2a0a0e616427e0e3a39506aade634db3e88e46eb7537e4d3",
+      "sha256": "30326f4bf447d0fa4c0c51977fe9d4f5a17d44123e2b29eb39058862cdf2cd00"
+    },
+    "scripts/grouped_retriever.py": {
+      "source": "scripts/grouped_retriever.py",
+      "source_sha256": "e28535dee427f74ecd7729a1fec590b78b761662fd91549a2f0e06d44976bfc3",
+      "sha256": "a29d48593e8d86325e74daccf7d0184e2473d60ca85a7bac2f6be979682a484d"
+    },
+    "scripts/image_ratio.py": {
+      "source": "scripts/image_ratio.py",
+      "source_sha256": "e029b6d32f720c46fe6f1aca5c8300f20a6ea6834af510fc5cd45527cc1efc7a",
+      "sha256": "a07747f3ae255a81066cd73f31f424e01a3f5ff3ace70285eec58430ea63c7bc"
+    },
+    "scripts/plot_code.py": {
+      "source": "scripts/plot_code.py",
+      "source_sha256": "ca42f786bb9697e4178099680f867a979ca62e706bd0785b856fbf2c684d40cb",
+      "sha256": "57beb18d42b276607d47a634e040058340f698551a5cf637c719367463522ec1"
+    },
+    "scripts/plot_runtime.py": {
+      "source": "scripts/plot_runtime.py",
+      "source_sha256": "ada9b903ae42c5a37e2b38787193a45e32a4a88708d35bc0c7faf146cd1e7a7a",
+      "sha256": "e32ea191c6e3e98eb2c0d231f864a7a637552602fd851d529312f750832ff494"
+    },
+    "scripts/plot_worker.py": {
+      "source": "scripts/plot_worker.py",
+      "source_sha256": "99e989140e36c6948791f5976a26f91609f6a971e8c3bbd20813e1552e8d2665",
+      "sha256": "743d7e0c749b9232974792cb0655105c4794977ad3ec027044d0c3b38675dec9"
+    },
+    "scripts/prepare_reference_groups.py": {
+      "source": "scripts/prepare_reference_groups.py",
+      "source_sha256": "3481e485287c78d0c09e4ac6a15c5a1138e3c5a2bb10f0cb5a549f816bb00253",
+      "sha256": "38f6669230015c735001f20016c8b093624dca3a7d7cdaeefdd18764b79faf9a"
+    },
+    "scripts/prepare_references.py": {
+      "source": "scripts/prepare_references.py",
+      "source_sha256": "2247aa94f9f18577d1119ab54c57edac1d82d1ea8c043280348f0da5caba1933",
+      "sha256": "d1f2e494b438170d5fb0c678480de52847d0ef180fd4059796e7130097cfe91e"
+    },
+    "scripts/probe.py": {
+      "source": "scripts/probe.py",
+      "source_sha256": "88bdd7dfa4975b79890c4ece29ee8e9d60647cdbbc0bbb80fdde2dcb52faa205",
+      "sha256": "a921a740d6bd998078ec1edd9edfbda6ff91e608e52a735da00242e19a629ac7"
+    },
+    "scripts/reference_groups.py": {
+      "source": "scripts/reference_groups.py",
+      "source_sha256": "2528711e79a9e4ad2bde5b0b8781863d339a093e9c3cca9cf8a610ad6d76a26f",
+      "sha256": "87f921753f7667f5c534c3948e978b7eb98285a0604125356fc90aff7ff0f84c"
+    },
+    "scripts/reference_probe.py": {
+      "source": "scripts/reference_probe.py",
+      "source_sha256": "e29b5214fedab41b68741126fce505abb7830f5800882c10d36a0b90c878ad81",
+      "sha256": "98cb96a2f0f45d39f17c3a601f340b78e1107488a4d16ca406e3bb4eda019c88"
+    },
+    "scripts/respond.py": {
+      "source": "scripts/respond.py",
+      "source_sha256": "cea9d5a0d51e9817b1793f2cbbd5c8683afbe49f8e6ccf5ec119a634b4f27e23",
+      "sha256": "d2098ecee4dee945259819e92150d2faf514f920f0e1a24e017c34e5cfcf31e9"
+    },
+    "scripts/respond_retrieval.py": {
+      "source": "scripts/respond_retrieval.py",
+      "source_sha256": "03b35d881e38f425d741071ca01e8792b56461231fabaf73e9f4e34793694e9e",
+      "sha256": "65930520439e38def488013e6d52fbf58072dcb0328380781c5b51bae49523fa"
+    },
+    "scripts/respond_text.py": {
+      "source": "scripts/respond_text.py",
+      "source_sha256": "2f995934d9235c600a4b029bae61d0309448551427b9aa2e08d2e2f0cda98335",
+      "sha256": "d1389ce2da9e22908f52f2506b917b162e5d5d0fb14fb2ecab8ab6a78df712f5"
+    },
+    "scripts/review_agents.py": {
+      "source": "scripts/review_agents.py",
+      "source_sha256": "033ef81bd13c5ef4fa459afba7cbabf949cc1d8ee5fdd8e9fd2cd7dea53ce68c",
+      "sha256": "dcee555f51f32181b424633449fba4e249013d7fa92962bc0ec3def840fde425"
+    },
+    "scripts/review_protocol.py": {
+      "source": "scripts/review_protocol.py",
+      "source_sha256": "44ea1efab70ee26e3e67ca3fe2b9bba8648baea2ffbf3c2f6a4c9192f3a6a6b2",
+      "sha256": "7b896de2feb45752b7d7f31bfcae8006d2f34c2647779390b29ce4115dd04dba"
+    },
+    "scripts/run.py": {
+      "source": "scripts/run.py",
+      "source_sha256": "a57a772db91e2e367f62c1b491fa5db0592a985174a645c1f130bbab50dbc736",
+      "sha256": "59eb4743faf1393b2677b7bf1a6ba417c3224e763171c70bbd9d50aa747be420"
+    },
+    "scripts/run_plot.py": {
+      "source": "scripts/run_plot.py",
+      "source_sha256": "4efea2a364f439a2e8511af9dec8cff40b7ad1e6ce523ba672dade0651f365f9",
+      "sha256": "b72bc035362f19dae9655c2349ec31433f02acf058cf1631c75558ec3da888d8"
+    },
+    "scripts/state.py": {
+      "source": "scripts/state.py",
+      "source_sha256": "2a7c6e6014583485ece18dc4cf1f44d32f2861a8ace3b08de9a518421e2639e6",
+      "sha256": "a5a68404c172a53c0d47a7942534b5c609bff4c792b5aacdad98cbcffe4dff3d"
+    },
+    "scripts/verify_install.py": {
+      "source": "scripts/verify_install.py",
+      "source_sha256": "b29776cd8cca49084610c77fbbf1976f9107a7ee8aeb02421cadeaf80dce1cee",
+      "sha256": "78025bc1c7acdcf9c508221d4abbfa086cdece4abe7114e73f60374b1face7fc"
+    }
+  }
+}

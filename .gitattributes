@@ -2,3 +2,5 @@
 skills/paper-sketch/assets/interact/** -text
 skills/paper-sketch/assets/paperbanana_plot/** -text
 data/** -text
+skills/paper-sketch/scripts/** -text
+skills/paper-sketch/assets/sync/** -text

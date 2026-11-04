@@ -77,6 +77,8 @@ Keep generated outputs in the current conversation's workspace.
 
 ## Development Quick Start
 
+기본 실행은 순차 동기 방식이며, 원본 에이전트·프롬프트의 사본을 보존함. 개발 중 원본 연결 코드를 변경하면 `python scripts/build_sync_runtime.py`로 동기 실행 사본을 재생성한 뒤 테스트해야 함.
+
 Python 환경과 패키지는 uv로 관리함. 저장소 루트에서 아래 명령으로 잠금 파일에 기록된 환경을 준비함.
 
 Windows에서는 참고 이미지의 긴 파일명을 위해 짧은 경로에 클론하는 것을 권장함. Git의 긴 경로 처리는 아래처럼 저장소 단위로 설정할 수 있으며 전역 설정 변경은 필요하지 않음.
@@ -129,6 +131,8 @@ uv run --locked python skills/paper-sketch/scripts/prepare_reference_groups.py -
 ```
 
 ## Tests
+
+전체 회귀 시험에는 원본 비동기 사본 비교가 포함되므로 해당 시험 환경에는 로컬 loopback 허용이 필요함. 실제 동기 실행의 기본 샌드박스 검증은 `tests/sync_smoke.py`를 설치된 Python으로 실행하며, 실행 중 소켓 생성 자체를 차단함. 실행 예시는 [설치 안내](docs/installation.md)의 Synchronous Runtime Maintenance 기준임.
 
 ```shell
 uv run --locked python -m unittest discover -s tests -v
